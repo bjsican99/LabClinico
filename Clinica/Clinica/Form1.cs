@@ -17,8 +17,9 @@ namespace Clinica
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-
+            MenuClinica menu = new MenuClinica();
+            menu.Show();
+            this.Hide();
 
         }
 

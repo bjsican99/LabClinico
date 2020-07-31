@@ -9,3 +9,15 @@ C:\Users\Brian\source\repos\Clinica\Clinica\obj\Debug\Clinica.csproj.CoreCompile
 C:\Users\Brian\source\repos\Clinica\Clinica\obj\Debug\Clinica.exe
 C:\Users\Brian\source\repos\Clinica\Clinica\obj\Debug\Clinica.pdb
 C:\Users\Brian\source\repos\Clinica\Clinica\obj\Debug\Clinica.MenuClinica.resources
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\bin\Debug\Clinica.exe.config
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\bin\Debug\Clinica.exe
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\bin\Debug\Clinica.pdb
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csprojAssemblyReference.cache
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.DatosUsuarioClini.resources
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Form1.resources
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.MenuClinica.resources
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Properties.Resources.resources
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csproj.GenerateResource.cache
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csproj.CoreCompileInputs.cache
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.exe
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.pdb

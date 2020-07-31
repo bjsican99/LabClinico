@@ -16,5 +16,10 @@ namespace Clinica
         {
             InitializeComponent();
         }
+
+        private void DatosUsuarioClini_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
