@@ -1,0 +1,11 @@
+C:\Users\Brian\source\repos\Clinica\Clinica\bin\Debug\Clinica.exe.config
+C:\Users\Brian\source\repos\Clinica\Clinica\bin\Debug\Clinica.exe
+C:\Users\Brian\source\repos\Clinica\Clinica\bin\Debug\Clinica.pdb
+C:\Users\Brian\source\repos\Clinica\Clinica\obj\Debug\Clinica.csprojAssemblyReference.cache
+C:\Users\Brian\source\repos\Clinica\Clinica\obj\Debug\Clinica.Form1.resources
+C:\Users\Brian\source\repos\Clinica\Clinica\obj\Debug\Clinica.Properties.Resources.resources
+C:\Users\Brian\source\repos\Clinica\Clinica\obj\Debug\Clinica.csproj.GenerateResource.cache
+C:\Users\Brian\source\repos\Clinica\Clinica\obj\Debug\Clinica.csproj.CoreCompileInputs.cache
+C:\Users\Brian\source\repos\Clinica\Clinica\obj\Debug\Clinica.exe
+C:\Users\Brian\source\repos\Clinica\Clinica\obj\Debug\Clinica.pdb
+C:\Users\Brian\source\repos\Clinica\Clinica\obj\Debug\Clinica.MenuClinica.resources
