@@ -21,3 +21,23 @@ C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csproj.Gener
 C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csproj.CoreCompileInputs.cache
 C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.exe
 C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.pdb
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\Form1.resx
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\MenuClinica.resx
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\Form1.cs
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\Form1.Designer.cs
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\MenuClinica.cs
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\MenuClinica.Designer.cs
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\Clinica.exe.config
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\Clinica.exe
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\Clinica.pdb
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csprojAssemblyReference.cache
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.DatosUsuarioClini.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Form1.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.MenuClinica.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Properties.Resources.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csproj.GenerateResource.cache
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csproj.CoreCompileInputs.cache
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.exe
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.pdb
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Reportes.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Consultas.resources
