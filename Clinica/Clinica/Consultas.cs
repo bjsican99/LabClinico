@@ -28,7 +28,7 @@ namespace Clinica
 
         private void Btn_Regresar_Click(object sender, EventArgs e)
         {
-            MenuClinica Vi_Menu = new MenuClinica();
+            FR_MENU Vi_Menu = new FR_MENU();
             Vi_Menu.Show();
             this.Hide();
         }

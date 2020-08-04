@@ -1,20 +1,22 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Clinica
 {
-    public partial class MenuClinica : Form
+    public partial class FR_MENU : Form
     {
-        public MenuClinica()
+        public FR_MENU()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DatosUsuarioClini usu = new DatosUsuarioClini();
+            FR_INGRESOUSU usu = new FR_INGRESOUSU();
             usu.Show();
             this.Hide();
+
         }
 
         private void MenuClinica_Load(object sender, EventArgs e)
@@ -34,6 +36,16 @@ namespace Clinica
             Consultas Vi_Consulta = new Consultas();
             Vi_Consulta.Show();
             this.Hide();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
         }
     }
 }

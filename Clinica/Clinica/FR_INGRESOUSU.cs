@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Clinica
 {
-    public partial class DatosUsuarioClini : Form
+    public partial class FR_INGRESOUSU : Form
     {
-        public DatosUsuarioClini()
+        public FR_INGRESOUSU()
         {
             InitializeComponent();
         }
@@ -24,14 +24,19 @@ namespace Clinica
 
         private void Btn_Regresar_Click(object sender, EventArgs e)
         {
-            MenuClinica Vi_Menu = new MenuClinica();
+            FR_MENU Vi_Menu = new FR_MENU();
             Vi_Menu.Show();
             this.Hide();
         }
 
         private void Txt_Regresar_Click(object sender, EventArgs e)
         {
+          
+        }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            panel1.BackColor = Color.FromArgb(25, 0, 0, 0);
         }
     }
 }

@@ -41,3 +41,23 @@ C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.exe
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.pdb
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Reportes.resources
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Consultas.resources
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\bin\Debug\FR_LOGIN.resx
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\bin\Debug\FR_LOGIN.cs
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\bin\Debug\FR_LOGIN.Designer.cs
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\bin\Debug\Clinica.exe.config
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\bin\Debug\Clinica.exe
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\bin\Debug\Clinica.pdb
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csprojAssemblyReference.cache
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Consultas.resources
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Properties.Resources.resources
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Reportes.resources
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csproj.GenerateResource.cache
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csproj.CoreCompileInputs.cache
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\obj\Debug\Clinica.exe
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\obj\Debug\Clinica.pdb
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\bin\Debug\FR_MENU.resx
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\bin\Debug\FR_MENU.cs
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\bin\Debug\FR_MENU.Designer.cs
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_MENU.resources
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_INGRESOUSU.resources
+C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_LOGIN.resources
