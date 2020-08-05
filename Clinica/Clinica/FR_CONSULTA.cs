@@ -32,5 +32,12 @@ namespace Clinica
             Vi_Menu.Show();
             this.Hide();
         }
+
+        private void Btn_Regresar_Click_1(object sender, EventArgs e)
+        {
+            FR_MENU Vi_Menu = new FR_MENU();
+            Vi_Menu.Show();
+            this.Hide();
+        }
     }
 }

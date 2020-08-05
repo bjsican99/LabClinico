@@ -83,6 +83,7 @@
             this.TX_INGRESOPASSWORD.Name = "TX_INGRESOPASSWORD";
             this.TX_INGRESOPASSWORD.Size = new System.Drawing.Size(321, 23);
             this.TX_INGRESOPASSWORD.TabIndex = 4;
+            this.TX_INGRESOPASSWORD.TextChanged += new System.EventHandler(this.TX_INGRESOPASSWORD_TextChanged);
             // 
             // label2
             // 
@@ -132,6 +133,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(582, 503);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FR_LOGIN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

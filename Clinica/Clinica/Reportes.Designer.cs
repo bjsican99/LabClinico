@@ -30,6 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reportes));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Date_FechaFin = new System.Windows.Forms.DateTimePicker();
             this.Txt_FechaFin = new System.Windows.Forms.Label();
@@ -44,11 +49,6 @@
             this.DG_Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DG_FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DG_Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DG_Pacientes)).BeginInit();
             this.SuspendLayout();
@@ -76,6 +76,62 @@
             this.panel1.Size = new System.Drawing.Size(835, 451);
             this.panel1.TabIndex = 28;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(588, 376);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(130, 37);
+            this.label3.TabIndex = 44;
+            this.label3.Text = "Regresar";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(463, 354);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(87, 81);
+            this.button3.TabIndex = 43;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(30, 354);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 82);
+            this.button1.TabIndex = 42;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(570, 47);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(108, 98);
+            this.button2.TabIndex = 41;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(296, 72);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(156, 37);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "Fecha final";
             // 
             // label1
             // 
@@ -179,7 +235,7 @@
             this.DG_FechaRegistro,
             this.DG_Telefono});
             this.DG_Pacientes.Location = new System.Drawing.Point(30, 162);
-            this.DG_Pacientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DG_Pacientes.Margin = new System.Windows.Forms.Padding(4);
             this.DG_Pacientes.Name = "DG_Pacientes";
             this.DG_Pacientes.RowHeadersWidth = 51;
             this.DG_Pacientes.Size = new System.Drawing.Size(677, 185);
@@ -221,61 +277,6 @@
             this.DG_Telefono.Name = "DG_Telefono";
             this.DG_Telefono.Width = 125;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(296, 72);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 37);
-            this.label2.TabIndex = 40;
-            this.label2.Text = "Fecha final";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(570, 47);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 98);
-            this.button2.TabIndex = 41;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(30, 354);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 82);
-            this.button1.TabIndex = 42;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(463, 354);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(87, 81);
-            this.button3.TabIndex = 43;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(588, 376);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 37);
-            this.label3.TabIndex = 44;
-            this.label3.Text = "Regresar";
-            // 
             // Reportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -284,7 +285,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(882, 503);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Reportes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reportes";

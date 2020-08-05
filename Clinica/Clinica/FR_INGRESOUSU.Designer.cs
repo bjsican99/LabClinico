@@ -31,26 +31,26 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_INGRESOUSU));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TX_CORREO = new System.Windows.Forms.TextBox();
+            this.TX_NOMBRE = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CB_ESTADOCIVIL = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.TX_ALERGIAS = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.TX_TELEFONO = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.TX_APELLIDO = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DATE_FECHAREGISTROUSUARIO = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Btn_Regresar = new System.Windows.Forms.Button();
+            this.B_VALIDARUSUARIO = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.B_REGRESARUSUARIO = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,21 +76,21 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Apellido";
             // 
-            // textBox1
+            // TX_CORREO
             // 
-            this.textBox1.Location = new System.Drawing.Point(225, 243);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 22);
-            this.textBox1.TabIndex = 6;
+            this.TX_CORREO.Location = new System.Drawing.Point(225, 243);
+            this.TX_CORREO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TX_CORREO.Name = "TX_CORREO";
+            this.TX_CORREO.Size = new System.Drawing.Size(167, 22);
+            this.TX_CORREO.TabIndex = 6;
             // 
-            // textBox2
+            // TX_NOMBRE
             // 
-            this.textBox2.Location = new System.Drawing.Point(225, 94);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 22);
-            this.textBox2.TabIndex = 7;
+            this.TX_NOMBRE.Location = new System.Drawing.Point(225, 94);
+            this.TX_NOMBRE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TX_NOMBRE.Name = "TX_NOMBRE";
+            this.TX_NOMBRE.Size = new System.Drawing.Size(167, 22);
+            this.TX_NOMBRE.TabIndex = 7;
             // 
             // label3
             // 
@@ -103,17 +103,17 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Estado Civil";
             // 
-            // comboBox1
+            // CB_ESTADOCIVIL
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.CB_ESTADOCIVIL.FormattingEnabled = true;
+            this.CB_ESTADOCIVIL.Items.AddRange(new object[] {
             "Solter@",
             "Casad@"});
-            this.comboBox1.Location = new System.Drawing.Point(225, 297);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(167, 24);
-            this.comboBox1.TabIndex = 9;
+            this.CB_ESTADOCIVIL.Location = new System.Drawing.Point(225, 297);
+            this.CB_ESTADOCIVIL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CB_ESTADOCIVIL.Name = "CB_ESTADOCIVIL";
+            this.CB_ESTADOCIVIL.Size = new System.Drawing.Size(167, 24);
+            this.CB_ESTADOCIVIL.TabIndex = 9;
             // 
             // label4
             // 
@@ -172,13 +172,13 @@
             this.label6.TabIndex = 16;
             this.label6.Text = "Correo";
             // 
-            // textBox4
+            // TX_ALERGIAS
             // 
-            this.textBox4.Location = new System.Drawing.Point(635, 192);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(167, 22);
-            this.textBox4.TabIndex = 17;
+            this.TX_ALERGIAS.Location = new System.Drawing.Point(635, 192);
+            this.TX_ALERGIAS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TX_ALERGIAS.Name = "TX_ALERGIAS";
+            this.TX_ALERGIAS.Size = new System.Drawing.Size(167, 22);
+            this.TX_ALERGIAS.TabIndex = 17;
             // 
             // label7
             // 
@@ -191,13 +191,13 @@
             this.label7.TabIndex = 18;
             this.label7.Text = "SEGURO";
             // 
-            // textBox5
+            // TX_TELEFONO
             // 
-            this.textBox5.Location = new System.Drawing.Point(225, 192);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(167, 22);
-            this.textBox5.TabIndex = 21;
+            this.TX_TELEFONO.Location = new System.Drawing.Point(225, 192);
+            this.TX_TELEFONO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TX_TELEFONO.Name = "TX_TELEFONO";
+            this.TX_TELEFONO.Size = new System.Drawing.Size(167, 22);
+            this.TX_TELEFONO.TabIndex = 21;
             // 
             // label8
             // 
@@ -210,13 +210,13 @@
             this.label8.TabIndex = 22;
             this.label8.Text = "FECHA REGISTRO";
             // 
-            // textBox7
+            // TX_APELLIDO
             // 
-            this.textBox7.Location = new System.Drawing.Point(225, 141);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(167, 22);
-            this.textBox7.TabIndex = 24;
+            this.TX_APELLIDO.Location = new System.Drawing.Point(225, 141);
+            this.TX_APELLIDO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TX_APELLIDO.Name = "TX_APELLIDO";
+            this.TX_APELLIDO.Size = new System.Drawing.Size(167, 22);
+            this.TX_APELLIDO.TabIndex = 24;
             // 
             // label9
             // 
@@ -229,35 +229,35 @@
             this.label9.TabIndex = 25;
             this.label9.Text = "Cod Paciente";
             // 
-            // dateTimePicker1
+            // DATE_FECHAREGISTROUSUARIO
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(532, 92);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(167, 22);
-            this.dateTimePicker1.TabIndex = 26;
+            this.DATE_FECHAREGISTROUSUARIO.Location = new System.Drawing.Point(532, 92);
+            this.DATE_FECHAREGISTROUSUARIO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DATE_FECHAREGISTROUSUARIO.Name = "DATE_FECHAREGISTROUSUARIO";
+            this.DATE_FECHAREGISTROUSUARIO.Size = new System.Drawing.Size(167, 22);
+            this.DATE_FECHAREGISTROUSUARIO.TabIndex = 26;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.B_VALIDARUSUARIO);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.Btn_Regresar);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.B_REGRESARUSUARIO);
+            this.panel1.Controls.Add(this.TX_CORREO);
+            this.panel1.Controls.Add(this.DATE_FECHAREGISTROUSUARIO);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.TX_APELLIDO);
+            this.panel1.Controls.Add(this.TX_NOMBRE);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.TX_TELEFONO);
+            this.panel1.Controls.Add(this.CB_ESTADOCIVIL);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.TX_ALERGIAS);
             this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.checkBox2);
@@ -268,18 +268,17 @@
             this.panel1.TabIndex = 27;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // Btn_Regresar
+            // B_VALIDARUSUARIO
             // 
-            this.Btn_Regresar.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_Regresar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Regresar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Regresar.Image")));
-            this.Btn_Regresar.Location = new System.Drawing.Point(483, 322);
-            this.Btn_Regresar.Margin = new System.Windows.Forms.Padding(4);
-            this.Btn_Regresar.Name = "Btn_Regresar";
-            this.Btn_Regresar.Size = new System.Drawing.Size(111, 94);
-            this.Btn_Regresar.TabIndex = 32;
-            this.Btn_Regresar.UseVisualStyleBackColor = false;
-            this.Btn_Regresar.Click += new System.EventHandler(this.Btn_Regresar_Click);
+            this.B_VALIDARUSUARIO.BackColor = System.Drawing.Color.Transparent;
+            this.B_VALIDARUSUARIO.ForeColor = System.Drawing.Color.White;
+            this.B_VALIDARUSUARIO.Image = ((System.Drawing.Image)(resources.GetObject("B_VALIDARUSUARIO.Image")));
+            this.B_VALIDARUSUARIO.Location = new System.Drawing.Point(678, 322);
+            this.B_VALIDARUSUARIO.Margin = new System.Windows.Forms.Padding(4);
+            this.B_VALIDARUSUARIO.Name = "B_VALIDARUSUARIO";
+            this.B_VALIDARUSUARIO.Size = new System.Drawing.Size(111, 94);
+            this.B_VALIDARUSUARIO.TabIndex = 35;
+            this.B_VALIDARUSUARIO.UseVisualStyleBackColor = false;
             // 
             // label10
             // 
@@ -292,17 +291,18 @@
             this.label10.TabIndex = 34;
             this.label10.Text = "CODIGO";
             // 
-            // button1
+            // B_REGRESARUSUARIO
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(678, 322);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 94);
-            this.button1.TabIndex = 35;
-            this.button1.UseVisualStyleBackColor = false;
+            this.B_REGRESARUSUARIO.BackColor = System.Drawing.Color.Transparent;
+            this.B_REGRESARUSUARIO.ForeColor = System.Drawing.Color.White;
+            this.B_REGRESARUSUARIO.Image = ((System.Drawing.Image)(resources.GetObject("B_REGRESARUSUARIO.Image")));
+            this.B_REGRESARUSUARIO.Location = new System.Drawing.Point(483, 322);
+            this.B_REGRESARUSUARIO.Margin = new System.Windows.Forms.Padding(4);
+            this.B_REGRESARUSUARIO.Name = "B_REGRESARUSUARIO";
+            this.B_REGRESARUSUARIO.Size = new System.Drawing.Size(111, 94);
+            this.B_REGRESARUSUARIO.TabIndex = 32;
+            this.B_REGRESARUSUARIO.UseVisualStyleBackColor = false;
+            this.B_REGRESARUSUARIO.Click += new System.EventHandler(this.Btn_Regresar_Click);
             // 
             // FR_INGRESOUSU
             // 
@@ -312,6 +312,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(882, 503);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FR_INGRESOUSU";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -327,25 +328,25 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TX_CORREO;
+        private System.Windows.Forms.TextBox TX_NOMBRE;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CB_ESTADOCIVIL;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox TX_ALERGIAS;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox TX_TELEFONO;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox TX_APELLIDO;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker DATE_FECHAREGISTROUSUARIO;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button Btn_Regresar;
+        private System.Windows.Forms.Button B_REGRESARUSUARIO;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button B_VALIDARUSUARIO;
     }
 }

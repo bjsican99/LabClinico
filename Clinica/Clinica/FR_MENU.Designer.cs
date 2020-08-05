@@ -94,7 +94,7 @@
             // 
             this.B_INGRESOCONSULTA.BackColor = System.Drawing.Color.White;
             this.B_INGRESOCONSULTA.Image = ((System.Drawing.Image)(resources.GetObject("B_INGRESOCONSULTA.Image")));
-            this.B_INGRESOCONSULTA.Location = new System.Drawing.Point(467, 96);
+            this.B_INGRESOCONSULTA.Location = new System.Drawing.Point(43, 239);
             this.B_INGRESOCONSULTA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.B_INGRESOCONSULTA.Name = "B_INGRESOCONSULTA";
             this.B_INGRESOCONSULTA.Size = new System.Drawing.Size(99, 97);
@@ -106,7 +106,7 @@
             // 
             this.B_INGRESOREPORTE.BackColor = System.Drawing.Color.White;
             this.B_INGRESOREPORTE.Image = ((System.Drawing.Image)(resources.GetObject("B_INGRESOREPORTE.Image")));
-            this.B_INGRESOREPORTE.Location = new System.Drawing.Point(43, 227);
+            this.B_INGRESOREPORTE.Location = new System.Drawing.Point(467, 239);
             this.B_INGRESOREPORTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.B_INGRESOREPORTE.Name = "B_INGRESOREPORTE";
             this.B_INGRESOREPORTE.Size = new System.Drawing.Size(99, 97);
@@ -130,12 +130,13 @@
             // 
             this.B_INGRESOFACTURACIÓN.BackColor = System.Drawing.Color.White;
             this.B_INGRESOFACTURACIÓN.Image = ((System.Drawing.Image)(resources.GetObject("B_INGRESOFACTURACIÓN.Image")));
-            this.B_INGRESOFACTURACIÓN.Location = new System.Drawing.Point(467, 227);
+            this.B_INGRESOFACTURACIÓN.Location = new System.Drawing.Point(467, 96);
             this.B_INGRESOFACTURACIÓN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.B_INGRESOFACTURACIÓN.Name = "B_INGRESOFACTURACIÓN";
             this.B_INGRESOFACTURACIÓN.Size = new System.Drawing.Size(99, 97);
             this.B_INGRESOFACTURACIÓN.TabIndex = 7;
             this.B_INGRESOFACTURACIÓN.UseVisualStyleBackColor = false;
+            this.B_INGRESOFACTURACIÓN.Click += new System.EventHandler(this.B_INGRESOFACTURACIÓN_Click);
             // 
             // label5
             // 
@@ -191,6 +192,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.B_INGRESOREPORTE);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FR_MENU";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

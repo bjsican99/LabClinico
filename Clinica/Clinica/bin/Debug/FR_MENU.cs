@@ -47,5 +47,12 @@ namespace Clinica
         {
             System.Windows.Forms.Application.Exit();
         }
+
+        private void B_INGRESOFACTURACIÓN_Click(object sender, EventArgs e)
+        {
+            Consultas Vi_Consulta = new Consultas();
+            Vi_Consulta.Show();
+            this.Hide();
+        }
     }
 }

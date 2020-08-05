@@ -6,9 +6,12 @@ namespace Clinica
 {
     public partial class FR_LOGIN : Form
     {
+        
+
         public FR_LOGIN()
         {
             InitializeComponent();
+            TX_INGRESOPASSWORD.PasswordChar = '*';
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -45,6 +48,11 @@ namespace Clinica
             usu.Show();
             this.Hide();
             
+
+        }
+
+        private void TX_INGRESOPASSWORD_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
