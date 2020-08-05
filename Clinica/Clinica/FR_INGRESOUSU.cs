@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Odbc;
 
 namespace Clinica
 {
@@ -24,17 +25,58 @@ namespace Clinica
 
         private void Btn_Regresar_Click(object sender, EventArgs e)
         {
-         
+
         }
 
         private void Txt_Regresar_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             panel1.BackColor = Color.FromArgb(25, 0, 0, 0);
         }
+
+        private void B_VALIDARUSUARIO_Click(object sender, EventArgs e)
+        {
+            //INSERTARUSUARIO();
+            LUSUARIO();
+
+
+
+
+        }
+
+
+
+        Conexion cn = new Conexion();
+        void INSERTARUSUARIO()
+            
+        {
+            //INSERTAR
+
+            string cadena = "INSERT INTO usuario (NOMBRE, apellido, telefono, correo, estado, alergias, seguro) VALUES ('"+ TX_NOMBRE + "' '" +TX_APELLIDO+ "' '" + TX_TELEFONO + "' '" + TX_CORREO + "' '" + CB_ESTADOCIVIL+ "' '" +TX_ALERGIAS+ "' '"+RB_SEGURO+"'    )";
+            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            consulta.ExecuteNonQuery();
+          
+
+
+        }
+
+        void LUSUARIO()
+        {
+            TX_NOMBRE.Text = "";
+            TX_APELLIDO.Text = "";
+            TX_TELEFONO.Text = "";
+            TX_CORREO.Text = "";
+            CB_ESTADOCIVIL.Text = ("");
+            TX_ALERGIAS.Text = "";
+            RB_SEGURO.Text = "";
+
+
+
+        }
+
     }
 }

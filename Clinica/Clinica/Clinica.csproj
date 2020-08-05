@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conexion.cs" />
     <Compile Include="FR_CONSULTAS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,12 +94,6 @@
     <Compile Include="FR_TOTAL.Designer.cs">
       <DependentUpon>FR_TOTAL.cs</DependentUpon>
     </Compile>
-    <Compile Include="FR_REPORTE.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FR_REPORTE.Designer.cs">
-      <DependentUpon>FR_REPORTE.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FR_CONSULTAS.resx">
@@ -126,9 +121,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FR_REPORTE.resx">
-      <DependentUpon>FR_REPORTE.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

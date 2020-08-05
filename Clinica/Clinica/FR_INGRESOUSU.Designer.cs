@@ -37,8 +37,6 @@
             this.CB_ESTADOCIVIL = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.TX_ALERGIAS = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -49,7 +47,8 @@
             this.DATE_FECHAREGISTROUSUARIO = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.B_VALIDARUSUARIO = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
+            this.L_COD = new System.Windows.Forms.Label();
+            this.RB_SEGURO = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -136,30 +135,6 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "ALERGIAS";
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(666, 245);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(42, 21);
-            this.checkBox1.TabIndex = 13;
-            this.checkBox1.Text = "SI";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(726, 245);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(50, 21);
-            this.checkBox2.TabIndex = 14;
-            this.checkBox2.Text = "NO";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -239,8 +214,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.RB_SEGURO);
             this.panel1.Controls.Add(this.B_VALIDARUSUARIO);
-            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.L_COD);
             this.panel1.Controls.Add(this.TX_CORREO);
             this.panel1.Controls.Add(this.DATE_FECHAREGISTROUSUARIO);
             this.panel1.Controls.Add(this.label1);
@@ -256,9 +232,7 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.TX_ALERGIAS);
-            this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.checkBox2);
             this.panel1.Location = new System.Drawing.Point(24, 21);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
@@ -277,17 +251,28 @@
             this.B_VALIDARUSUARIO.Size = new System.Drawing.Size(111, 94);
             this.B_VALIDARUSUARIO.TabIndex = 35;
             this.B_VALIDARUSUARIO.UseVisualStyleBackColor = false;
+            this.B_VALIDARUSUARIO.Click += new System.EventHandler(this.B_VALIDARUSUARIO_Click);
             // 
-            // label10
+            // L_COD
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(218, 38);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(126, 37);
-            this.label10.TabIndex = 34;
-            this.label10.Text = "CODIGO";
+            this.L_COD.AutoSize = true;
+            this.L_COD.BackColor = System.Drawing.Color.Transparent;
+            this.L_COD.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_COD.Location = new System.Drawing.Point(218, 38);
+            this.L_COD.Name = "L_COD";
+            this.L_COD.Size = new System.Drawing.Size(126, 37);
+            this.L_COD.TabIndex = 34;
+            this.L_COD.Text = "CODIGO";
+            // 
+            // RB_SEGURO
+            // 
+            this.RB_SEGURO.AutoSize = true;
+            this.RB_SEGURO.Location = new System.Drawing.Point(635, 249);
+            this.RB_SEGURO.Name = "RB_SEGURO";
+            this.RB_SEGURO.Size = new System.Drawing.Size(17, 16);
+            this.RB_SEGURO.TabIndex = 36;
+            this.RB_SEGURO.TabStop = true;
+            this.RB_SEGURO.UseVisualStyleBackColor = true;
             // 
             // FR_INGRESOUSU
             // 
@@ -319,8 +304,6 @@
         private System.Windows.Forms.ComboBox CB_ESTADOCIVIL;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TX_ALERGIAS;
         private System.Windows.Forms.Label label7;
@@ -330,7 +313,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker DATE_FECHAREGISTROUSUARIO;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label L_COD;
         private System.Windows.Forms.Button B_VALIDARUSUARIO;
+        private System.Windows.Forms.RadioButton RB_SEGURO;
     }
 }

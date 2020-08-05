@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_REPORTES));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.B_IMPRIMIR = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,7 +54,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.B_IMPRIMIR);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -72,15 +72,16 @@
             this.panel1.Size = new System.Drawing.Size(828, 460);
             this.panel1.TabIndex = 29;
             // 
-            // button1
+            // B_IMPRIMIR
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(30, 354);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 82);
-            this.button1.TabIndex = 42;
-            this.button1.UseVisualStyleBackColor = false;
+            this.B_IMPRIMIR.BackColor = System.Drawing.Color.White;
+            this.B_IMPRIMIR.Image = ((System.Drawing.Image)(resources.GetObject("B_IMPRIMIR.Image")));
+            this.B_IMPRIMIR.Location = new System.Drawing.Point(30, 354);
+            this.B_IMPRIMIR.Name = "B_IMPRIMIR";
+            this.B_IMPRIMIR.Size = new System.Drawing.Size(106, 82);
+            this.B_IMPRIMIR.TabIndex = 42;
+            this.B_IMPRIMIR.UseVisualStyleBackColor = false;
+            this.B_IMPRIMIR.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -210,6 +211,7 @@
             this.DG_Pacientes.RowHeadersWidth = 51;
             this.DG_Pacientes.Size = new System.Drawing.Size(677, 185);
             this.DG_Pacientes.TabIndex = 28;
+            this.DG_Pacientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DG_Pacientes_CellContentClick);
             // 
             // DG_Codigo
             // 
@@ -266,7 +268,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button B_IMPRIMIR;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
