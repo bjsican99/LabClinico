@@ -61,11 +61,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FR_CONSULTA.cs">
+    <Compile Include="FR_CONSULTAS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FR_CONSULTA.Designer.cs">
-      <DependentUpon>FR_CONSULTA.cs</DependentUpon>
+    <Compile Include="FR_CONSULTAS.Designer.cs">
+      <DependentUpon>FR_CONSULTAS.cs</DependentUpon>
     </Compile>
     <Compile Include="FR_INGRESOUSU.cs">
       <SubType>Form</SubType>
@@ -81,24 +81,28 @@
       <DependentUpon>FR_LOGIN.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Reportes.cs">
+    <Compile Include="FR_REPORTES.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reportes.Designer.cs">
-      <DependentUpon>Reportes.cs</DependentUpon>
+    <Compile Include="FR_REPORTES.Designer.cs">
+      <DependentUpon>FR_REPORTES.cs</DependentUpon>
     </Compile>
-    <Compile Include="FR_MENU.cs">
+    <Compile Include="FR_TOTAL.cs">
       <SubType>Form</SubType>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="FR_MENU.Designer.cs">
-      <DependentUpon>FR_MENU.cs</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Compile Include="FR_TOTAL.Designer.cs">
+      <DependentUpon>FR_TOTAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_REPORTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_REPORTE.Designer.cs">
+      <DependentUpon>FR_REPORTE.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FR_CONSULTA.resx">
-      <DependentUpon>FR_CONSULTA.cs</DependentUpon>
+    <EmbeddedResource Include="FR_CONSULTAS.resx">
+      <DependentUpon>FR_CONSULTAS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FR_INGRESOUSU.resx">
       <DependentUpon>FR_INGRESOUSU.cs</DependentUpon>
@@ -107,9 +111,11 @@
       <DependentUpon>FR_LOGIN.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="FR_MENU.resx">
-      <DependentUpon>FR_MENU.cs</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <EmbeddedResource Include="FR_REPORTES.resx">
+      <DependentUpon>FR_REPORTES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_TOTAL.resx">
+      <DependentUpon>FR_TOTAL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -120,8 +126,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Reportes.resx">
-      <DependentUpon>Reportes.cs</DependentUpon>
+    <EmbeddedResource Include="FR_REPORTE.resx">
+      <DependentUpon>FR_REPORTE.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

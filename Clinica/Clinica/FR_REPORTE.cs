@@ -33,9 +33,7 @@ namespace Clinica
 
         private void Btn_Regresar_Click(object sender, EventArgs e)
         {
-            FR_MENU Vi_Menu = new FR_MENU();
-            Vi_Menu.Show();
-            this.Hide();
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -65,9 +63,7 @@ namespace Clinica
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FR_MENU Vi_Menu = new FR_MENU();
-            Vi_Menu.Show();
-            this.Hide();
+           
         }
     }
 }

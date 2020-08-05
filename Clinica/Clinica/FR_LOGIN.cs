@@ -21,10 +21,7 @@ namespace Clinica
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FR_MENU menu = new FR_MENU();
-            menu.Show();
-            this.Hide();
-
+           
         }
 
         private void tBIngresoUsu_TextChanged(object sender, EventArgs e)
@@ -44,7 +41,7 @@ namespace Clinica
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            FR_MENU usu = new FR_MENU();
+            FR_TOTAL usu = new FR_TOTAL();
             usu.Show();
             this.Hide();
             

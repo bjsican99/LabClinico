@@ -50,7 +50,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.B_VALIDARUSUARIO = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.B_REGRESARUSUARIO = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -242,7 +241,6 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.B_VALIDARUSUARIO);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.B_REGRESARUSUARIO);
             this.panel1.Controls.Add(this.TX_CORREO);
             this.panel1.Controls.Add(this.DATE_FECHAREGISTROUSUARIO);
             this.panel1.Controls.Add(this.label1);
@@ -291,19 +289,6 @@
             this.label10.TabIndex = 34;
             this.label10.Text = "CODIGO";
             // 
-            // B_REGRESARUSUARIO
-            // 
-            this.B_REGRESARUSUARIO.BackColor = System.Drawing.Color.Transparent;
-            this.B_REGRESARUSUARIO.ForeColor = System.Drawing.Color.White;
-            this.B_REGRESARUSUARIO.Image = ((System.Drawing.Image)(resources.GetObject("B_REGRESARUSUARIO.Image")));
-            this.B_REGRESARUSUARIO.Location = new System.Drawing.Point(483, 322);
-            this.B_REGRESARUSUARIO.Margin = new System.Windows.Forms.Padding(4);
-            this.B_REGRESARUSUARIO.Name = "B_REGRESARUSUARIO";
-            this.B_REGRESARUSUARIO.Size = new System.Drawing.Size(111, 94);
-            this.B_REGRESARUSUARIO.TabIndex = 32;
-            this.B_REGRESARUSUARIO.UseVisualStyleBackColor = false;
-            this.B_REGRESARUSUARIO.Click += new System.EventHandler(this.Btn_Regresar_Click);
-            // 
             // FR_INGRESOUSU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -345,7 +330,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker DATE_FECHAREGISTROUSUARIO;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button B_REGRESARUSUARIO;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button B_VALIDARUSUARIO;
     }

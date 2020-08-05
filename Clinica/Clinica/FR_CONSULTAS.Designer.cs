@@ -1,6 +1,6 @@
 ﻿namespace Clinica
 {
-    partial class Consultas
+    partial class FR_CONSULTAS
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consultas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_CONSULTAS));
             this.panel1 = new System.Windows.Forms.Panel();
             this.TX_NOMBREPACIENTECONSULTA = new System.Windows.Forms.TextBox();
             this.Lbl_Nombre = new System.Windows.Forms.Label();
@@ -42,15 +42,13 @@
             this.DG_Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DG_Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DG_FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.B_REGRESARCONSULTA = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DG_Pacientes)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Controls.Add(this.B_REGRESARCONSULTA);
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.TX_NOMBREPACIENTECONSULTA);
             this.panel1.Controls.Add(this.Lbl_Nombre);
             this.panel1.Controls.Add(this.TX_CODIGOPACIENTECONSULTA);
@@ -60,11 +58,11 @@
             this.panel1.Controls.Add(this.Lbl_Titulo);
             this.panel1.Controls.Add(this.Lbl_Regresar);
             this.panel1.Controls.Add(this.DG_Pacientes);
-            this.panel1.Location = new System.Drawing.Point(29, 33);
+            this.panel1.Location = new System.Drawing.Point(32, 27);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(825, 442);
-            this.panel1.TabIndex = 29;
+            this.panel1.TabIndex = 30;
             // 
             // TX_NOMBREPACIENTECONSULTA
             // 
@@ -125,7 +123,6 @@
             this.B_BUSCAR.Size = new System.Drawing.Size(88, 69);
             this.B_BUSCAR.TabIndex = 38;
             this.B_BUSCAR.UseVisualStyleBackColor = true;
-            this.B_BUSCAR.Click += new System.EventHandler(this.Btn_Buscar_Click);
             // 
             // Lbl_Titulo
             // 
@@ -160,11 +157,11 @@
             this.DG_Codigo,
             this.DG_Nombre,
             this.DG_FechaRegistro});
-            this.DG_Pacientes.Location = new System.Drawing.Point(43, 230);
+            this.DG_Pacientes.Location = new System.Drawing.Point(186, 242);
             this.DG_Pacientes.Margin = new System.Windows.Forms.Padding(4);
             this.DG_Pacientes.Name = "DG_Pacientes";
             this.DG_Pacientes.RowHeadersWidth = 51;
-            this.DG_Pacientes.Size = new System.Drawing.Size(602, 216);
+            this.DG_Pacientes.Size = new System.Drawing.Size(426, 216);
             this.DG_Pacientes.TabIndex = 28;
             // 
             // DG_Codigo
@@ -188,32 +185,17 @@
             this.DG_FechaRegistro.Name = "DG_FechaRegistro";
             this.DG_FechaRegistro.Width = 125;
             // 
-            // B_REGRESARCONSULTA
-            // 
-            this.B_REGRESARCONSULTA.BackColor = System.Drawing.Color.Transparent;
-            this.B_REGRESARCONSULTA.ForeColor = System.Drawing.Color.White;
-            this.B_REGRESARCONSULTA.Image = ((System.Drawing.Image)(resources.GetObject("B_REGRESARCONSULTA.Image")));
-            this.B_REGRESARCONSULTA.Location = new System.Drawing.Point(682, 314);
-            this.B_REGRESARCONSULTA.Margin = new System.Windows.Forms.Padding(4);
-            this.B_REGRESARCONSULTA.Name = "B_REGRESARCONSULTA";
-            this.B_REGRESARCONSULTA.Size = new System.Drawing.Size(111, 94);
-            this.B_REGRESARCONSULTA.TabIndex = 44;
-            this.B_REGRESARCONSULTA.UseVisualStyleBackColor = false;
-            this.B_REGRESARCONSULTA.Click += new System.EventHandler(this.Btn_Regresar_Click_1);
-            // 
-            // Consultas
+            // FR_CONSULTAS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(931, 531);
+            this.ClientSize = new System.Drawing.Size(898, 498);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Consultas";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Consultas";
+            this.Name = "FR_CONSULTAS";
+            this.Text = "FR_CONSULTAS";
+            this.Load += new System.EventHandler(this.FR_CONSULTAS_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DG_Pacientes)).EndInit();
@@ -224,18 +206,17 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox TX_NOMBREPACIENTECONSULTA;
+        private System.Windows.Forms.Label Lbl_Nombre;
+        private System.Windows.Forms.TextBox TX_CODIGOPACIENTECONSULTA;
+        private System.Windows.Forms.Label Lbl_CodPaciente;
         private System.Windows.Forms.Label Lbl_Buscar;
         private System.Windows.Forms.Button B_BUSCAR;
         private System.Windows.Forms.Label Lbl_Titulo;
         private System.Windows.Forms.Label Lbl_Regresar;
         private System.Windows.Forms.DataGridView DG_Pacientes;
-        private System.Windows.Forms.TextBox TX_CODIGOPACIENTECONSULTA;
-        private System.Windows.Forms.Label Lbl_CodPaciente;
         private System.Windows.Forms.DataGridViewTextBoxColumn DG_Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn DG_Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn DG_FechaRegistro;
-        private System.Windows.Forms.TextBox TX_NOMBREPACIENTECONSULTA;
-        private System.Windows.Forms.Label Lbl_Nombre;
-        private System.Windows.Forms.Button B_REGRESARCONSULTA;
     }
 }
