@@ -1,6 +1,6 @@
 ﻿namespace Clinica
 {
-    partial class FR_AGREGARUSU
+    partial class FR_FACTURACION
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_FACTURACION));
             this.SuspendLayout();
             // 
-            // FR_AGREGARUSU
+            // FR_FACTURACION
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 287);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FR_AGREGARUSU";
-            this.Text = "FR_AGREGARUSU";
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(754, 496);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "FR_FACTURACION";
+            this.Text = "FR_FACTURACION";
             this.ResumeLayout(false);
 
         }

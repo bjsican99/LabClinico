@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Odbc;
+using System.Drawing.Printing;
 
 namespace Clinica
 {
@@ -17,12 +18,17 @@ namespace Clinica
         {
             InitializeComponent();
             cargar();
+
+
         }
 
         Conexion cn = new Conexion();
         private void button1_Click(object sender, EventArgs e)
         {
-            cargar();
+            printDocument1.Print();
+
+
+
         }
 
         void cargar()
@@ -38,6 +44,21 @@ namespace Clinica
 
         private void DG_Pacientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            Bitmap bm = new Bitmap(this.DG_Pacientes.Width, this.DG_Pacientes.Height);
+            DG_Pacientes.DrawToBitmap(bm, new Rectangle(0, 0, this.DG_Pacientes.Width, this.DG_Pacientes.Height));
+            e.Graphics.DrawImage(bm, 10, 10);
+
+
+
+
+
+
+
 
         }
     }

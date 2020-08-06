@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Clinica
 {
-    public partial class FR_AGREGARUSU : Form
+    public partial class FR_EXAMEN : Form
     {
-        public FR_AGREGARUSU()
+        public FR_EXAMEN()
         {
             InitializeComponent();
         }

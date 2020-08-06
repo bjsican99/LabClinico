@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_REPORTES));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TX_NOMBREPACIENTECONSULTA = new System.Windows.Forms.TextBox();
+            this.Lbl_Nombre = new System.Windows.Forms.Label();
+            this.TX_CODIGOPACIENTECONSULTA = new System.Windows.Forms.TextBox();
+            this.Lbl_CodPaciente = new System.Windows.Forms.Label();
             this.B_IMPRIMIR = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,6 +46,7 @@
             this.Txt_Generar = new System.Windows.Forms.Label();
             this.Txt_Regresar = new System.Windows.Forms.Label();
             this.DG_Pacientes = new System.Windows.Forms.DataGridView();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DG_Pacientes)).BeginInit();
             this.SuspendLayout();
@@ -49,6 +54,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.TX_NOMBREPACIENTECONSULTA);
+            this.panel1.Controls.Add(this.Lbl_Nombre);
+            this.panel1.Controls.Add(this.TX_CODIGOPACIENTECONSULTA);
+            this.panel1.Controls.Add(this.Lbl_CodPaciente);
             this.panel1.Controls.Add(this.B_IMPRIMIR);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label2);
@@ -67,6 +76,44 @@
             this.panel1.Size = new System.Drawing.Size(828, 460);
             this.panel1.TabIndex = 29;
             // 
+            // TX_NOMBREPACIENTECONSULTA
+            // 
+            this.TX_NOMBREPACIENTECONSULTA.Location = new System.Drawing.Point(545, 124);
+            this.TX_NOMBREPACIENTECONSULTA.Margin = new System.Windows.Forms.Padding(4);
+            this.TX_NOMBREPACIENTECONSULTA.Name = "TX_NOMBREPACIENTECONSULTA";
+            this.TX_NOMBREPACIENTECONSULTA.Size = new System.Drawing.Size(208, 22);
+            this.TX_NOMBREPACIENTECONSULTA.TabIndex = 47;
+            // 
+            // Lbl_Nombre
+            // 
+            this.Lbl_Nombre.AutoSize = true;
+            this.Lbl_Nombre.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Nombre.Location = new System.Drawing.Point(377, 111);
+            this.Lbl_Nombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Lbl_Nombre.Name = "Lbl_Nombre";
+            this.Lbl_Nombre.Size = new System.Drawing.Size(165, 37);
+            this.Lbl_Nombre.TabIndex = 46;
+            this.Lbl_Nombre.Text = "N. Paciente";
+            // 
+            // TX_CODIGOPACIENTECONSULTA
+            // 
+            this.TX_CODIGOPACIENTECONSULTA.Location = new System.Drawing.Point(545, 83);
+            this.TX_CODIGOPACIENTECONSULTA.Margin = new System.Windows.Forms.Padding(4);
+            this.TX_CODIGOPACIENTECONSULTA.Name = "TX_CODIGOPACIENTECONSULTA";
+            this.TX_CODIGOPACIENTECONSULTA.Size = new System.Drawing.Size(208, 22);
+            this.TX_CODIGOPACIENTECONSULTA.TabIndex = 45;
+            // 
+            // Lbl_CodPaciente
+            // 
+            this.Lbl_CodPaciente.AutoSize = true;
+            this.Lbl_CodPaciente.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_CodPaciente.Location = new System.Drawing.Point(377, 74);
+            this.Lbl_CodPaciente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Lbl_CodPaciente.Name = "Lbl_CodPaciente";
+            this.Lbl_CodPaciente.Size = new System.Drawing.Size(160, 37);
+            this.Lbl_CodPaciente.TabIndex = 44;
+            this.Lbl_CodPaciente.Text = "C. paciente";
+            // 
             // B_IMPRIMIR
             // 
             this.B_IMPRIMIR.BackColor = System.Drawing.Color.White;
@@ -83,9 +130,9 @@
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(570, 47);
+            this.button2.Location = new System.Drawing.Point(714, 348);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 98);
+            this.button2.Size = new System.Drawing.Size(86, 95);
             this.button2.TabIndex = 41;
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -94,7 +141,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(296, 72);
+            this.label2.Location = new System.Drawing.Point(23, 111);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(156, 37);
@@ -106,7 +153,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(685, 83);
+            this.label1.Location = new System.Drawing.Point(567, 376);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 37);
@@ -115,7 +162,7 @@
             // 
             // Date_FechaFin
             // 
-            this.Date_FechaFin.Location = new System.Drawing.Point(303, 120);
+            this.Date_FechaFin.Location = new System.Drawing.Point(203, 122);
             this.Date_FechaFin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Date_FechaFin.Name = "Date_FechaFin";
             this.Date_FechaFin.Size = new System.Drawing.Size(167, 22);
@@ -138,7 +185,7 @@
             this.Txt_FechaIni.AutoSize = true;
             this.Txt_FechaIni.BackColor = System.Drawing.Color.Transparent;
             this.Txt_FechaIni.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_FechaIni.Location = new System.Drawing.Point(40, 72);
+            this.Txt_FechaIni.Location = new System.Drawing.Point(23, 74);
             this.Txt_FechaIni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Txt_FechaIni.Name = "Txt_FechaIni";
             this.Txt_FechaIni.Size = new System.Drawing.Size(173, 37);
@@ -147,7 +194,7 @@
             // 
             // Date_FechaIni
             // 
-            this.Date_FechaIni.Location = new System.Drawing.Point(47, 120);
+            this.Date_FechaIni.Location = new System.Drawing.Point(203, 83);
             this.Date_FechaIni.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Date_FechaIni.Name = "Date_FechaIni";
             this.Date_FechaIni.Size = new System.Drawing.Size(167, 22);
@@ -202,6 +249,10 @@
             this.DG_Pacientes.TabIndex = 28;
             this.DG_Pacientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DG_Pacientes_CellContentClick);
             // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
             // FR_REPORTES
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -234,5 +285,10 @@
         private System.Windows.Forms.Label Txt_Generar;
         private System.Windows.Forms.Label Txt_Regresar;
         private System.Windows.Forms.DataGridView DG_Pacientes;
+        private System.Windows.Forms.TextBox TX_NOMBREPACIENTECONSULTA;
+        private System.Windows.Forms.Label Lbl_Nombre;
+        private System.Windows.Forms.TextBox TX_CODIGOPACIENTECONSULTA;
+        private System.Windows.Forms.Label Lbl_CodPaciente;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

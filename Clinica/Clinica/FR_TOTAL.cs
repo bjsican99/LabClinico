@@ -70,12 +70,17 @@ namespace Clinica
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<FR_CONSULTAS>();
+            AbrirFormulario<FR_EXAMEN>();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FR_REPORTES>();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

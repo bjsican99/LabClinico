@@ -64,5 +64,7 @@ C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\bin\Debug\FR_LOGIN.Designer.cs
 C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_INGRESOUSU.resources
 C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_LOGIN.resources
 C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_TOTAL.resources
-C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CONSULTAS.resources
 C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_REPORTES.resources
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_AGREGARUSU.resources
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_EXAMEN.resources
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_NUEVOUSU.resources

@@ -35,8 +35,8 @@
             this.TX_INGRESOPASSWORD = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.B_AGREGARUSU = new System.Windows.Forms.Button();
             this.B_VALIDACIÓN = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -101,7 +101,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.B_AGREGARUSU);
             this.panel1.Controls.Add(this.B_VALIDACIÓN);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
@@ -116,6 +116,17 @@
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // B_AGREGARUSU
+            // 
+            this.B_AGREGARUSU.BackColor = System.Drawing.Color.White;
+            this.B_AGREGARUSU.Image = ((System.Drawing.Image)(resources.GetObject("B_AGREGARUSU.Image")));
+            this.B_AGREGARUSU.Location = new System.Drawing.Point(29, 375);
+            this.B_AGREGARUSU.Name = "B_AGREGARUSU";
+            this.B_AGREGARUSU.Size = new System.Drawing.Size(89, 76);
+            this.B_AGREGARUSU.TabIndex = 6;
+            this.B_AGREGARUSU.UseVisualStyleBackColor = false;
+            this.B_AGREGARUSU.Click += new System.EventHandler(this.B_AGREGARUSU_Click);
+            // 
             // B_VALIDACIÓN
             // 
             this.B_VALIDACIÓN.BackColor = System.Drawing.Color.White;
@@ -126,16 +137,6 @@
             this.B_VALIDACIÓN.TabIndex = 5;
             this.B_VALIDACIÓN.UseVisualStyleBackColor = false;
             this.B_VALIDACIÓN.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(29, 375);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 76);
-            this.button1.TabIndex = 6;
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // FR_LOGIN
             // 
@@ -167,7 +168,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button B_VALIDACIÓN;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button B_AGREGARUSU;
     }
 }
 

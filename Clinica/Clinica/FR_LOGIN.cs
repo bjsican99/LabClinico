@@ -54,5 +54,12 @@ namespace Clinica
         {
 
         }
+
+        private void B_AGREGARUSU_Click(object sender, EventArgs e)
+        {
+            FR_NUEVOUSU usu = new FR_NUEVOUSU();
+            usu.Show();
+            this.Hide();
+        }
     }
 }

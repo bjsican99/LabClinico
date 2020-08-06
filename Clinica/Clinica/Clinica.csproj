@@ -62,17 +62,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
-    <Compile Include="FR_AGREGARUSU.cs">
+    <Compile Include="FR_EXAMEN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FR_AGREGARUSU.Designer.cs">
-      <DependentUpon>FR_AGREGARUSU.cs</DependentUpon>
+    <Compile Include="FR_EXAMEN.Designer.cs">
+      <DependentUpon>FR_EXAMEN.cs</DependentUpon>
     </Compile>
-    <Compile Include="FR_CONSULTAS.cs">
+    <Compile Include="FR_FACTURACION.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FR_CONSULTAS.Designer.cs">
-      <DependentUpon>FR_CONSULTAS.cs</DependentUpon>
+    <Compile Include="FR_FACTURACION.Designer.cs">
+      <DependentUpon>FR_FACTURACION.cs</DependentUpon>
     </Compile>
     <Compile Include="FR_INGRESOUSU.cs">
       <SubType>Form</SubType>
@@ -88,6 +88,12 @@
       <DependentUpon>FR_LOGIN.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="FR_NUEVOUSU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_NUEVOUSU.Designer.cs">
+      <DependentUpon>FR_NUEVOUSU.cs</DependentUpon>
+    </Compile>
     <Compile Include="FR_REPORTES.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,11 +108,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FR_AGREGARUSU.resx">
-      <DependentUpon>FR_AGREGARUSU.cs</DependentUpon>
+    <EmbeddedResource Include="FR_EXAMEN.resx">
+      <DependentUpon>FR_EXAMEN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FR_CONSULTAS.resx">
-      <DependentUpon>FR_CONSULTAS.cs</DependentUpon>
+    <EmbeddedResource Include="FR_FACTURACION.resx">
+      <DependentUpon>FR_FACTURACION.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FR_INGRESOUSU.resx">
       <DependentUpon>FR_INGRESOUSU.cs</DependentUpon>
@@ -114,6 +120,9 @@
     <EmbeddedResource Include="FR_LOGIN.resx">
       <DependentUpon>FR_LOGIN.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_NUEVOUSU.resx">
+      <DependentUpon>FR_NUEVOUSU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FR_REPORTES.resx">
       <DependentUpon>FR_REPORTES.cs</DependentUpon>

@@ -73,7 +73,7 @@ namespace Clinica
             TX_CORREO.Text = "";
             CB_ESTADOCIVIL.Text = ("");
             TX_ALERGIAS.Text = "";
-            RB_SEGURO.Text = "";
+           
 
 
 
