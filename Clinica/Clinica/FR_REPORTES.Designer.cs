@@ -42,11 +42,6 @@
             this.Txt_Generar = new System.Windows.Forms.Label();
             this.Txt_Regresar = new System.Windows.Forms.Label();
             this.DG_Pacientes = new System.Windows.Forms.DataGridView();
-            this.DG_Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DG_Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DG_Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DG_FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DG_Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DG_Pacientes)).BeginInit();
             this.SuspendLayout();
@@ -199,12 +194,6 @@
             this.DG_Pacientes.BackgroundColor = System.Drawing.Color.Silver;
             this.DG_Pacientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DG_Pacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DG_Pacientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.DG_Codigo,
-            this.DG_Nombre,
-            this.DG_Apellido,
-            this.DG_FechaRegistro,
-            this.DG_Telefono});
             this.DG_Pacientes.Location = new System.Drawing.Point(30, 162);
             this.DG_Pacientes.Margin = new System.Windows.Forms.Padding(4);
             this.DG_Pacientes.Name = "DG_Pacientes";
@@ -212,41 +201,6 @@
             this.DG_Pacientes.Size = new System.Drawing.Size(677, 185);
             this.DG_Pacientes.TabIndex = 28;
             this.DG_Pacientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DG_Pacientes_CellContentClick);
-            // 
-            // DG_Codigo
-            // 
-            this.DG_Codigo.HeaderText = "Codigo";
-            this.DG_Codigo.MinimumWidth = 6;
-            this.DG_Codigo.Name = "DG_Codigo";
-            this.DG_Codigo.Width = 125;
-            // 
-            // DG_Nombre
-            // 
-            this.DG_Nombre.HeaderText = "Nombre";
-            this.DG_Nombre.MinimumWidth = 6;
-            this.DG_Nombre.Name = "DG_Nombre";
-            this.DG_Nombre.Width = 125;
-            // 
-            // DG_Apellido
-            // 
-            this.DG_Apellido.HeaderText = "Apellido";
-            this.DG_Apellido.MinimumWidth = 6;
-            this.DG_Apellido.Name = "DG_Apellido";
-            this.DG_Apellido.Width = 125;
-            // 
-            // DG_FechaRegistro
-            // 
-            this.DG_FechaRegistro.HeaderText = "Fecha de registro";
-            this.DG_FechaRegistro.MinimumWidth = 6;
-            this.DG_FechaRegistro.Name = "DG_FechaRegistro";
-            this.DG_FechaRegistro.Width = 125;
-            // 
-            // DG_Telefono
-            // 
-            this.DG_Telefono.HeaderText = "Teléfono";
-            this.DG_Telefono.MinimumWidth = 6;
-            this.DG_Telefono.Name = "DG_Telefono";
-            this.DG_Telefono.Width = 125;
             // 
             // FR_REPORTES
             // 
@@ -280,10 +234,5 @@
         private System.Windows.Forms.Label Txt_Generar;
         private System.Windows.Forms.Label Txt_Regresar;
         private System.Windows.Forms.DataGridView DG_Pacientes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DG_Codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DG_Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DG_Apellido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DG_FechaRegistro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DG_Telefono;
     }
 }

@@ -16,6 +16,7 @@ namespace Clinica
         public FR_REPORTES()
         {
             InitializeComponent();
+            cargar();
         }
 
         Conexion cn = new Conexion();

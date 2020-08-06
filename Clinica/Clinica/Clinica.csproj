@@ -62,6 +62,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="FR_AGREGARUSU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_AGREGARUSU.Designer.cs">
+      <DependentUpon>FR_AGREGARUSU.cs</DependentUpon>
+    </Compile>
     <Compile Include="FR_CONSULTAS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FR_AGREGARUSU.resx">
+      <DependentUpon>FR_AGREGARUSU.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FR_CONSULTAS.resx">
       <DependentUpon>FR_CONSULTAS.cs</DependentUpon>
     </EmbeddedResource>

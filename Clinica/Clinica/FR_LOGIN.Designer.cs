@@ -36,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.B_VALIDACIÓN = new System.Windows.Forms.Button();
+            this.B_AGREGARUSU = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -100,6 +101,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.B_AGREGARUSU);
             this.panel1.Controls.Add(this.B_VALIDACIÓN);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
@@ -116,7 +118,7 @@
             // 
             // B_VALIDACIÓN
             // 
-            this.B_VALIDACIÓN.BackColor = System.Drawing.Color.Transparent;
+            this.B_VALIDACIÓN.BackColor = System.Drawing.Color.White;
             this.B_VALIDACIÓN.Image = ((System.Drawing.Image)(resources.GetObject("B_VALIDACIÓN.Image")));
             this.B_VALIDACIÓN.Location = new System.Drawing.Point(407, 359);
             this.B_VALIDACIÓN.Name = "B_VALIDACIÓN";
@@ -124,6 +126,16 @@
             this.B_VALIDACIÓN.TabIndex = 5;
             this.B_VALIDACIÓN.UseVisualStyleBackColor = false;
             this.B_VALIDACIÓN.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // B_AGREGARUSU
+            // 
+            this.B_AGREGARUSU.BackColor = System.Drawing.Color.White;
+            this.B_AGREGARUSU.Image = ((System.Drawing.Image)(resources.GetObject("B_AGREGARUSU.Image")));
+            this.B_AGREGARUSU.Location = new System.Drawing.Point(29, 375);
+            this.B_AGREGARUSU.Name = "B_AGREGARUSU";
+            this.B_AGREGARUSU.Size = new System.Drawing.Size(89, 76);
+            this.B_AGREGARUSU.TabIndex = 6;
+            this.B_AGREGARUSU.UseVisualStyleBackColor = false;
             // 
             // FR_LOGIN
             // 
@@ -155,6 +167,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button B_VALIDACIÓN;
+        private System.Windows.Forms.Button B_AGREGARUSU;
     }
 }
 

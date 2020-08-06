@@ -40,7 +40,7 @@ namespace Clinica
 
         private void B_VALIDARUSUARIO_Click(object sender, EventArgs e)
         {
-            //INSERTARUSUARIO();
+            INSERTARUSUARIO();
             LUSUARIO();
 
 
@@ -54,9 +54,10 @@ namespace Clinica
         void INSERTARUSUARIO()
             
         {
+
             //INSERTAR
 
-            string cadena = "INSERT INTO usuario (NOMBRE, apellido, telefono, correo, estado, alergias, seguro) VALUES ('"+ TX_NOMBRE + "' '" +TX_APELLIDO+ "' '" + TX_TELEFONO + "' '" + TX_CORREO + "' '" + CB_ESTADOCIVIL+ "' '" +TX_ALERGIAS+ "' '"+RB_SEGURO+"'    )";
+            string cadena = "INSERT INTO usuario (CODIGO, NOMBRE, APELLIDO, TELEFONO, CORREO,ECIVIL,) VALUES ('"+L_COD+"' , '" + TX_NOMBRE.Text + "', '" + TX_APELLIDO.Text + "', '" + TX_TELEFONO.Text + "' ,'" + TX_CORREO.Text + "','" + CB_ESTADOCIVIL.Text + "','" + TX_ALERGIAS.Text + "' )";
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
           
