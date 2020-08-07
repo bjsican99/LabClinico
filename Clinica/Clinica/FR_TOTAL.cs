@@ -82,6 +82,15 @@ namespace Clinica
         {
             AbrirFormulario<FR_FACTURACION>();
         }
+
+        private void CK_PICTURE(object sender, EventArgs e)
+        {
+            FR_ETIQUETA usu = new FR_ETIQUETA();
+            usu.Show();
+            this.Hide();
+
+
+        }
     }
 
 

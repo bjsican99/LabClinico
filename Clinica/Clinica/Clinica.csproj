@@ -48,11 +48,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BarcodeStandard, Version=2.2.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BarcodeLib.2.2.5\lib\netstandard2.0\BarcodeStandard.dll</HintPath>
+    </Reference>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.5.1\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -70,6 +76,12 @@
     </Compile>
     <Compile Include="FR_CORREO.Designer.cs">
       <DependentUpon>FR_CORREO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_ETIQUETA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_ETIQUETA.Designer.cs">
+      <DependentUpon>FR_ETIQUETA.cs</DependentUpon>
     </Compile>
     <Compile Include="FR_EXAMEN.cs">
       <SubType>Form</SubType>
@@ -120,6 +132,9 @@
     <EmbeddedResource Include="FR_CORREO.resx">
       <DependentUpon>FR_CORREO.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FR_ETIQUETA.resx">
+      <DependentUpon>FR_ETIQUETA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FR_EXAMEN.resx">
       <DependentUpon>FR_EXAMEN.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +166,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
