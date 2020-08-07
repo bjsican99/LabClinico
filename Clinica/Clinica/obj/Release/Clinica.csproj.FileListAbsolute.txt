@@ -1,0 +1,12 @@
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\bin\Release\Clinica.exe.config
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\bin\Release\Clinica.exe
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\bin\Release\Clinica.pdb
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Release\Clinica.csprojAssemblyReference.cache
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Release\Clinica.DatosUsuarioClini.resources
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Release\Clinica.Form1.resources
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Release\Clinica.MenuClinica.resources
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Release\Clinica.Properties.Resources.resources
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Release\Clinica.csproj.GenerateResource.cache
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Release\Clinica.csproj.CoreCompileInputs.cache
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Release\Clinica.exe
+C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Release\Clinica.pdb
