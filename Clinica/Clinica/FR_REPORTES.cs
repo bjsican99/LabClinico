@@ -30,8 +30,7 @@ namespace Clinica
         Conexion cn = new Conexion();
         private void button1_Click(object sender, EventArgs e)
         {
-           printDocument1.Print();
-
+           
 
         }
 
@@ -107,9 +106,7 @@ namespace Clinica
 
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
-            Bitmap bm = new Bitmap(this.DG_Pacientes.Width, this.DG_Pacientes.Height);
-            DG_Pacientes.DrawToBitmap(bm, new Rectangle(0, 0, this.DG_Pacientes.Width, this.DG_Pacientes.Height));
-            e.Graphics.DrawImage(bm, 10, 10);
+           
 
 
 
