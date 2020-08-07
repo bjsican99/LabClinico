@@ -30,17 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_REPORTES));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.TX_NOMBREPACIENTECONSULTA = new System.Windows.Forms.TextBox();
-            this.Lbl_Nombre = new System.Windows.Forms.Label();
-            this.TX_CODIGOPACIENTECONSULTA = new System.Windows.Forms.TextBox();
-            this.Lbl_CodPaciente = new System.Windows.Forms.Label();
-            this.B_IMPRIMIR = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_eliminar = new System.Windows.Forms.Label();
+            this.btn_eliminar = new System.Windows.Forms.Button();
+            this.lbl_modificar = new System.Windows.Forms.Label();
+            this.btn_modificar = new System.Windows.Forms.Button();
+            this.txt_nombrepaciente = new System.Windows.Forms.TextBox();
+            this.lbl_nombrepaciente = new System.Windows.Forms.Label();
+            this.txt_codigopaciente = new System.Windows.Forms.TextBox();
+            this.lbl_codigopaciente = new System.Windows.Forms.Label();
+            this.btn_imprimir = new System.Windows.Forms.Button();
+            this.btn_buscar = new System.Windows.Forms.Button();
+            this.lbl_fechafinal = new System.Windows.Forms.Label();
+            this.lbl_buscar = new System.Windows.Forms.Label();
             this.Date_FechaFin = new System.Windows.Forms.DateTimePicker();
-            this.Txt_FechaFin = new System.Windows.Forms.Label();
-            this.Txt_FechaIni = new System.Windows.Forms.Label();
+            this.lbl_imprimir = new System.Windows.Forms.Label();
+            this.lbl_fechainicio = new System.Windows.Forms.Label();
             this.Date_FechaIni = new System.Windows.Forms.DateTimePicker();
             this.Txt_Titulo = new System.Windows.Forms.Label();
             this.Txt_Generar = new System.Windows.Forms.Label();
@@ -54,150 +58,192 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.TX_NOMBREPACIENTECONSULTA);
-            this.panel1.Controls.Add(this.Lbl_Nombre);
-            this.panel1.Controls.Add(this.TX_CODIGOPACIENTECONSULTA);
-            this.panel1.Controls.Add(this.Lbl_CodPaciente);
-            this.panel1.Controls.Add(this.B_IMPRIMIR);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lbl_eliminar);
+            this.panel1.Controls.Add(this.btn_eliminar);
+            this.panel1.Controls.Add(this.lbl_modificar);
+            this.panel1.Controls.Add(this.btn_modificar);
+            this.panel1.Controls.Add(this.txt_nombrepaciente);
+            this.panel1.Controls.Add(this.lbl_nombrepaciente);
+            this.panel1.Controls.Add(this.txt_codigopaciente);
+            this.panel1.Controls.Add(this.lbl_codigopaciente);
+            this.panel1.Controls.Add(this.btn_imprimir);
+            this.panel1.Controls.Add(this.btn_buscar);
+            this.panel1.Controls.Add(this.lbl_fechafinal);
+            this.panel1.Controls.Add(this.lbl_buscar);
             this.panel1.Controls.Add(this.Date_FechaFin);
-            this.panel1.Controls.Add(this.Txt_FechaFin);
-            this.panel1.Controls.Add(this.Txt_FechaIni);
+            this.panel1.Controls.Add(this.lbl_imprimir);
+            this.panel1.Controls.Add(this.lbl_fechainicio);
             this.panel1.Controls.Add(this.Date_FechaIni);
             this.panel1.Controls.Add(this.Txt_Titulo);
             this.panel1.Controls.Add(this.Txt_Generar);
             this.panel1.Controls.Add(this.Txt_Regresar);
             this.panel1.Controls.Add(this.DG_Pacientes);
-            this.panel1.Location = new System.Drawing.Point(53, 28);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(40, 23);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(828, 460);
+            this.panel1.Size = new System.Drawing.Size(639, 387);
             this.panel1.TabIndex = 29;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // TX_NOMBREPACIENTECONSULTA
+            // lbl_eliminar
             // 
-            this.TX_NOMBREPACIENTECONSULTA.Location = new System.Drawing.Point(545, 124);
-            this.TX_NOMBREPACIENTECONSULTA.Margin = new System.Windows.Forms.Padding(4);
-            this.TX_NOMBREPACIENTECONSULTA.Name = "TX_NOMBREPACIENTECONSULTA";
-            this.TX_NOMBREPACIENTECONSULTA.Size = new System.Drawing.Size(208, 22);
-            this.TX_NOMBREPACIENTECONSULTA.TabIndex = 47;
+            this.lbl_eliminar.AutoSize = true;
+            this.lbl_eliminar.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_eliminar.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_eliminar.Location = new System.Drawing.Point(315, 362);
+            this.lbl_eliminar.Name = "lbl_eliminar";
+            this.lbl_eliminar.Size = new System.Drawing.Size(98, 29);
+            this.lbl_eliminar.TabIndex = 52;
+            this.lbl_eliminar.Text = "Eliminar";
             // 
-            // Lbl_Nombre
+            // btn_eliminar
             // 
-            this.Lbl_Nombre.AutoSize = true;
-            this.Lbl_Nombre.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Nombre.Location = new System.Drawing.Point(377, 111);
-            this.Lbl_Nombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Lbl_Nombre.Name = "Lbl_Nombre";
-            this.Lbl_Nombre.Size = new System.Drawing.Size(165, 37);
-            this.Lbl_Nombre.TabIndex = 46;
-            this.Lbl_Nombre.Text = "N. Paciente";
+            this.btn_eliminar.Image = ((System.Drawing.Image)(resources.GetObject("btn_eliminar.Image")));
+            this.btn_eliminar.Location = new System.Drawing.Point(320, 288);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(79, 72);
+            this.btn_eliminar.TabIndex = 51;
+            this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
-            // TX_CODIGOPACIENTECONSULTA
+            // lbl_modificar
             // 
-            this.TX_CODIGOPACIENTECONSULTA.Location = new System.Drawing.Point(545, 83);
-            this.TX_CODIGOPACIENTECONSULTA.Margin = new System.Windows.Forms.Padding(4);
-            this.TX_CODIGOPACIENTECONSULTA.Name = "TX_CODIGOPACIENTECONSULTA";
-            this.TX_CODIGOPACIENTECONSULTA.Size = new System.Drawing.Size(208, 22);
-            this.TX_CODIGOPACIENTECONSULTA.TabIndex = 45;
+            this.lbl_modificar.AutoSize = true;
+            this.lbl_modificar.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_modificar.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_modificar.Location = new System.Drawing.Point(404, 362);
+            this.lbl_modificar.Name = "lbl_modificar";
+            this.lbl_modificar.Size = new System.Drawing.Size(110, 29);
+            this.lbl_modificar.TabIndex = 50;
+            this.lbl_modificar.Text = "Modificar";
             // 
-            // Lbl_CodPaciente
+            // btn_modificar
             // 
-            this.Lbl_CodPaciente.AutoSize = true;
-            this.Lbl_CodPaciente.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_CodPaciente.Location = new System.Drawing.Point(377, 74);
-            this.Lbl_CodPaciente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Lbl_CodPaciente.Name = "Lbl_CodPaciente";
-            this.Lbl_CodPaciente.Size = new System.Drawing.Size(160, 37);
-            this.Lbl_CodPaciente.TabIndex = 44;
-            this.Lbl_CodPaciente.Text = "C. paciente";
+            this.btn_modificar.Image = ((System.Drawing.Image)(resources.GetObject("btn_modificar.Image")));
+            this.btn_modificar.Location = new System.Drawing.Point(425, 288);
+            this.btn_modificar.Name = "btn_modificar";
+            this.btn_modificar.Size = new System.Drawing.Size(79, 72);
+            this.btn_modificar.TabIndex = 48;
+            this.btn_modificar.UseVisualStyleBackColor = true;
+            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
             // 
-            // B_IMPRIMIR
+            // txt_nombrepaciente
             // 
-            this.B_IMPRIMIR.BackColor = System.Drawing.Color.White;
-            this.B_IMPRIMIR.Image = ((System.Drawing.Image)(resources.GetObject("B_IMPRIMIR.Image")));
-            this.B_IMPRIMIR.Location = new System.Drawing.Point(30, 354);
-            this.B_IMPRIMIR.Name = "B_IMPRIMIR";
-            this.B_IMPRIMIR.Size = new System.Drawing.Size(106, 82);
-            this.B_IMPRIMIR.TabIndex = 42;
-            this.B_IMPRIMIR.UseVisualStyleBackColor = false;
-            this.B_IMPRIMIR.Click += new System.EventHandler(this.button1_Click);
+            this.txt_nombrepaciente.Location = new System.Drawing.Point(409, 101);
+            this.txt_nombrepaciente.Name = "txt_nombrepaciente";
+            this.txt_nombrepaciente.Size = new System.Drawing.Size(157, 20);
+            this.txt_nombrepaciente.TabIndex = 47;
             // 
-            // button2
+            // lbl_nombrepaciente
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(714, 348);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 95);
-            this.button2.TabIndex = 41;
-            this.button2.UseVisualStyleBackColor = false;
+            this.lbl_nombrepaciente.AutoSize = true;
+            this.lbl_nombrepaciente.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nombrepaciente.Location = new System.Drawing.Point(283, 90);
+            this.lbl_nombrepaciente.Name = "lbl_nombrepaciente";
+            this.lbl_nombrepaciente.Size = new System.Drawing.Size(116, 29);
+            this.lbl_nombrepaciente.TabIndex = 46;
+            this.lbl_nombrepaciente.Text = "Nombre.p";
             // 
-            // label2
+            // txt_codigopaciente
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(23, 111);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 37);
-            this.label2.TabIndex = 40;
-            this.label2.Text = "Fecha final";
+            this.txt_codigopaciente.Location = new System.Drawing.Point(409, 67);
+            this.txt_codigopaciente.Name = "txt_codigopaciente";
+            this.txt_codigopaciente.Size = new System.Drawing.Size(157, 20);
+            this.txt_codigopaciente.TabIndex = 45;
             // 
-            // label1
+            // lbl_codigopaciente
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(595, 376);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 37);
-            this.label1.TabIndex = 39;
-            this.label1.Text = "Buscar";
+            this.lbl_codigopaciente.AutoSize = true;
+            this.lbl_codigopaciente.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_codigopaciente.Location = new System.Drawing.Point(283, 60);
+            this.lbl_codigopaciente.Name = "lbl_codigopaciente";
+            this.lbl_codigopaciente.Size = new System.Drawing.Size(105, 29);
+            this.lbl_codigopaciente.TabIndex = 44;
+            this.lbl_codigopaciente.Text = "Codigo.p";
+            // 
+            // btn_imprimir
+            // 
+            this.btn_imprimir.BackColor = System.Drawing.Color.White;
+            this.btn_imprimir.Image = ((System.Drawing.Image)(resources.GetObject("btn_imprimir.Image")));
+            this.btn_imprimir.Location = new System.Drawing.Point(22, 288);
+            this.btn_imprimir.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_imprimir.Name = "btn_imprimir";
+            this.btn_imprimir.Size = new System.Drawing.Size(80, 67);
+            this.btn_imprimir.TabIndex = 42;
+            this.btn_imprimir.UseVisualStyleBackColor = false;
+            this.btn_imprimir.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btn_buscar
+            // 
+            this.btn_buscar.BackColor = System.Drawing.Color.White;
+            this.btn_buscar.ForeColor = System.Drawing.Color.White;
+            this.btn_buscar.Image = ((System.Drawing.Image)(resources.GetObject("btn_buscar.Image")));
+            this.btn_buscar.Location = new System.Drawing.Point(526, 288);
+            this.btn_buscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(74, 72);
+            this.btn_buscar.TabIndex = 41;
+            this.btn_buscar.UseVisualStyleBackColor = false;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
+            // 
+            // lbl_fechafinal
+            // 
+            this.lbl_fechafinal.AutoSize = true;
+            this.lbl_fechafinal.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_fechafinal.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fechafinal.Location = new System.Drawing.Point(17, 90);
+            this.lbl_fechafinal.Name = "lbl_fechafinal";
+            this.lbl_fechafinal.Size = new System.Drawing.Size(124, 29);
+            this.lbl_fechafinal.TabIndex = 40;
+            this.lbl_fechafinal.Text = "Fecha final";
+            // 
+            // lbl_buscar
+            // 
+            this.lbl_buscar.AutoSize = true;
+            this.lbl_buscar.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_buscar.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_buscar.Location = new System.Drawing.Point(531, 362);
+            this.lbl_buscar.Name = "lbl_buscar";
+            this.lbl_buscar.Size = new System.Drawing.Size(82, 29);
+            this.lbl_buscar.TabIndex = 39;
+            this.lbl_buscar.Text = "Buscar";
             // 
             // Date_FechaFin
             // 
-            this.Date_FechaFin.Location = new System.Drawing.Point(203, 122);
-            this.Date_FechaFin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Date_FechaFin.Location = new System.Drawing.Point(152, 99);
+            this.Date_FechaFin.Margin = new System.Windows.Forms.Padding(2);
             this.Date_FechaFin.Name = "Date_FechaFin";
-            this.Date_FechaFin.Size = new System.Drawing.Size(167, 22);
+            this.Date_FechaFin.Size = new System.Drawing.Size(126, 20);
             this.Date_FechaFin.TabIndex = 37;
             // 
-            // Txt_FechaFin
+            // lbl_imprimir
             // 
-            this.Txt_FechaFin.AutoSize = true;
-            this.Txt_FechaFin.BackColor = System.Drawing.Color.Transparent;
-            this.Txt_FechaFin.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_FechaFin.Location = new System.Drawing.Point(143, 376);
-            this.Txt_FechaFin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Txt_FechaFin.Name = "Txt_FechaFin";
-            this.Txt_FechaFin.Size = new System.Drawing.Size(119, 37);
-            this.Txt_FechaFin.TabIndex = 36;
-            this.Txt_FechaFin.Text = "Generar";
+            this.lbl_imprimir.AutoSize = true;
+            this.lbl_imprimir.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_imprimir.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_imprimir.Location = new System.Drawing.Point(17, 357);
+            this.lbl_imprimir.Name = "lbl_imprimir";
+            this.lbl_imprimir.Size = new System.Drawing.Size(94, 29);
+            this.lbl_imprimir.TabIndex = 36;
+            this.lbl_imprimir.Text = "Generar";
             // 
-            // Txt_FechaIni
+            // lbl_fechainicio
             // 
-            this.Txt_FechaIni.AutoSize = true;
-            this.Txt_FechaIni.BackColor = System.Drawing.Color.Transparent;
-            this.Txt_FechaIni.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_FechaIni.Location = new System.Drawing.Point(23, 74);
-            this.Txt_FechaIni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Txt_FechaIni.Name = "Txt_FechaIni";
-            this.Txt_FechaIni.Size = new System.Drawing.Size(173, 37);
-            this.Txt_FechaIni.TabIndex = 35;
-            this.Txt_FechaIni.Text = "Fecha inicial";
+            this.lbl_fechainicio.AutoSize = true;
+            this.lbl_fechainicio.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_fechainicio.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fechainicio.Location = new System.Drawing.Point(17, 60);
+            this.lbl_fechainicio.Name = "lbl_fechainicio";
+            this.lbl_fechainicio.Size = new System.Drawing.Size(139, 29);
+            this.lbl_fechainicio.TabIndex = 35;
+            this.lbl_fechainicio.Text = "Fecha inicial";
             // 
             // Date_FechaIni
             // 
-            this.Date_FechaIni.Location = new System.Drawing.Point(203, 83);
-            this.Date_FechaIni.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Date_FechaIni.Location = new System.Drawing.Point(152, 67);
+            this.Date_FechaIni.Margin = new System.Windows.Forms.Padding(2);
             this.Date_FechaIni.Name = "Date_FechaIni";
-            this.Date_FechaIni.Size = new System.Drawing.Size(167, 22);
+            this.Date_FechaIni.Size = new System.Drawing.Size(126, 20);
             this.Date_FechaIni.TabIndex = 34;
             // 
             // Txt_Titulo
@@ -205,10 +251,9 @@
             this.Txt_Titulo.AutoSize = true;
             this.Txt_Titulo.BackColor = System.Drawing.Color.Transparent;
             this.Txt_Titulo.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Titulo.Location = new System.Drawing.Point(248, 12);
-            this.Txt_Titulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Txt_Titulo.Location = new System.Drawing.Point(186, 10);
             this.Txt_Titulo.Name = "Txt_Titulo";
-            this.Txt_Titulo.Size = new System.Drawing.Size(292, 37);
+            this.Txt_Titulo.Size = new System.Drawing.Size(231, 29);
             this.Txt_Titulo.TabIndex = 33;
             this.Txt_Titulo.Text = "Pacientes registrados";
             // 
@@ -217,10 +262,9 @@
             this.Txt_Generar.AutoSize = true;
             this.Txt_Generar.BackColor = System.Drawing.Color.Transparent;
             this.Txt_Generar.Font = new System.Drawing.Font("Agency FB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Generar.Location = new System.Drawing.Point(867, 529);
-            this.Txt_Generar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Txt_Generar.Location = new System.Drawing.Point(650, 430);
             this.Txt_Generar.Name = "Txt_Generar";
-            this.Txt_Generar.Size = new System.Drawing.Size(123, 34);
+            this.Txt_Generar.Size = new System.Drawing.Size(89, 25);
             this.Txt_Generar.TabIndex = 32;
             this.Txt_Generar.Text = "Generar PDF";
             // 
@@ -229,10 +273,9 @@
             this.Txt_Regresar.AutoSize = true;
             this.Txt_Regresar.BackColor = System.Drawing.Color.Transparent;
             this.Txt_Regresar.Font = new System.Drawing.Font("Agency FB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Regresar.Location = new System.Drawing.Point(1021, 529);
-            this.Txt_Regresar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Txt_Regresar.Location = new System.Drawing.Point(766, 430);
             this.Txt_Regresar.Name = "Txt_Regresar";
-            this.Txt_Regresar.Size = new System.Drawing.Size(95, 34);
+            this.Txt_Regresar.Size = new System.Drawing.Size(68, 25);
             this.Txt_Regresar.TabIndex = 31;
             this.Txt_Regresar.Text = "Regresar";
             // 
@@ -241,11 +284,10 @@
             this.DG_Pacientes.BackgroundColor = System.Drawing.Color.Silver;
             this.DG_Pacientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DG_Pacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DG_Pacientes.Location = new System.Drawing.Point(30, 162);
-            this.DG_Pacientes.Margin = new System.Windows.Forms.Padding(4);
+            this.DG_Pacientes.Location = new System.Drawing.Point(22, 132);
             this.DG_Pacientes.Name = "DG_Pacientes";
             this.DG_Pacientes.RowHeadersWidth = 51;
-            this.DG_Pacientes.Size = new System.Drawing.Size(677, 185);
+            this.DG_Pacientes.Size = new System.Drawing.Size(544, 150);
             this.DG_Pacientes.TabIndex = 28;
             this.DG_Pacientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DG_Pacientes_CellContentClick);
             // 
@@ -255,12 +297,13 @@
             // 
             // FR_REPORTES
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(936, 513);
+            this.ClientSize = new System.Drawing.Size(714, 434);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FR_REPORTES";
             this.Text = "FR_REPORTES";
             this.panel1.ResumeLayout(false);
@@ -273,22 +316,26 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button B_IMPRIMIR;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_imprimir;
+        private System.Windows.Forms.Button btn_buscar;
+        private System.Windows.Forms.Label lbl_fechafinal;
+        private System.Windows.Forms.Label lbl_buscar;
         private System.Windows.Forms.DateTimePicker Date_FechaFin;
-        private System.Windows.Forms.Label Txt_FechaFin;
-        private System.Windows.Forms.Label Txt_FechaIni;
+        private System.Windows.Forms.Label lbl_imprimir;
+        private System.Windows.Forms.Label lbl_fechainicio;
         private System.Windows.Forms.DateTimePicker Date_FechaIni;
         private System.Windows.Forms.Label Txt_Titulo;
         private System.Windows.Forms.Label Txt_Generar;
         private System.Windows.Forms.Label Txt_Regresar;
         private System.Windows.Forms.DataGridView DG_Pacientes;
-        private System.Windows.Forms.TextBox TX_NOMBREPACIENTECONSULTA;
-        private System.Windows.Forms.Label Lbl_Nombre;
-        private System.Windows.Forms.TextBox TX_CODIGOPACIENTECONSULTA;
-        private System.Windows.Forms.Label Lbl_CodPaciente;
+        private System.Windows.Forms.TextBox txt_nombrepaciente;
+        private System.Windows.Forms.Label lbl_nombrepaciente;
+        private System.Windows.Forms.TextBox txt_codigopaciente;
+        private System.Windows.Forms.Label lbl_codigopaciente;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.Button btn_modificar;
+        private System.Windows.Forms.Label lbl_eliminar;
+        private System.Windows.Forms.Button btn_eliminar;
+        private System.Windows.Forms.Label lbl_modificar;
     }
 }

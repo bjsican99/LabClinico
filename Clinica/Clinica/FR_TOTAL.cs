@@ -80,7 +80,7 @@ namespace Clinica
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            AbrirFormulario<FR_FACTURACION>();
         }
     }
 
