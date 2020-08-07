@@ -56,7 +56,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.TX_DPI = new System.Windows.Forms.TextBox();
             this.L_COD = new System.Windows.Forms.Label();
-            this.txt_cod_prueba = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,7 +86,7 @@
             // TX_CORREO
             // 
             this.TX_CORREO.Location = new System.Drawing.Point(170, 182);
-            this.TX_CORREO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TX_CORREO.Margin = new System.Windows.Forms.Padding(2);
             this.TX_CORREO.Name = "TX_CORREO";
             this.TX_CORREO.Size = new System.Drawing.Size(126, 20);
             this.TX_CORREO.TabIndex = 6;
@@ -95,7 +94,7 @@
             // TX_NOMBRE
             // 
             this.TX_NOMBRE.Location = new System.Drawing.Point(170, 61);
-            this.TX_NOMBRE.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TX_NOMBRE.Margin = new System.Windows.Forms.Padding(2);
             this.TX_NOMBRE.Name = "TX_NOMBRE";
             this.TX_NOMBRE.Size = new System.Drawing.Size(126, 20);
             this.TX_NOMBRE.TabIndex = 7;
@@ -119,7 +118,7 @@
             "Solter@",
             "Casad@"});
             this.CB_ESTADOCIVIL.Location = new System.Drawing.Point(170, 226);
-            this.CB_ESTADOCIVIL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CB_ESTADOCIVIL.Margin = new System.Windows.Forms.Padding(2);
             this.CB_ESTADOCIVIL.Name = "CB_ESTADOCIVIL";
             this.CB_ESTADOCIVIL.Size = new System.Drawing.Size(126, 21);
             this.CB_ESTADOCIVIL.TabIndex = 9;
@@ -163,7 +162,7 @@
             // TX_ALERGIAS
             // 
             this.TX_ALERGIAS.Location = new System.Drawing.Point(170, 301);
-            this.TX_ALERGIAS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TX_ALERGIAS.Margin = new System.Windows.Forms.Padding(2);
             this.TX_ALERGIAS.Name = "TX_ALERGIAS";
             this.TX_ALERGIAS.Size = new System.Drawing.Size(126, 20);
             this.TX_ALERGIAS.TabIndex = 17;
@@ -171,7 +170,7 @@
             // TX_TELEFONO
             // 
             this.TX_TELEFONO.Location = new System.Drawing.Point(170, 141);
-            this.TX_TELEFONO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TX_TELEFONO.Margin = new System.Windows.Forms.Padding(2);
             this.TX_TELEFONO.Name = "TX_TELEFONO";
             this.TX_TELEFONO.Size = new System.Drawing.Size(126, 20);
             this.TX_TELEFONO.TabIndex = 21;
@@ -191,7 +190,7 @@
             // TX_APELLIDO
             // 
             this.TX_APELLIDO.Location = new System.Drawing.Point(170, 99);
-            this.TX_APELLIDO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TX_APELLIDO.Margin = new System.Windows.Forms.Padding(2);
             this.TX_APELLIDO.Name = "TX_APELLIDO";
             this.TX_APELLIDO.Size = new System.Drawing.Size(126, 20);
             this.TX_APELLIDO.TabIndex = 24;
@@ -211,7 +210,7 @@
             // DATE_FECHAREGISTROUSUARIO
             // 
             this.DATE_FECHAREGISTROUSUARIO.Location = new System.Drawing.Point(452, 142);
-            this.DATE_FECHAREGISTROUSUARIO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DATE_FECHAREGISTROUSUARIO.Margin = new System.Windows.Forms.Padding(2);
             this.DATE_FECHAREGISTROUSUARIO.Name = "DATE_FECHAREGISTROUSUARIO";
             this.DATE_FECHAREGISTROUSUARIO.Size = new System.Drawing.Size(126, 20);
             this.DATE_FECHAREGISTROUSUARIO.TabIndex = 26;
@@ -219,7 +218,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.txt_cod_prueba);
             this.panel1.Controls.Add(this.RD_DOCTOR);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.RB_PACIENTE);
@@ -247,7 +245,7 @@
             this.panel1.Controls.Add(this.TX_ALERGIAS);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(18, 17);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(628, 375);
             this.panel1.TabIndex = 27;
@@ -257,7 +255,7 @@
             // 
             this.RD_DOCTOR.AutoSize = true;
             this.RD_DOCTOR.Location = new System.Drawing.Point(524, 102);
-            this.RD_DOCTOR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RD_DOCTOR.Margin = new System.Windows.Forms.Padding(2);
             this.RD_DOCTOR.Name = "RD_DOCTOR";
             this.RD_DOCTOR.Size = new System.Drawing.Size(57, 17);
             this.RD_DOCTOR.TabIndex = 46;
@@ -281,7 +279,7 @@
             // 
             this.RB_PACIENTE.AutoSize = true;
             this.RB_PACIENTE.Location = new System.Drawing.Point(452, 102);
-            this.RB_PACIENTE.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RB_PACIENTE.Margin = new System.Windows.Forms.Padding(2);
             this.RB_PACIENTE.Name = "RB_PACIENTE";
             this.RB_PACIENTE.Size = new System.Drawing.Size(67, 17);
             this.RB_PACIENTE.TabIndex = 44;
@@ -320,7 +318,7 @@
             "Solter@",
             "Casad@"});
             this.CB_GENERO.Location = new System.Drawing.Point(452, 59);
-            this.CB_GENERO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CB_GENERO.Margin = new System.Windows.Forms.Padding(2);
             this.CB_GENERO.Name = "CB_GENERO";
             this.CB_GENERO.Size = new System.Drawing.Size(126, 21);
             this.CB_GENERO.TabIndex = 41;
@@ -340,7 +338,7 @@
             // TX_DIRECCION
             // 
             this.TX_DIRECCION.Location = new System.Drawing.Point(170, 337);
-            this.TX_DIRECCION.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TX_DIRECCION.Margin = new System.Windows.Forms.Padding(2);
             this.TX_DIRECCION.Name = "TX_DIRECCION";
             this.TX_DIRECCION.Size = new System.Drawing.Size(126, 20);
             this.TX_DIRECCION.TabIndex = 39;
@@ -360,7 +358,7 @@
             // TX_DPI
             // 
             this.TX_DPI.Location = new System.Drawing.Point(170, 267);
-            this.TX_DPI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TX_DPI.Margin = new System.Windows.Forms.Padding(2);
             this.TX_DPI.Name = "TX_DPI";
             this.TX_DPI.Size = new System.Drawing.Size(126, 20);
             this.TX_DPI.TabIndex = 37;
@@ -377,13 +375,6 @@
             this.L_COD.TabIndex = 34;
             this.L_COD.Text = "CODIGO";
             // 
-            // txt_cod_prueba
-            // 
-            this.txt_cod_prueba.Location = new System.Drawing.Point(293, 23);
-            this.txt_cod_prueba.Name = "txt_cod_prueba";
-            this.txt_cod_prueba.Size = new System.Drawing.Size(100, 20);
-            this.txt_cod_prueba.TabIndex = 47;
-            // 
             // FR_INGRESOUSU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -393,7 +384,7 @@
             this.ClientSize = new System.Drawing.Size(662, 409);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FR_INGRESOUSU";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "INGRESO USUARIO";
@@ -433,6 +424,5 @@
         private System.Windows.Forms.TextBox TX_DIRECCION;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox TX_DPI;
-        private System.Windows.Forms.TextBox txt_cod_prueba;
     }
 }

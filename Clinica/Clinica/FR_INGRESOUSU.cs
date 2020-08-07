@@ -57,7 +57,7 @@ namespace Clinica
 
             //INSERTAR
 
-            string cadena = "INSERT INTO usuario (pk_id_persona, nombre_persona, apellido_persona, telefono_persona, dpi_persona,direccion_persona, fecha_nacimiento_persona, genero_persona, estado_persona, tipo_persona ) VALUES ('"+txt_cod_prueba.Text+"' , '" + TX_NOMBRE.Text + "', '" + TX_APELLIDO.Text + "', '" + TX_TELEFONO.Text + "' ,'" + TX_CORREO.Text + "','" + CB_ESTADOCIVIL.Text + "','" + TX_ALERGIAS.Text + "' );";
+            string cadena = "INSERT INTO usuario (pk_id_persona, nombre_persona, apellido_persona, telefono_persona, dpi_persona,direccion_persona, fecha_nacimiento_persona, genero_persona, estado_persona, tipo_persona ) VALUES ('"+"' , '" + TX_NOMBRE.Text + "', '" + TX_APELLIDO.Text + "', '" + TX_TELEFONO.Text + "' ,'" + TX_CORREO.Text + "','" + CB_ESTADOCIVIL.Text + "','" + TX_ALERGIAS.Text + "' );";
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
           
