@@ -18,26 +18,15 @@ C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csproj.Gener
 C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csproj.CoreCompileInputs.cache
 C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.exe
 C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.pdb
-C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\Form1.resx
-C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\MenuClinica.resx
-C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\Form1.cs
-C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\Form1.Designer.cs
-C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\MenuClinica.cs
-C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\MenuClinica.Designer.cs
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\Clinica.exe.config
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\Clinica.exe
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\Clinica.pdb
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csprojAssemblyReference.cache
-C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.DatosUsuarioClini.resources
-C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Form1.resources
-C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.MenuClinica.resources
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Properties.Resources.resources
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csproj.GenerateResource.cache
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csproj.CoreCompileInputs.cache
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.exe
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.pdb
-C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Reportes.resources
-C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Consultas.resources
 C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\bin\Debug\FR_LOGIN.resx
 C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\bin\Debug\FR_LOGIN.cs
 C:\Users\Brian\Desktop\LabClinico\LabClinico\Clinica\Clinica\bin\Debug\FR_LOGIN.Designer.cs
@@ -122,3 +111,28 @@ C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\bin\Debug\stdole.dll
 C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_FACTURACION.resources
 C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csproj.CopyComplete
 C:\Users\Brian\Desktop\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CORREO.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\FR_LOGIN.resx
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\FR_LOGIN.cs
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\FR_LOGIN.Designer.cs
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\stdole.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CORREO.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_EXAMEN.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_FACTURACION.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_INGRESOUSU.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_LOGIN.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_NUEVOUSU.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_REPORTES.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_TOTAL.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csproj.CopyComplete
