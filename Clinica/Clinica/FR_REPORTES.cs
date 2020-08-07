@@ -17,7 +17,7 @@ namespace Clinica
         public FR_REPORTES()
         {
             InitializeComponent();
-            cargar();
+            //cargar();
 
 
         }
@@ -25,8 +25,7 @@ namespace Clinica
         Conexion cn = new Conexion();
         private void button1_Click(object sender, EventArgs e)
         {
-            printDocument1.Print();
-
+           printDocument1.Print();
 
 
         }

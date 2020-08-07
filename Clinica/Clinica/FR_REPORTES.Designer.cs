@@ -153,7 +153,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(567, 376);
+            this.label1.Location = new System.Drawing.Point(595, 376);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 37);
@@ -173,7 +173,7 @@
             this.Txt_FechaFin.AutoSize = true;
             this.Txt_FechaFin.BackColor = System.Drawing.Color.Transparent;
             this.Txt_FechaFin.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_FechaFin.Location = new System.Drawing.Point(164, 376);
+            this.Txt_FechaFin.Location = new System.Drawing.Point(143, 376);
             this.Txt_FechaFin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Txt_FechaFin.Name = "Txt_FechaFin";
             this.Txt_FechaFin.Size = new System.Drawing.Size(119, 37);

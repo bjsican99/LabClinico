@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_EXAMEN));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.CB_PACIENTE = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.B_INGRESAR = new System.Windows.Forms.Button();
             this.B_ACTUALIZAR = new System.Windows.Forms.Button();
             this.DG_EXAMENES = new System.Windows.Forms.DataGridView();
@@ -44,8 +46,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.CB_PACIENTE = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DG_EXAMENES)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +65,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.CB_PACIENTE);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.B_INGRESAR);
@@ -84,6 +86,29 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(820, 463);
             this.panel1.TabIndex = 2;
+            // 
+            // CB_PACIENTE
+            // 
+            this.CB_PACIENTE.FormattingEnabled = true;
+            this.CB_PACIENTE.Items.AddRange(new object[] {
+            "Solter@",
+            "Casad@"});
+            this.CB_PACIENTE.Location = new System.Drawing.Point(243, 407);
+            this.CB_PACIENTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CB_PACIENTE.Name = "CB_PACIENTE";
+            this.CB_PACIENTE.Size = new System.Drawing.Size(189, 24);
+            this.CB_PACIENTE.TabIndex = 16;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(33, 407);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(161, 37);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "C. Paciente";
             // 
             // B_INGRESAR
             // 
@@ -207,28 +232,16 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "N. Cientifico";
             // 
-            // label7
+            // button1
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(33, 407);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(161, 37);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "C. Paciente";
-            // 
-            // CB_PACIENTE
-            // 
-            this.CB_PACIENTE.FormattingEnabled = true;
-            this.CB_PACIENTE.Items.AddRange(new object[] {
-            "Solter@",
-            "Casad@"});
-            this.CB_PACIENTE.Location = new System.Drawing.Point(243, 407);
-            this.CB_PACIENTE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.CB_PACIENTE.Name = "CB_PACIENTE";
-            this.CB_PACIENTE.Size = new System.Drawing.Size(189, 24);
-            this.CB_PACIENTE.TabIndex = 16;
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(621, 24);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(76, 59);
+            this.button1.TabIndex = 17;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FR_EXAMEN
             // 
@@ -266,5 +279,6 @@
         private System.Windows.Forms.Button B_INGRESAR;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox CB_PACIENTE;
+        private System.Windows.Forms.Button button1;
     }
 }

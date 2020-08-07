@@ -16,5 +16,12 @@ namespace Clinica
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FR_CORREO usu = new FR_CORREO();
+            usu.Show();
+            this.Hide();
+        }
     }
 }
