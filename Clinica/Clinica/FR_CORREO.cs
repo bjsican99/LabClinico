@@ -38,11 +38,11 @@ namespace Clinica
 
             System.Net.Mail.MailMessage mmsg = new System.Net.Mail.MailMessage();
 
-            mmsg.To.Add(TX_PARA.Text);
-            mmsg.Subject =TX_ASUNTO.Text;
+            mmsg.To.Add(txt_para.Text);
+            mmsg.Subject =txt_asunto.Text;
             mmsg.SubjectEncoding = System.Text.Encoding.UTF8;
-            mmsg.Bcc.Add(TX_CC.Text);
-            mmsg.Body = TX_MENSAJE.Text;
+            mmsg.Bcc.Add(txt_cc.Text);
+            mmsg.Body = txt_mensaje.Text;
             mmsg.BodyEncoding = System.Text.Encoding.UTF8;
             mmsg.IsBodyHtml = true;
             mmsg.From = new System.Net.Mail.MailAddress("lclinico12@gmail.com");
@@ -70,6 +70,16 @@ namespace Clinica
         private void button1_Click_1(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TX_PARA_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

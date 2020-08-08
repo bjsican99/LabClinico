@@ -38,15 +38,15 @@ namespace Clinica
             //BRIAN SANTIZO 
 
             Form formulario;
-            formulario = P_CONTENEDOR.Controls.OfType<Abrir>().FirstOrDefault();
+            formulario = pnl_contenedor.Controls.OfType<Abrir>().FirstOrDefault();
              if(formulario == null)
             {
                 formulario = new Abrir();
                 formulario.TopLevel = false;
                 formulario.FormBorderStyle = FormBorderStyle.None;
                 formulario.Dock = DockStyle.Fill;
-                P_CONTENEDOR.Controls.Add(formulario);
-                P_CONTENEDOR.Tag = formulario;
+                pnl_contenedor.Controls.Add(formulario);
+                pnl_contenedor.Tag = formulario;
                 formulario.Show();
                 formulario.BringToFront();
             }

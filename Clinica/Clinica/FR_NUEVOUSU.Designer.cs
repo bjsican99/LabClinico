@@ -29,117 +29,117 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_NUEVOUSU));
-            this.label1 = new System.Windows.Forms.Label();
-            this.TX_PASSWORDNUEVO = new System.Windows.Forms.TextBox();
-            this.TX_USUARIONUEVO = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lbl_usuario = new System.Windows.Forms.Label();
+            this.txt_password = new System.Windows.Forms.TextBox();
+            this.txt_usuario = new System.Windows.Forms.TextBox();
+            this.lbl_password = new System.Windows.Forms.Label();
+            this.lbl_acceso = new System.Windows.Forms.Label();
+            this.txt_acceso = new System.Windows.Forms.TextBox();
+            this.btn_regresar = new System.Windows.Forms.Button();
+            this.btn_validar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_usuario
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.label1.Location = new System.Drawing.Point(29, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 37);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Usuario:";
+            this.lbl_usuario.AutoSize = true;
+            this.lbl_usuario.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_usuario.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_usuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.lbl_usuario.Location = new System.Drawing.Point(66, 62);
+            this.lbl_usuario.Name = "lbl_usuario";
+            this.lbl_usuario.Size = new System.Drawing.Size(125, 37);
+            this.lbl_usuario.TabIndex = 5;
+            this.lbl_usuario.Text = "Usuario:";
             // 
-            // TX_PASSWORDNUEVO
+            // txt_password
             // 
-            this.TX_PASSWORDNUEVO.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TX_PASSWORDNUEVO.Location = new System.Drawing.Point(123, 193);
-            this.TX_PASSWORDNUEVO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TX_PASSWORDNUEVO.Name = "TX_PASSWORDNUEVO";
-            this.TX_PASSWORDNUEVO.Size = new System.Drawing.Size(321, 23);
-            this.TX_PASSWORDNUEVO.TabIndex = 8;
+            this.txt_password.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_password.Location = new System.Drawing.Point(160, 197);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_password.Name = "txt_password";
+            this.txt_password.Size = new System.Drawing.Size(321, 23);
+            this.txt_password.TabIndex = 8;
             // 
-            // TX_USUARIONUEVO
+            // txt_usuario
             // 
-            this.TX_USUARIONUEVO.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TX_USUARIONUEVO.Location = new System.Drawing.Point(123, 97);
-            this.TX_USUARIONUEVO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TX_USUARIONUEVO.Name = "TX_USUARIONUEVO";
-            this.TX_USUARIONUEVO.Size = new System.Drawing.Size(321, 23);
-            this.TX_USUARIONUEVO.TabIndex = 6;
+            this.txt_usuario.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_usuario.Location = new System.Drawing.Point(160, 101);
+            this.txt_usuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_usuario.Name = "txt_usuario";
+            this.txt_usuario.Size = new System.Drawing.Size(321, 23);
+            this.txt_usuario.TabIndex = 6;
             // 
-            // label2
+            // lbl_password
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.label2.Location = new System.Drawing.Point(29, 154);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 37);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Password:";
+            this.lbl_password.AutoSize = true;
+            this.lbl_password.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_password.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.lbl_password.Location = new System.Drawing.Point(66, 158);
+            this.lbl_password.Name = "lbl_password";
+            this.lbl_password.Size = new System.Drawing.Size(151, 37);
+            this.lbl_password.TabIndex = 7;
+            this.lbl_password.Text = "Password:";
             // 
-            // label3
+            // lbl_acceso
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.label3.Location = new System.Drawing.Point(29, 244);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 37);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "C. Acceso";
+            this.lbl_acceso.AutoSize = true;
+            this.lbl_acceso.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_acceso.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_acceso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.lbl_acceso.Location = new System.Drawing.Point(66, 248);
+            this.lbl_acceso.Name = "lbl_acceso";
+            this.lbl_acceso.Size = new System.Drawing.Size(140, 37);
+            this.lbl_acceso.TabIndex = 9;
+            this.lbl_acceso.Text = "C. Acceso";
             // 
-            // textBox1
+            // txt_acceso
             // 
-            this.textBox1.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(123, 283);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(321, 23);
-            this.textBox1.TabIndex = 10;
+            this.txt_acceso.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_acceso.Location = new System.Drawing.Point(160, 287);
+            this.txt_acceso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_acceso.Name = "txt_acceso";
+            this.txt_acceso.Size = new System.Drawing.Size(321, 23);
+            this.txt_acceso.TabIndex = 10;
             // 
-            // button1
+            // btn_regresar
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(114, 371);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 81);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Regresar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_regresar.BackColor = System.Drawing.Color.White;
+            this.btn_regresar.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_regresar.Location = new System.Drawing.Point(123, 392);
+            this.btn_regresar.Name = "btn_regresar";
+            this.btn_regresar.Size = new System.Drawing.Size(138, 81);
+            this.btn_regresar.TabIndex = 11;
+            this.btn_regresar.Text = "Regresar";
+            this.btn_regresar.UseVisualStyleBackColor = false;
+            this.btn_regresar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btn_validar
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(306, 371);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(138, 81);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Validar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_validar.BackColor = System.Drawing.Color.White;
+            this.btn_validar.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_validar.Location = new System.Drawing.Point(315, 392);
+            this.btn_validar.Name = "btn_validar";
+            this.btn_validar.Size = new System.Drawing.Size(138, 81);
+            this.btn_validar.TabIndex = 12;
+            this.btn_validar.Text = "Validar";
+            this.btn_validar.UseVisualStyleBackColor = false;
+            this.btn_validar.Click += new System.EventHandler(this.button2_Click);
             // 
             // FR_NUEVOUSU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(582, 503);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.TX_PASSWORDNUEVO);
-            this.Controls.Add(this.TX_USUARIONUEVO);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(600, 550);
+            this.Controls.Add(this.btn_validar);
+            this.Controls.Add(this.btn_regresar);
+            this.Controls.Add(this.txt_acceso);
+            this.Controls.Add(this.lbl_acceso);
+            this.Controls.Add(this.lbl_usuario);
+            this.Controls.Add(this.txt_password);
+            this.Controls.Add(this.txt_usuario);
+            this.Controls.Add(this.lbl_password);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FR_NUEVOUSU";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -152,13 +152,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TX_PASSWORDNUEVO;
-        private System.Windows.Forms.TextBox TX_USUARIONUEVO;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lbl_usuario;
+        private System.Windows.Forms.TextBox txt_password;
+        private System.Windows.Forms.TextBox txt_usuario;
+        private System.Windows.Forms.Label lbl_password;
+        private System.Windows.Forms.Label lbl_acceso;
+        private System.Windows.Forms.TextBox txt_acceso;
+        private System.Windows.Forms.Button btn_regresar;
+        private System.Windows.Forms.Button btn_validar;
     }
 }

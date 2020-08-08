@@ -57,7 +57,7 @@ namespace Clinica
 
             //CODIGO PARA PODER INSERTAR EN LA BASE DE DATOS
 
-            string cadena = "INSERT INTO usuario (pk_id_persona, nombre_persona, apellido_persona, telefono_persona, dpi_persona,direccion_persona, fecha_nacimiento_persona, genero_persona, estado_persona, tipo_persona ) VALUES ('"+"' , '" + TX_NOMBRE.Text + "', '" + TX_APELLIDO.Text + "', '" + TX_TELEFONO.Text + "' ,'" + TX_CORREO.Text + "','" + CB_ESTADOCIVIL.Text + "','" + TX_ALERGIAS.Text + "' );";
+            string cadena = "INSERT INTO usuario (pk_id_persona, nombre_persona, apellido_persona, telefono_persona, dpi_persona,direccion_persona, fecha_nacimiento_persona, genero_persona, estado_persona, tipo_persona ) VALUES ('"+"' , '" + txt_nombre.Text + "', '" + txt_apellido.Text + "', '" + txt_telefono.Text + "' ,'" + txt_correo.Text + "','" + cbo_estado.Text + "','" + txt_alergias.Text + "' );";
             OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
             consulta.ExecuteNonQuery();
           
@@ -68,12 +68,12 @@ namespace Clinica
         void LUSUARIO()
         {
             //LIMPIAR
-            TX_NOMBRE.Text = "";
-            TX_APELLIDO.Text = "";
-            TX_TELEFONO.Text = "";
-            TX_CORREO.Text = "";
-            CB_ESTADOCIVIL.Text = ("");
-            TX_ALERGIAS.Text = "";
+            txt_nombre.Text = "";
+            txt_apellido.Text = "";
+            txt_telefono.Text = "";
+            txt_correo.Text = "";
+            cbo_estado.Text = ("");
+            txt_alergias.Text = "";
            
 
 

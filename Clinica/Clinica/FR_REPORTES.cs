@@ -43,7 +43,7 @@ namespace Clinica
             OdbcDataAdapter datos = new OdbcDataAdapter(cadena, cn.conexion());
             DataTable dt = new DataTable();
             datos.Fill(dt);
-            DG_Pacientes.DataSource = dt;
+            dgv_vista.DataSource = dt;
 
         }
 
@@ -55,7 +55,7 @@ namespace Clinica
             OdbcDataAdapter datos = new OdbcDataAdapter(cadena, cn.conexion());
             DataTable dt = new DataTable();
             datos.Fill(dt);
-            DG_Pacientes.DataSource = dt;
+            dgv_vista.DataSource = dt;
             }
             catch (Exception e)
             {
@@ -67,8 +67,8 @@ namespace Clinica
         {
             try
             {
-                DataGridViewRow fila = DG_Pacientes.CurrentRow;
-                string str_cadena = "UPDATE empleados SET nombre_completo= '" + Convert.ToString(DG_Pacientes.CurrentRow.Cells[1].Value) + "', puesto='" + Convert.ToString(DG_Pacientes.CurrentRow.Cells[2].Value) + "', departamento='" + Convert.ToString(DG_Pacientes.CurrentRow.Cells[3].Value) + "', estado=" + Convert.ToString(DG_Pacientes.CurrentRow.Cells[4].Value) + " WHERE codigo_empleado = " + txt_codigopaciente.Text;
+                DataGridViewRow fila = dgv_vista.CurrentRow;
+                string str_cadena = "UPDATE empleados SET nombre_completo= '" + Convert.ToString(dgv_vista.CurrentRow.Cells[1].Value) + "', puesto='" + Convert.ToString(dgv_vista.CurrentRow.Cells[2].Value) + "', departamento='" + Convert.ToString(dgv_vista.CurrentRow.Cells[3].Value) + "', estado=" + Convert.ToString(dgv_vista.CurrentRow.Cells[4].Value) + " WHERE codigo_empleado = " + txt_codigopaciente.Text;
                 OdbcCommand consulta = new OdbcCommand(str_cadena, cn.conexion());
                 if (consulta.ExecuteNonQuery() == 1)
                 {
@@ -84,7 +84,7 @@ namespace Clinica
         }
         void Eliminar()
         {
-            DataGridViewRow fila = DG_Pacientes.CurrentRow;
+            DataGridViewRow fila = dgv_vista.CurrentRow;
             try
             {
                 string str_cadena = "DELETE FROM empleados WHERE codigo_empleado = " + txt_codigopaciente.Text;

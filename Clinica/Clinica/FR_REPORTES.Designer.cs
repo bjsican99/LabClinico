@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_REPORTES));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnl_blanco = new System.Windows.Forms.Panel();
             this.lbl_eliminar = new System.Windows.Forms.Label();
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.lbl_modificar = new System.Windows.Forms.Label();
@@ -42,47 +42,47 @@
             this.btn_buscar = new System.Windows.Forms.Button();
             this.lbl_fechafinal = new System.Windows.Forms.Label();
             this.lbl_buscar = new System.Windows.Forms.Label();
-            this.Date_FechaFin = new System.Windows.Forms.DateTimePicker();
+            this.cbo_final = new System.Windows.Forms.DateTimePicker();
             this.lbl_imprimir = new System.Windows.Forms.Label();
             this.lbl_fechainicio = new System.Windows.Forms.Label();
-            this.Date_FechaIni = new System.Windows.Forms.DateTimePicker();
-            this.Txt_Titulo = new System.Windows.Forms.Label();
+            this.cbo_finicial = new System.Windows.Forms.DateTimePicker();
+            this.lbl_titulo = new System.Windows.Forms.Label();
             this.Txt_Generar = new System.Windows.Forms.Label();
             this.Txt_Regresar = new System.Windows.Forms.Label();
-            this.DG_Pacientes = new System.Windows.Forms.DataGridView();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DG_Pacientes)).BeginInit();
+            this.dgv_vista = new System.Windows.Forms.DataGridView();
+            this.pnl_blanco.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_vista)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnl_blanco
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.lbl_eliminar);
-            this.panel1.Controls.Add(this.btn_eliminar);
-            this.panel1.Controls.Add(this.lbl_modificar);
-            this.panel1.Controls.Add(this.btn_modificar);
-            this.panel1.Controls.Add(this.txt_nombrepaciente);
-            this.panel1.Controls.Add(this.lbl_nombrepaciente);
-            this.panel1.Controls.Add(this.txt_codigopaciente);
-            this.panel1.Controls.Add(this.lbl_codigopaciente);
-            this.panel1.Controls.Add(this.btn_imprimir);
-            this.panel1.Controls.Add(this.btn_buscar);
-            this.panel1.Controls.Add(this.lbl_fechafinal);
-            this.panel1.Controls.Add(this.lbl_buscar);
-            this.panel1.Controls.Add(this.Date_FechaFin);
-            this.panel1.Controls.Add(this.lbl_imprimir);
-            this.panel1.Controls.Add(this.lbl_fechainicio);
-            this.panel1.Controls.Add(this.Date_FechaIni);
-            this.panel1.Controls.Add(this.Txt_Titulo);
-            this.panel1.Controls.Add(this.Txt_Generar);
-            this.panel1.Controls.Add(this.Txt_Regresar);
-            this.panel1.Controls.Add(this.DG_Pacientes);
-            this.panel1.Location = new System.Drawing.Point(53, 28);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(852, 476);
-            this.panel1.TabIndex = 29;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.pnl_blanco.BackColor = System.Drawing.Color.White;
+            this.pnl_blanco.Controls.Add(this.lbl_eliminar);
+            this.pnl_blanco.Controls.Add(this.btn_eliminar);
+            this.pnl_blanco.Controls.Add(this.lbl_modificar);
+            this.pnl_blanco.Controls.Add(this.btn_modificar);
+            this.pnl_blanco.Controls.Add(this.txt_nombrepaciente);
+            this.pnl_blanco.Controls.Add(this.lbl_nombrepaciente);
+            this.pnl_blanco.Controls.Add(this.txt_codigopaciente);
+            this.pnl_blanco.Controls.Add(this.lbl_codigopaciente);
+            this.pnl_blanco.Controls.Add(this.btn_imprimir);
+            this.pnl_blanco.Controls.Add(this.btn_buscar);
+            this.pnl_blanco.Controls.Add(this.lbl_fechafinal);
+            this.pnl_blanco.Controls.Add(this.lbl_buscar);
+            this.pnl_blanco.Controls.Add(this.cbo_final);
+            this.pnl_blanco.Controls.Add(this.lbl_imprimir);
+            this.pnl_blanco.Controls.Add(this.lbl_fechainicio);
+            this.pnl_blanco.Controls.Add(this.cbo_finicial);
+            this.pnl_blanco.Controls.Add(this.lbl_titulo);
+            this.pnl_blanco.Controls.Add(this.Txt_Generar);
+            this.pnl_blanco.Controls.Add(this.Txt_Regresar);
+            this.pnl_blanco.Controls.Add(this.dgv_vista);
+            this.pnl_blanco.Location = new System.Drawing.Point(53, 28);
+            this.pnl_blanco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnl_blanco.Name = "pnl_blanco";
+            this.pnl_blanco.Size = new System.Drawing.Size(852, 476);
+            this.pnl_blanco.TabIndex = 29;
+            this.pnl_blanco.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lbl_eliminar
             // 
@@ -217,13 +217,13 @@
             this.lbl_buscar.TabIndex = 39;
             this.lbl_buscar.Text = "Buscar";
             // 
-            // Date_FechaFin
+            // cbo_final
             // 
-            this.Date_FechaFin.Location = new System.Drawing.Point(203, 122);
-            this.Date_FechaFin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Date_FechaFin.Name = "Date_FechaFin";
-            this.Date_FechaFin.Size = new System.Drawing.Size(167, 22);
-            this.Date_FechaFin.TabIndex = 37;
+            this.cbo_final.Location = new System.Drawing.Point(203, 122);
+            this.cbo_final.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbo_final.Name = "cbo_final";
+            this.cbo_final.Size = new System.Drawing.Size(167, 22);
+            this.cbo_final.TabIndex = 37;
             // 
             // lbl_imprimir
             // 
@@ -249,25 +249,25 @@
             this.lbl_fechainicio.TabIndex = 35;
             this.lbl_fechainicio.Text = "Fecha inicial";
             // 
-            // Date_FechaIni
+            // cbo_finicial
             // 
-            this.Date_FechaIni.Location = new System.Drawing.Point(203, 82);
-            this.Date_FechaIni.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Date_FechaIni.Name = "Date_FechaIni";
-            this.Date_FechaIni.Size = new System.Drawing.Size(167, 22);
-            this.Date_FechaIni.TabIndex = 34;
+            this.cbo_finicial.Location = new System.Drawing.Point(203, 82);
+            this.cbo_finicial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbo_finicial.Name = "cbo_finicial";
+            this.cbo_finicial.Size = new System.Drawing.Size(167, 22);
+            this.cbo_finicial.TabIndex = 34;
             // 
-            // Txt_Titulo
+            // lbl_titulo
             // 
-            this.Txt_Titulo.AutoSize = true;
-            this.Txt_Titulo.BackColor = System.Drawing.Color.Transparent;
-            this.Txt_Titulo.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Titulo.Location = new System.Drawing.Point(248, 12);
-            this.Txt_Titulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Txt_Titulo.Name = "Txt_Titulo";
-            this.Txt_Titulo.Size = new System.Drawing.Size(292, 37);
-            this.Txt_Titulo.TabIndex = 33;
-            this.Txt_Titulo.Text = "Pacientes registrados";
+            this.lbl_titulo.AutoSize = true;
+            this.lbl_titulo.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_titulo.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_titulo.Location = new System.Drawing.Point(248, 12);
+            this.lbl_titulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_titulo.Name = "lbl_titulo";
+            this.lbl_titulo.Size = new System.Drawing.Size(292, 37);
+            this.lbl_titulo.TabIndex = 33;
+            this.lbl_titulo.Text = "Pacientes registrados";
             // 
             // Txt_Generar
             // 
@@ -293,18 +293,18 @@
             this.Txt_Regresar.TabIndex = 31;
             this.Txt_Regresar.Text = "Regresar";
             // 
-            // DG_Pacientes
+            // dgv_vista
             // 
-            this.DG_Pacientes.BackgroundColor = System.Drawing.Color.Silver;
-            this.DG_Pacientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DG_Pacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DG_Pacientes.Location = new System.Drawing.Point(29, 162);
-            this.DG_Pacientes.Margin = new System.Windows.Forms.Padding(4);
-            this.DG_Pacientes.Name = "DG_Pacientes";
-            this.DG_Pacientes.RowHeadersWidth = 51;
-            this.DG_Pacientes.Size = new System.Drawing.Size(725, 185);
-            this.DG_Pacientes.TabIndex = 28;
-            this.DG_Pacientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DG_Pacientes_CellContentClick);
+            this.dgv_vista.BackgroundColor = System.Drawing.Color.Silver;
+            this.dgv_vista.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_vista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_vista.Location = new System.Drawing.Point(29, 162);
+            this.dgv_vista.Margin = new System.Windows.Forms.Padding(4);
+            this.dgv_vista.Name = "dgv_vista";
+            this.dgv_vista.RowHeadersWidth = 51;
+            this.dgv_vista.Size = new System.Drawing.Size(725, 185);
+            this.dgv_vista.TabIndex = 28;
+            this.dgv_vista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DG_Pacientes_CellContentClick);
             // 
             // FR_REPORTES
             // 
@@ -312,34 +312,34 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(952, 534);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnl_blanco);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FR_REPORTES";
             this.Text = "FR_REPORTES";
             this.Load += new System.EventHandler(this.FR_REPORTES_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DG_Pacientes)).EndInit();
+            this.pnl_blanco.ResumeLayout(false);
+            this.pnl_blanco.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_vista)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnl_blanco;
         private System.Windows.Forms.Button btn_imprimir;
         private System.Windows.Forms.Button btn_buscar;
         private System.Windows.Forms.Label lbl_fechafinal;
         private System.Windows.Forms.Label lbl_buscar;
-        private System.Windows.Forms.DateTimePicker Date_FechaFin;
+        private System.Windows.Forms.DateTimePicker cbo_final;
         private System.Windows.Forms.Label lbl_imprimir;
         private System.Windows.Forms.Label lbl_fechainicio;
-        private System.Windows.Forms.DateTimePicker Date_FechaIni;
-        private System.Windows.Forms.Label Txt_Titulo;
+        private System.Windows.Forms.DateTimePicker cbo_finicial;
+        private System.Windows.Forms.Label lbl_titulo;
         private System.Windows.Forms.Label Txt_Generar;
         private System.Windows.Forms.Label Txt_Regresar;
-        private System.Windows.Forms.DataGridView DG_Pacientes;
+        private System.Windows.Forms.DataGridView dgv_vista;
         private System.Windows.Forms.TextBox txt_nombrepaciente;
         private System.Windows.Forms.Label lbl_nombrepaciente;
         private System.Windows.Forms.TextBox txt_codigopaciente;

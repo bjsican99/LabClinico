@@ -29,156 +29,156 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_FACTURACION));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.TX_FACTURA = new System.Windows.Forms.TextBox();
-            this.TX_FECHA = new System.Windows.Forms.TextBox();
-            this.TX_NOMBRE = new System.Windows.Forms.TextBox();
-            this.TX_EXAMEN = new System.Windows.Forms.TextBox();
-            this.TX_TOTAL = new System.Windows.Forms.TextBox();
+            this.lbl_facturacion = new System.Windows.Forms.Label();
+            this.lbl_factura = new System.Windows.Forms.Label();
+            this.lbl_nombre = new System.Windows.Forms.Label();
+            this.lbl_examen = new System.Windows.Forms.Label();
+            this.lbl_total = new System.Windows.Forms.Label();
+            this.lbl_fecha = new System.Windows.Forms.Label();
+            this.txt_factura = new System.Windows.Forms.TextBox();
+            this.txt_fecha = new System.Windows.Forms.TextBox();
+            this.txt_nombre = new System.Windows.Forms.TextBox();
+            this.txt_examen = new System.Windows.Forms.TextBox();
+            this.txt_total = new System.Windows.Forms.TextBox();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_imprimir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_facturacion
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Corbel", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(233, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 40);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "FACTURACION";
+            this.lbl_facturacion.AutoSize = true;
+            this.lbl_facturacion.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_facturacion.Font = new System.Drawing.Font("Corbel", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_facturacion.Location = new System.Drawing.Point(172, 39);
+            this.lbl_facturacion.Name = "lbl_facturacion";
+            this.lbl_facturacion.Size = new System.Drawing.Size(227, 40);
+            this.lbl_facturacion.TabIndex = 0;
+            this.lbl_facturacion.Text = "FACTURACION";
             // 
-            // label2
+            // lbl_factura
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(37, 102);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 37);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "# Factura";
+            this.lbl_factura.AutoSize = true;
+            this.lbl_factura.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_factura.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_factura.Location = new System.Drawing.Point(58, 136);
+            this.lbl_factura.Name = "lbl_factura";
+            this.lbl_factura.Size = new System.Drawing.Size(137, 37);
+            this.lbl_factura.TabIndex = 1;
+            this.lbl_factura.Text = "# Factura";
             // 
-            // label3
+            // lbl_nombre
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(37, 205);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 37);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Nombre";
+            this.lbl_nombre.AutoSize = true;
+            this.lbl_nombre.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_nombre.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nombre.Location = new System.Drawing.Point(58, 239);
+            this.lbl_nombre.Name = "lbl_nombre";
+            this.lbl_nombre.Size = new System.Drawing.Size(120, 37);
+            this.lbl_nombre.TabIndex = 2;
+            this.lbl_nombre.Text = "Nombre";
             // 
-            // label4
+            // lbl_examen
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(37, 264);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 37);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Examen";
+            this.lbl_examen.AutoSize = true;
+            this.lbl_examen.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_examen.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_examen.Location = new System.Drawing.Point(58, 298);
+            this.lbl_examen.Name = "lbl_examen";
+            this.lbl_examen.Size = new System.Drawing.Size(119, 37);
+            this.lbl_examen.TabIndex = 3;
+            this.lbl_examen.Text = "Examen";
             // 
-            // label5
+            // lbl_total
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(37, 321);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 37);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Total";
+            this.lbl_total.AutoSize = true;
+            this.lbl_total.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_total.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_total.Location = new System.Drawing.Point(58, 355);
+            this.lbl_total.Name = "lbl_total";
+            this.lbl_total.Size = new System.Drawing.Size(80, 37);
+            this.lbl_total.TabIndex = 4;
+            this.lbl_total.Text = "Total";
             // 
-            // label6
+            // lbl_fecha
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(37, 155);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 37);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Fecha";
+            this.lbl_fecha.AutoSize = true;
+            this.lbl_fecha.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_fecha.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fecha.Location = new System.Drawing.Point(58, 189);
+            this.lbl_fecha.Name = "lbl_fecha";
+            this.lbl_fecha.Size = new System.Drawing.Size(91, 37);
+            this.lbl_fecha.TabIndex = 5;
+            this.lbl_fecha.Text = "Fecha";
             // 
-            // TX_FACTURA
+            // txt_factura
             // 
-            this.TX_FACTURA.Location = new System.Drawing.Point(240, 115);
-            this.TX_FACTURA.Name = "TX_FACTURA";
-            this.TX_FACTURA.Size = new System.Drawing.Size(217, 22);
-            this.TX_FACTURA.TabIndex = 6;
-            this.TX_FACTURA.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txt_factura.Location = new System.Drawing.Point(261, 149);
+            this.txt_factura.Name = "txt_factura";
+            this.txt_factura.Size = new System.Drawing.Size(217, 22);
+            this.txt_factura.TabIndex = 6;
+            this.txt_factura.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // TX_FECHA
+            // txt_fecha
             // 
-            this.TX_FECHA.Location = new System.Drawing.Point(240, 168);
-            this.TX_FECHA.Name = "TX_FECHA";
-            this.TX_FECHA.Size = new System.Drawing.Size(217, 22);
-            this.TX_FECHA.TabIndex = 7;
+            this.txt_fecha.Location = new System.Drawing.Point(261, 202);
+            this.txt_fecha.Name = "txt_fecha";
+            this.txt_fecha.Size = new System.Drawing.Size(217, 22);
+            this.txt_fecha.TabIndex = 7;
             // 
-            // TX_NOMBRE
+            // txt_nombre
             // 
-            this.TX_NOMBRE.Location = new System.Drawing.Point(240, 218);
-            this.TX_NOMBRE.Name = "TX_NOMBRE";
-            this.TX_NOMBRE.Size = new System.Drawing.Size(217, 22);
-            this.TX_NOMBRE.TabIndex = 8;
+            this.txt_nombre.Location = new System.Drawing.Point(261, 252);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Size = new System.Drawing.Size(217, 22);
+            this.txt_nombre.TabIndex = 8;
             // 
-            // TX_EXAMEN
+            // txt_examen
             // 
-            this.TX_EXAMEN.Location = new System.Drawing.Point(240, 277);
-            this.TX_EXAMEN.Name = "TX_EXAMEN";
-            this.TX_EXAMEN.Size = new System.Drawing.Size(217, 22);
-            this.TX_EXAMEN.TabIndex = 9;
+            this.txt_examen.Location = new System.Drawing.Point(261, 311);
+            this.txt_examen.Name = "txt_examen";
+            this.txt_examen.Size = new System.Drawing.Size(217, 22);
+            this.txt_examen.TabIndex = 9;
             // 
-            // TX_TOTAL
+            // txt_total
             // 
-            this.TX_TOTAL.Location = new System.Drawing.Point(240, 334);
-            this.TX_TOTAL.Name = "TX_TOTAL";
-            this.TX_TOTAL.Size = new System.Drawing.Size(217, 22);
-            this.TX_TOTAL.TabIndex = 10;
+            this.txt_total.Location = new System.Drawing.Point(261, 368);
+            this.txt_total.Name = "txt_total";
+            this.txt_total.Size = new System.Drawing.Size(217, 22);
+            this.txt_total.TabIndex = 10;
             // 
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
-            // button1
+            // btn_imprimir
             // 
-            this.button1.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(179, 401);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(225, 55);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Imprimir";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_imprimir.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_imprimir.Location = new System.Drawing.Point(179, 432);
+            this.btn_imprimir.Name = "btn_imprimir";
+            this.btn_imprimir.Size = new System.Drawing.Size(225, 55);
+            this.btn_imprimir.TabIndex = 11;
+            this.btn_imprimir.Text = "Imprimir";
+            this.btn_imprimir.UseVisualStyleBackColor = true;
+            this.btn_imprimir.Click += new System.EventHandler(this.button1_Click);
             // 
             // FR_FACTURACION
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(607, 511);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.TX_TOTAL);
-            this.Controls.Add(this.TX_EXAMEN);
-            this.Controls.Add(this.TX_NOMBRE);
-            this.Controls.Add(this.TX_FECHA);
-            this.Controls.Add(this.TX_FACTURA);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(600, 550);
+            this.Controls.Add(this.btn_imprimir);
+            this.Controls.Add(this.txt_total);
+            this.Controls.Add(this.txt_examen);
+            this.Controls.Add(this.txt_nombre);
+            this.Controls.Add(this.txt_fecha);
+            this.Controls.Add(this.txt_factura);
+            this.Controls.Add(this.lbl_fecha);
+            this.Controls.Add(this.lbl_total);
+            this.Controls.Add(this.lbl_examen);
+            this.Controls.Add(this.lbl_nombre);
+            this.Controls.Add(this.lbl_factura);
+            this.Controls.Add(this.lbl_facturacion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FR_FACTURACION";
             this.Text = "FR_FACTURACION";
@@ -190,18 +190,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox TX_FACTURA;
-        private System.Windows.Forms.TextBox TX_FECHA;
-        private System.Windows.Forms.TextBox TX_NOMBRE;
-        private System.Windows.Forms.TextBox TX_EXAMEN;
-        private System.Windows.Forms.TextBox TX_TOTAL;
+        private System.Windows.Forms.Label lbl_facturacion;
+        private System.Windows.Forms.Label lbl_factura;
+        private System.Windows.Forms.Label lbl_nombre;
+        private System.Windows.Forms.Label lbl_examen;
+        private System.Windows.Forms.Label lbl_total;
+        private System.Windows.Forms.Label lbl_fecha;
+        private System.Windows.Forms.TextBox txt_factura;
+        private System.Windows.Forms.TextBox txt_fecha;
+        private System.Windows.Forms.TextBox txt_nombre;
+        private System.Windows.Forms.TextBox txt_examen;
+        private System.Windows.Forms.TextBox txt_total;
         private System.Drawing.Printing.PrintDocument printDocument1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_imprimir;
     }
 }

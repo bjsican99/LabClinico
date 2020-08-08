@@ -36,8 +36,8 @@ namespace Clinica
             //CODIGO PARA LA GENERACION DE EL CODIGO DE BARRAS DENTRO DEL PANEL
             BarcodeLib.Barcode Codigo = new BarcodeLib.Barcode();
             Codigo.IncludeLabel = true;
-            panel1.BackgroundImage = Codigo.Encode(BarcodeLib.TYPE.CODE128,textBox1.Text,Color.Black, Color.White, 400,100);
-            Image imgFinal = (Image)panel1.BackgroundImage.Clone();
+            pnl_codigobarras.BackgroundImage = Codigo.Encode(BarcodeLib.TYPE.CODE128,txt_codigo.Text,Color.Black, Color.White, 400,100);
+            Image imgFinal = (Image)pnl_codigobarras.BackgroundImage.Clone();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace Clinica
             //BRIAN SANTIZO
             //CODIGO PARA CONVERTIR A IMAGEN LO QUE ESTA DE FONDO EN EL PANEL
             //YA QUE EL CODIGO DE BARRAS SE SETEA COMO IMAGEN DE FONDO
-            Image imgFinal = (Image)panel1.BackgroundImage.Clone();
+            Image imgFinal = (Image)pnl_codigobarras.BackgroundImage.Clone();
             SaveFileDialog Cajadedialogoguardar = new SaveFileDialog();
             Cajadedialogoguardar.AddExtension = true;
             Cajadedialogoguardar.Filter = "Image PNG (*.png )|*.png ";
@@ -63,8 +63,8 @@ namespace Clinica
             //BRIAN SANTIZO
             //EXTRAE TODO LO QUE ESTE DENTRO DEL PANEL A SI ANCHO Y ALTO 
             //SE PONE AQUI PARA QUE SEA LO QUE ESTE DENTRO DEL DOCUMENTO DE IMPRESION
-            Bitmap bm = new Bitmap(panel1.Width,panel1.Height);
-            panel1.DrawToBitmap(bm, new Rectangle(0, 0, panel1.Width, panel1.Height));
+            Bitmap bm = new Bitmap(pnl_codigobarras.Width,pnl_codigobarras.Height);
+            pnl_codigobarras.DrawToBitmap(bm, new Rectangle(0, 0, pnl_codigobarras.Width, pnl_codigobarras.Height));
             e.Graphics.DrawImage(bm, 0, 0);
             bm.Dispose();
         }
@@ -74,6 +74,11 @@ namespace Clinica
             //BRIAN SANTIZO
             //IMPRESION
             printDocument1.Print();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_salir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAACQtJREFUeF7t
         mnlwlPUZx2NHa/tHrRYUrNJqDYSYA3KQW9hAJCQkARIScgEhgXBJkSgwIkdgRuQqlGMUqEKliCVDTq4I
@@ -162,7 +162,7 @@
         P3fMExXsWVndFwnH2/hs0U033XTTTTeuxMPjP+ts9ZQLPNDSAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_factura.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAACXxJREFUeF7t
         mntQ1NcVxzFJ00lHMzpt0rQmpoEIWEDRRVERBRQEERQpCqu8nz4w2iipsbZUI6apsRm1MZpJxFRCQ1zB
@@ -208,7 +208,7 @@
         3CODOvFfad1yyy233HLLrfbLw+N/KIK2sWA9iRUAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_reportes.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABCBJREFUeF7t
         mu9rVXUcx/d3iENRd+/mzGooGpkztfajH5JhabnUtTldg6AofVAMgiAiCIKiB0EgBCLTfrHlUPwV9bzn
@@ -231,7 +231,7 @@
         +UGFaw+6eOikZG2HmfvbCvri27Rp06bNhqGj41/ZewFWfjAUsAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_examenes.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABMBJREFUeF7t
         mt1rHGUUxjd/Qm+1CW26yRatCS2Nsd0qaW1NdkvEaINNQkOTtOajtQpC1Qu/8EIQrCheCF5IFS8sS70Q
@@ -257,7 +257,7 @@
         pKSk7Bkymf8ACHeA7uzjCD0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_usuario.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAA2BJREFUeF7t
         ms+LVWUYx+/fISOoo1lhkklJSRISpQ0yONepSY0MjSZ/UC6C2lS0KKiFixYugggVsxjHLO9gomjeueLC
@@ -277,7 +277,7 @@
         2reGIWHl/4Mz9/0GLI5G418o8nDQZOZWrQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ptb_ingresoetiqueta.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
         2AAAAdgB+lymcgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAepSURBVHhe5Zt7
@@ -316,7 +316,7 @@
         p0gOUM5SapAG1FDO0huZA/TPteINjXhHF95H5wyG/wAbTCzdOfGbBgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ptb_imagen.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAH
         YgAAB2IBOHqZ2wAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADArSURBVHhe7Z0J
