@@ -26,9 +26,9 @@ namespace Clinica
 
 
         }
-
+        int intValido = 0;
         Conexion cn = new Conexion();
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_imprimir_Click(object sender, EventArgs e)
         {
            
 
@@ -38,67 +38,135 @@ namespace Clinica
         {
             //CODIGO PARA EXTRAER DE LA BASE DE DATOS LA TABLA PARA MOSTRAR EN EL DATAGRID
             //BRIAN SANTIZO
-            string cadena = "SELECT * FROM empleados";
+            try
+            {
+                string strCadena = "SELECT * FROM empleados";
 
-            OdbcDataAdapter datos = new OdbcDataAdapter(cadena, cn.conexion());
-            DataTable dt = new DataTable();
-            datos.Fill(dt);
-            dgv_vista.DataSource = dt;
-
+                OdbcDataAdapter datos = new OdbcDataAdapter(strCadena, cn.conexion());
+                DataTable dt = new DataTable();
+                datos.Fill(dt);
+                dgv_vista.DataSource = dt;
+            }
+            catch (Exception exError)
+            {
+                Console.WriteLine("Error en cargar", exError);
+            }
         }
-
+        //FUNCION PARA BUSCAR SIRVE PARA BUSCAR A LA PERSONA A MODIFICAR Y A ELIMINAR
+        //Bryan Mazariegos
         void buscar()
         {
-            try { 
-            string cadena = "SELECT * FROM  empleados WHERE codigo_empleado = "+ txt_codigopaciente.Text;
-
-            OdbcDataAdapter datos = new OdbcDataAdapter(cadena, cn.conexion());
-            DataTable dt = new DataTable();
-            datos.Fill(dt);
-            dgv_vista.DataSource = dt;
-            }
-            catch (Exception e)
+            if (txt_codigopaciente.Text == "")
             {
-
+                MessageBox.Show("Debe ingresar el códogo");
             }
-
-}
-        void modificar()
-        {
-            try
+            else
             {
-                DataGridViewRow fila = dgv_vista.CurrentRow;
-                string str_cadena = "UPDATE empleados SET nombre_completo= '" + Convert.ToString(dgv_vista.CurrentRow.Cells[1].Value) + "', puesto='" + Convert.ToString(dgv_vista.CurrentRow.Cells[2].Value) + "', departamento='" + Convert.ToString(dgv_vista.CurrentRow.Cells[3].Value) + "', estado=" + Convert.ToString(dgv_vista.CurrentRow.Cells[4].Value) + " WHERE codigo_empleado = " + txt_codigopaciente.Text;
-                OdbcCommand consulta = new OdbcCommand(str_cadena, cn.conexion());
-                if (consulta.ExecuteNonQuery() == 1)
+                txt_codigopaciente.Enabled = false;
+                try
                 {
-                    MessageBox.Show("Se modificaron los datos");
+                    intValido = 1;
+                    string cadena = "SELECT pk_id_persona FROM tbl_persona WHERE pk_id_persona=" + txt_codigopaciente.Text;
+                    OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+                    if (consulta.ExecuteNonQuery() == 1)
+                    {
+                        try
+                        {
+                            string strCadena = "SELECT * FROM  tbl_persona WHERE pk_id_persona = " + txt_codigopaciente.Text;
+
+                            OdbcDataAdapter datos = new OdbcDataAdapter(strCadena, cn.conexion());
+                            DataTable dt = new DataTable();
+                            datos.Fill(dt);
+                            dgv_vista.DataSource = dt;
+                        }
+                        catch (Exception exError)
+                        {
+                            Console.WriteLine("Error en llenado de busqueda", exError);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Codigo de persona no exixte");
+                        txt_codigopaciente.Enabled = true;
+                    }
                 }
-                else
-                    MessageBox.Show("No existe una persona con el código ingresado");
-            }
-            catch (Exception e)
-            {
-               
+                catch (Exception exError)
+                {
+                    Console.WriteLine("Error en la buscqueda de la persona", exError);
+                }
             }
         }
+        //FUNCION PARA MODIFICAR A UNA PERSONA
+        //Bryan Mazariegos
+        void modificar()
+        {
+            if (txt_codigopaciente.Text == ""|| intValido!=1)
+            {
+                MessageBox.Show("No se a buscado una persona");
+                txt_codigopaciente.Enabled = true;
+            }
+            else
+            {
+                try
+                {
+                    DataGridViewRow fila = dgv_vista.CurrentRow;
+                    string strCadena = "UPDATE tbl_persona SET nombre_persona= '" + Convert.ToString(dgv_vista.CurrentRow.Cells[1].Value) + "', apellido_persona='" + Convert.ToString(dgv_vista.CurrentRow.Cells[2].Value) + "', telefono_persona=" + Convert.ToString(dgv_vista.CurrentRow.Cells[3].Value) + ", dpi_persona=" + Convert.ToString(dgv_vista.CurrentRow.Cells[4].Value) + ", direccion_persona='" + Convert.ToString(dgv_vista.CurrentRow.Cells[5].Value) + "', email_persona='" + Convert.ToString(dgv_vista.CurrentRow.Cells[6].Value) + "', genero_persona=" + Convert.ToString(dgv_vista.CurrentRow.Cells[9].Value) + ", estado_persona=" + Convert.ToString(dgv_vista.CurrentRow.Cells[10].Value) + ", estadocivil_persona=" + Convert.ToString(dgv_vista.CurrentRow.Cells[11].Value) + ", alergias='" + Convert.ToString(dgv_vista.CurrentRow.Cells[12].Value) + "', tipo_persona=" + Convert.ToString(dgv_vista.CurrentRow.Cells[13].Value) + " WHERE pk_id_persona = " + txt_codigopaciente.Text;
+                    OdbcCommand consulta = new OdbcCommand(strCadena, cn.conexion());
+                    if (consulta.ExecuteNonQuery() == 1)
+                    {
+                        MessageBox.Show("Se modificaron los datos");
+                        txt_codigopaciente.Enabled = true;
+                        intValido = 0;
+                    }
+                    else
+                    {
+                        MessageBox.Show("No existe una persona con el código ingresado");
+                        txt_codigopaciente.Enabled = true;
+                        intValido = 0;
+                    }
+                }
+                catch (Exception exError)
+                {
+                    Console.WriteLine("Error en modificar ", exError);
+                    txt_codigopaciente.Enabled = true;
+                    intValido = 0;
+                }
+            }
+        }
+        //FUNCION PARA ELIMINAR A UNA PRSONA DETERMINADA
+        //Bryan Mazariegos
         void Eliminar()
         {
-            DataGridViewRow fila = dgv_vista.CurrentRow;
-            try
+            if (txt_codigopaciente.Text == "" || intValido != 1)
             {
-                string str_cadena = "DELETE FROM empleados WHERE codigo_empleado = " + txt_codigopaciente.Text;
-                OdbcCommand consulta = new OdbcCommand(str_cadena, cn.conexion());
-                if (consulta.ExecuteNonQuery() == 1)
-                {
-                    MessageBox.Show("Se han eliminado los datos");
-                }
-                else
-                    MessageBox.Show("No exixte el codigo a eliminar");
+                MessageBox.Show("No se a buscado una persona");
             }
-            catch (Exception e)
+            else
             {
-
+                try
+                {
+                    DataGridViewRow fila = dgv_vista.CurrentRow;
+                    string strCadena = "DELETE FROM tbl_persona WHERE pk_id_persona = " + txt_codigopaciente.Text;
+                    OdbcCommand consulta = new OdbcCommand(strCadena, cn.conexion());
+                    if (consulta.ExecuteNonQuery() == 1)
+                    {
+                        MessageBox.Show("Se han eliminado los datos");
+                        txt_codigopaciente.Enabled = true;
+                        intValido = 0;
+                    }
+                    else
+                    {
+                        MessageBox.Show("No exixte el codigo a eliminar");
+                        txt_codigopaciente.Enabled = true;
+                        intValido = 0;
+                    }
+                }
+                catch (Exception exError)
+                {
+                    Console.WriteLine("Error en eliminacion", exError);
+                    txt_codigopaciente.Enabled = true;
+                    intValido = 0;
+                }
             }
         }
         private void DG_Pacientes_CellContentClick(object sender, DataGridViewCellEventArgs e)

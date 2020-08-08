@@ -14,7 +14,7 @@ namespace Clinica
         {
             InitializeComponent();
             //CODIFICACION PARA EL TEXTFIELD DE CONTRASEÑA
-            TX_INGRESOPASSWORD.PasswordChar = '*';
+            txt_password.PasswordChar = '*';
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -40,7 +40,7 @@ namespace Clinica
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             //CODIGO PARA HACER TRASLUCIDO EL PANEL
-            panel1.BackColor = Color.FromArgb(25, 0, 0, 0);
+            pnl_blanco.BackColor = Color.FromArgb(25, 0, 0, 0);
         }
 
         private void button1_Click_1(object sender, EventArgs e)

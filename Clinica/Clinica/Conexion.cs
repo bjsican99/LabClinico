@@ -13,7 +13,7 @@ namespace Clinica
         public OdbcConnection conexion()
         {
             //CREACCION DE LA CONEXCION ODBC
-            OdbcConnection conn = new OdbcConnection("Dsn=Prueba1");
+            OdbcConnection conn = new OdbcConnection("Dsn=BD_LabClinico");
             try
             {
                 conn.Open();
