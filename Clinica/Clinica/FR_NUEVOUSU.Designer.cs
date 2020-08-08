@@ -144,6 +144,7 @@
             this.Name = "FR_NUEVOUSU";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FR_NUEVOUSU";
+            this.Load += new System.EventHandler(this.FR_NUEVOUSU_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

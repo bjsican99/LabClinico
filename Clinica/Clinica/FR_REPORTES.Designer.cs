@@ -100,7 +100,7 @@
             // 
             this.btn_eliminar.Image = ((System.Drawing.Image)(resources.GetObject("btn_eliminar.Image")));
             this.btn_eliminar.Location = new System.Drawing.Point(427, 354);
-            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_eliminar.Name = "btn_eliminar";
             this.btn_eliminar.Size = new System.Drawing.Size(105, 89);
             this.btn_eliminar.TabIndex = 51;
@@ -123,7 +123,7 @@
             // 
             this.btn_modificar.Image = ((System.Drawing.Image)(resources.GetObject("btn_modificar.Image")));
             this.btn_modificar.Location = new System.Drawing.Point(567, 354);
-            this.btn_modificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_modificar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_modificar.Name = "btn_modificar";
             this.btn_modificar.Size = new System.Drawing.Size(105, 89);
             this.btn_modificar.TabIndex = 48;
@@ -133,7 +133,7 @@
             // txt_nombrepaciente
             // 
             this.txt_nombrepaciente.Location = new System.Drawing.Point(545, 124);
-            this.txt_nombrepaciente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_nombrepaciente.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nombrepaciente.Name = "txt_nombrepaciente";
             this.txt_nombrepaciente.Size = new System.Drawing.Size(208, 22);
             this.txt_nombrepaciente.TabIndex = 47;
@@ -152,7 +152,7 @@
             // txt_codigopaciente
             // 
             this.txt_codigopaciente.Location = new System.Drawing.Point(545, 82);
-            this.txt_codigopaciente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_codigopaciente.Margin = new System.Windows.Forms.Padding(4);
             this.txt_codigopaciente.Name = "txt_codigopaciente";
             this.txt_codigopaciente.Size = new System.Drawing.Size(208, 22);
             this.txt_codigopaciente.TabIndex = 45;
@@ -299,7 +299,7 @@
             this.DG_Pacientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DG_Pacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DG_Pacientes.Location = new System.Drawing.Point(29, 162);
-            this.DG_Pacientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DG_Pacientes.Margin = new System.Windows.Forms.Padding(4);
             this.DG_Pacientes.Name = "DG_Pacientes";
             this.DG_Pacientes.RowHeadersWidth = 51;
             this.DG_Pacientes.Size = new System.Drawing.Size(725, 185);
@@ -317,6 +317,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FR_REPORTES";
             this.Text = "FR_REPORTES";
+            this.Load += new System.EventHandler(this.FR_REPORTES_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DG_Pacientes)).EndInit();

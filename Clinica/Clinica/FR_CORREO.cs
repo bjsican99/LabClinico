@@ -1,4 +1,6 @@
-﻿using System;
+﻿//BRIAN SANTIZO FORM
+//0901-17-1483
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,39 +34,37 @@ namespace Clinica
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //BRIAN SANTIZO
+
             System.Net.Mail.MailMessage mmsg = new System.Net.Mail.MailMessage();
 
             mmsg.To.Add(TX_PARA.Text);
             mmsg.Subject =TX_ASUNTO.Text;
             mmsg.SubjectEncoding = System.Text.Encoding.UTF8;
             mmsg.Bcc.Add(TX_CC.Text);
-
             mmsg.Body = TX_MENSAJE.Text;
             mmsg.BodyEncoding = System.Text.Encoding.UTF8;
             mmsg.IsBodyHtml = true;
             mmsg.From = new System.Net.Mail.MailAddress("lclinico12@gmail.com");
 
+            //CONEXION CON EL SERVIDOR DE GMAIL
+            //INGRESO DE CREDENCIALES DEL CORREO 
             System.Net.Mail.SmtpClient cliente = new System.Net.Mail.SmtpClient();
             cliente.Credentials = new System.Net.NetworkCredential("lclinico12@gmail.com", "Laboratorio123");
             cliente.Port = 587;
             cliente.EnableSsl = true;
             cliente.Host = "smtp.gmail.com";
-
-
-
-
             try
             {
+                //ENVIO DE MENSAJE
                 cliente.Send(mmsg);
                 MessageBox.Show("Correo enviado");
             }
             catch (Exception)
             {
+                //SI NO LO ENVIA, MUESTRA MENSAJE DE ERROR
                 MessageBox.Show("Error al enviar");
-
             }
-
-
         }
 
         private void button1_Click_1(object sender, EventArgs e)

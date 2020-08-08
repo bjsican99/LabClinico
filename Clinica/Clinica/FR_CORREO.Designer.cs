@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_CORREO));
             this.TX_PARA = new System.Windows.Forms.TextBox();
             this.TX_ASUNTO = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BT_ENVIAR = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.TX_CC = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.TX_MENSAJE = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BT_REGRESAR = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TX_PARA
@@ -54,16 +54,16 @@
             this.TX_ASUNTO.Size = new System.Drawing.Size(234, 22);
             this.TX_ASUNTO.TabIndex = 3;
             // 
-            // button2
+            // BT_ENVIAR
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(449, 41);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 48);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Enviar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.BT_ENVIAR.BackColor = System.Drawing.Color.White;
+            this.BT_ENVIAR.Location = new System.Drawing.Point(449, 41);
+            this.BT_ENVIAR.Name = "BT_ENVIAR";
+            this.BT_ENVIAR.Size = new System.Drawing.Size(125, 48);
+            this.BT_ENVIAR.TabIndex = 5;
+            this.BT_ENVIAR.Text = "Enviar";
+            this.BT_ENVIAR.UseVisualStyleBackColor = false;
+            this.BT_ENVIAR.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
@@ -106,16 +106,16 @@
             this.TX_MENSAJE.Size = new System.Drawing.Size(234, 22);
             this.TX_MENSAJE.TabIndex = 10;
             // 
-            // button1
+            // BT_REGRESAR
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(449, 136);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 48);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Regresar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.BT_REGRESAR.BackColor = System.Drawing.Color.White;
+            this.BT_REGRESAR.Location = new System.Drawing.Point(449, 136);
+            this.BT_REGRESAR.Name = "BT_REGRESAR";
+            this.BT_REGRESAR.Size = new System.Drawing.Size(125, 48);
+            this.BT_REGRESAR.TabIndex = 11;
+            this.BT_REGRESAR.Text = "Regresar";
+            this.BT_REGRESAR.UseVisualStyleBackColor = false;
+            this.BT_REGRESAR.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // FR_CORREO
             // 
@@ -123,13 +123,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(618, 304);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BT_REGRESAR);
             this.Controls.Add(this.TX_MENSAJE);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.TX_CC);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BT_ENVIAR);
             this.Controls.Add(this.TX_ASUNTO);
             this.Controls.Add(this.TX_PARA);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -145,12 +145,12 @@
         #endregion
         private System.Windows.Forms.TextBox TX_PARA;
         private System.Windows.Forms.TextBox TX_ASUNTO;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BT_ENVIAR;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox TX_CC;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TX_MENSAJE;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BT_REGRESAR;
     }
 }

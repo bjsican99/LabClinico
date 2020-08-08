@@ -1,4 +1,6 @@
-﻿using System;
+﻿//BRIAN SANTIZO FORM
+//0901-17-1483
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -11,6 +13,7 @@ namespace Clinica
         public FR_LOGIN()
         {
             InitializeComponent();
+            //CODIFICACION PARA EL TEXTFIELD DE CONTRASEÑA
             TX_INGRESOPASSWORD.PasswordChar = '*';
         }
 
@@ -36,6 +39,7 @@ namespace Clinica
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
+            //CODIGO PARA HACER TRASLUCIDO EL PANEL
             panel1.BackColor = Color.FromArgb(25, 0, 0, 0);
         }
 

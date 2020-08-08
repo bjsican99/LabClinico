@@ -36,6 +36,8 @@ namespace Clinica
 
         void cargar()
         {
+            //CODIGO PARA EXTRAER DE LA BASE DE DATOS LA TABLA PARA MOSTRAR EN EL DATAGRID
+            //BRIAN SANTIZO
             string cadena = "SELECT * FROM empleados";
 
             OdbcDataAdapter datos = new OdbcDataAdapter(cadena, cn.conexion());
@@ -133,6 +135,11 @@ namespace Clinica
         {
             Eliminar();
             txt_codigopaciente.Text = "";
+        }
+
+        private void FR_REPORTES_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

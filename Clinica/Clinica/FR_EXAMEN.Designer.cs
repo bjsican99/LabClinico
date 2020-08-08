@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_EXAMEN));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.CB_PACIENTE = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.B_INGRESAR = new System.Windows.Forms.Button();
@@ -46,7 +47,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DG_EXAMENES)).BeginInit();
             this.SuspendLayout();
@@ -87,6 +87,17 @@
             this.panel1.Size = new System.Drawing.Size(820, 463);
             this.panel1.TabIndex = 2;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(621, 24);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(76, 59);
+            this.button1.TabIndex = 17;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // CB_PACIENTE
             // 
             this.CB_PACIENTE.FormattingEnabled = true;
@@ -120,6 +131,7 @@
             this.B_INGRESAR.TabIndex = 14;
             this.B_INGRESAR.Text = "Ingresar";
             this.B_INGRESAR.UseVisualStyleBackColor = false;
+            this.B_INGRESAR.Click += new System.EventHandler(this.B_INGRESAR_Click);
             // 
             // B_ACTUALIZAR
             // 
@@ -232,17 +244,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "N. Cientifico";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(621, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 59);
-            this.button1.TabIndex = 17;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // FR_EXAMEN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -253,6 +254,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FR_EXAMEN";
             this.Text = "FR_EXAMEN";
+            this.Load += new System.EventHandler(this.FR_EXAMEN_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DG_EXAMENES)).EndInit();

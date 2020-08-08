@@ -1,4 +1,7 @@
-﻿using Clinica;
+﻿//BRIAN SANTIZO FORM
+//0901-17-1483
+
+using Clinica;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,13 +31,14 @@ namespace Clinica
             AbrirFormulario<FR_INGRESOUSU>();
         }
 
-
-
-        //METODO
+        
         private void AbrirFormulario<Abrir>() where Abrir : Form, new() {
+
+            //METODO PARA ABRIR FORMULARIOS DENTRO DE UN PANEL 
+            //BRIAN SANTIZO 
+
             Form formulario;
             formulario = P_CONTENEDOR.Controls.OfType<Abrir>().FirstOrDefault();
-             //si el formulario no existe
              if(formulario == null)
             {
                 formulario = new Abrir();
@@ -49,12 +53,7 @@ namespace Clinica
             else
             {
                 formulario.BringToFront();
-
-
             }
-        
-        
-        
         
         }
 
@@ -65,6 +64,7 @@ namespace Clinica
 
         private void button5_Click(object sender, EventArgs e)
         {
+           
             System.Windows.Forms.Application.Exit();
         }
 
@@ -80,6 +80,8 @@ namespace Clinica
 
         private void button4_Click(object sender, EventArgs e)
         {
+            
+
             AbrirFormulario<FR_FACTURACION>();
         }
 
