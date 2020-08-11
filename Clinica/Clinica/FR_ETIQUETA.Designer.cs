@@ -64,7 +64,7 @@
             // 
             // pnl_codigobarras
             // 
-            this.pnl_codigobarras.BackColor = System.Drawing.Color.White;
+            this.pnl_codigobarras.BackColor = System.Drawing.Color.Gray;
             this.pnl_codigobarras.Location = new System.Drawing.Point(182, 323);
             this.pnl_codigobarras.Name = "pnl_codigobarras";
             this.pnl_codigobarras.Size = new System.Drawing.Size(532, 172);

@@ -78,6 +78,8 @@ namespace Clinica
 
         private void button3_Click(object sender, EventArgs e)
         {
+            FR_TOTAL usu = new FR_TOTAL();
+            usu.Show();
             this.Hide();
         }
     }

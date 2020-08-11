@@ -19,6 +19,9 @@ namespace Clinica
         public FR_TOTAL()
         {
             InitializeComponent();
+          
+           
+           
         }
 
         private void P_CONTENEDOR_Paint(object sender, PaintEventArgs e)
@@ -87,11 +90,27 @@ namespace Clinica
 
         private void CK_PICTURE(object sender, EventArgs e)
         {
+         
+
+
+        }
+
+        private void lbl_hora_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbl_hora.Text = DateTime.Now.ToString("HH:mm:ss");
+            lbl_fecha.Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
             FR_ETIQUETA usu = new FR_ETIQUETA();
             usu.Show();
             this.Hide();
-
-
         }
     }
 

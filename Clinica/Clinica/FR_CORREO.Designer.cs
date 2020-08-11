@@ -46,7 +46,7 @@
             // 
             this.txt_para.Location = new System.Drawing.Point(180, 135);
             this.txt_para.Name = "txt_para";
-            this.txt_para.Size = new System.Drawing.Size(328, 22);
+            this.txt_para.Size = new System.Drawing.Size(355, 22);
             this.txt_para.TabIndex = 2;
             this.txt_para.TextChanged += new System.EventHandler(this.TX_PARA_TextChanged);
             // 
@@ -54,16 +54,16 @@
             // 
             this.txt_asunto.Location = new System.Drawing.Point(180, 274);
             this.txt_asunto.Name = "txt_asunto";
-            this.txt_asunto.Size = new System.Drawing.Size(328, 22);
+            this.txt_asunto.Size = new System.Drawing.Size(355, 22);
             this.txt_asunto.TabIndex = 3;
             // 
             // btn_enviar
             // 
             this.btn_enviar.BackColor = System.Drawing.Color.White;
             this.btn_enviar.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_enviar.Location = new System.Drawing.Point(128, 427);
+            this.btn_enviar.Location = new System.Drawing.Point(630, 154);
             this.btn_enviar.Name = "btn_enviar";
-            this.btn_enviar.Size = new System.Drawing.Size(125, 48);
+            this.btn_enviar.Size = new System.Drawing.Size(163, 48);
             this.btn_enviar.TabIndex = 5;
             this.btn_enviar.Text = "Enviar";
             this.btn_enviar.UseVisualStyleBackColor = false;
@@ -95,7 +95,7 @@
             // 
             this.txt_cc.Location = new System.Drawing.Point(180, 203);
             this.txt_cc.Name = "txt_cc";
-            this.txt_cc.Size = new System.Drawing.Size(328, 22);
+            this.txt_cc.Size = new System.Drawing.Size(355, 22);
             this.txt_cc.TabIndex = 8;
             // 
             // lbl_cc
@@ -114,16 +114,16 @@
             // 
             this.txt_mensaje.Location = new System.Drawing.Point(180, 354);
             this.txt_mensaje.Name = "txt_mensaje";
-            this.txt_mensaje.Size = new System.Drawing.Size(328, 22);
+            this.txt_mensaje.Size = new System.Drawing.Size(355, 22);
             this.txt_mensaje.TabIndex = 10;
             // 
             // btn_regresar
             // 
             this.btn_regresar.BackColor = System.Drawing.Color.White;
             this.btn_regresar.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_regresar.Location = new System.Drawing.Point(356, 427);
+            this.btn_regresar.Location = new System.Drawing.Point(630, 261);
             this.btn_regresar.Name = "btn_regresar";
-            this.btn_regresar.Size = new System.Drawing.Size(125, 48);
+            this.btn_regresar.Size = new System.Drawing.Size(163, 48);
             this.btn_regresar.TabIndex = 11;
             this.btn_regresar.Text = "Regresar";
             this.btn_regresar.UseVisualStyleBackColor = false;
@@ -156,7 +156,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(600, 500);
+            this.ClientSize = new System.Drawing.Size(900, 500);
             this.Controls.Add(this.lbl_mensaje);
             this.Controls.Add(this.lbl_titulo);
             this.Controls.Add(this.btn_regresar);

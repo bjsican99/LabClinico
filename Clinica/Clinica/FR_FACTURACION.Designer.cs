@@ -114,7 +114,7 @@
             // 
             this.txt_factura.Location = new System.Drawing.Point(261, 149);
             this.txt_factura.Name = "txt_factura";
-            this.txt_factura.Size = new System.Drawing.Size(217, 22);
+            this.txt_factura.Size = new System.Drawing.Size(318, 22);
             this.txt_factura.TabIndex = 6;
             this.txt_factura.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -122,28 +122,28 @@
             // 
             this.txt_fecha.Location = new System.Drawing.Point(261, 202);
             this.txt_fecha.Name = "txt_fecha";
-            this.txt_fecha.Size = new System.Drawing.Size(217, 22);
+            this.txt_fecha.Size = new System.Drawing.Size(318, 22);
             this.txt_fecha.TabIndex = 7;
             // 
             // txt_nombre
             // 
             this.txt_nombre.Location = new System.Drawing.Point(261, 252);
             this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(217, 22);
+            this.txt_nombre.Size = new System.Drawing.Size(318, 22);
             this.txt_nombre.TabIndex = 8;
             // 
             // txt_examen
             // 
             this.txt_examen.Location = new System.Drawing.Point(261, 311);
             this.txt_examen.Name = "txt_examen";
-            this.txt_examen.Size = new System.Drawing.Size(217, 22);
+            this.txt_examen.Size = new System.Drawing.Size(318, 22);
             this.txt_examen.TabIndex = 9;
             // 
             // txt_total
             // 
             this.txt_total.Location = new System.Drawing.Point(261, 368);
             this.txt_total.Name = "txt_total";
-            this.txt_total.Size = new System.Drawing.Size(217, 22);
+            this.txt_total.Size = new System.Drawing.Size(318, 22);
             this.txt_total.TabIndex = 10;
             // 
             // printDocument1
@@ -152,13 +152,14 @@
             // 
             // btn_imprimir
             // 
+            this.btn_imprimir.BackColor = System.Drawing.Color.White;
             this.btn_imprimir.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_imprimir.Location = new System.Drawing.Point(179, 432);
+            this.btn_imprimir.Location = new System.Drawing.Point(628, 231);
             this.btn_imprimir.Name = "btn_imprimir";
             this.btn_imprimir.Size = new System.Drawing.Size(225, 55);
             this.btn_imprimir.TabIndex = 11;
             this.btn_imprimir.Text = "Imprimir";
-            this.btn_imprimir.UseVisualStyleBackColor = true;
+            this.btn_imprimir.UseVisualStyleBackColor = false;
             this.btn_imprimir.Click += new System.EventHandler(this.button1_Click);
             // 
             // FR_FACTURACION
@@ -166,7 +167,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(600, 550);
+            this.ClientSize = new System.Drawing.Size(900, 500);
             this.Controls.Add(this.btn_imprimir);
             this.Controls.Add(this.txt_total);
             this.Controls.Add(this.txt_examen);
