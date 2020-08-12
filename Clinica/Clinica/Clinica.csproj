@@ -48,8 +48,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BarcodeStandard, Version=2.2.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BarcodeLib.2.2.5\lib\netstandard2.0\BarcodeStandard.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.5.1\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,55 +70,92 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Consultas.cs">
+    <Compile Include="Conexion.cs" />
+    <Compile Include="FR_CORREO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Consultas.Designer.cs">
-      <DependentUpon>Consultas.cs</DependentUpon>
+    <Compile Include="FR_CORREO.Designer.cs">
+      <DependentUpon>FR_CORREO.cs</DependentUpon>
     </Compile>
-    <Compile Include="DatosUsuarioClini.cs">
+    <Compile Include="FR_ETIQUETA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DatosUsuarioClini.Designer.cs">
-      <DependentUpon>DatosUsuarioClini.cs</DependentUpon>
+    <Compile Include="FR_ETIQUETA.Designer.cs">
+      <DependentUpon>FR_ETIQUETA.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FR_EXAMEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_EXAMEN.Designer.cs">
+      <DependentUpon>FR_EXAMEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_FACTURACION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_FACTURACION.Designer.cs">
+      <DependentUpon>FR_FACTURACION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_INGRESOUSU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_INGRESOUSU.Designer.cs">
+      <DependentUpon>FR_INGRESOUSU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_LOGIN.cs">
       <SubType>Form</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FR_LOGIN.Designer.cs">
+      <DependentUpon>FR_LOGIN.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Reportes.cs">
+    <Compile Include="FR_NUEVOUSU.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reportes.Designer.cs">
-      <DependentUpon>Reportes.cs</DependentUpon>
+    <Compile Include="FR_NUEVOUSU.Designer.cs">
+      <DependentUpon>FR_NUEVOUSU.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuClinica.cs">
+    <Compile Include="FR_REPORTES.cs">
       <SubType>Form</SubType>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="MenuClinica.Designer.cs">
-      <DependentUpon>MenuClinica.cs</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Compile Include="FR_REPORTES.Designer.cs">
+      <DependentUpon>FR_REPORTES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_TOTAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_TOTAL.Designer.cs">
+      <DependentUpon>FR_TOTAL.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Consultas.resx">
-      <DependentUpon>Consultas.cs</DependentUpon>
+    <EmbeddedResource Include="FR_CORREO.resx">
+      <DependentUpon>FR_CORREO.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DatosUsuarioClini.resx">
-      <DependentUpon>DatosUsuarioClini.cs</DependentUpon>
+    <EmbeddedResource Include="FR_ETIQUETA.resx">
+      <DependentUpon>FR_ETIQUETA.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FR_EXAMEN.resx">
+      <DependentUpon>FR_EXAMEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_FACTURACION.resx">
+      <DependentUpon>FR_FACTURACION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_INGRESOUSU.resx">
+      <DependentUpon>FR_INGRESOUSU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_LOGIN.resx">
+      <DependentUpon>FR_LOGIN.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuClinica.resx">
-      <DependentUpon>MenuClinica.cs</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <EmbeddedResource Include="FR_NUEVOUSU.resx">
+      <DependentUpon>FR_NUEVOUSU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_REPORTES.resx">
+      <DependentUpon>FR_REPORTES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_TOTAL.resx">
+      <DependentUpon>FR_TOTAL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -120,9 +166,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Reportes.resx">
-      <DependentUpon>Reportes.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -147,6 +191,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
