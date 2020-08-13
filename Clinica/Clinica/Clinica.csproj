@@ -71,6 +71,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="FR_BELIMINARDOCTOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_BELIMINARDOCTOR.Designer.cs">
+      <DependentUpon>FR_BELIMINARDOCTOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_BELIMINARPACIENTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_BELIMINARPACIENTE.Designer.cs">
+      <DependentUpon>FR_BELIMINARPACIENTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_BELIMINARPERSONAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_BELIMINARPERSONAL.Designer.cs">
+      <DependentUpon>FR_BELIMINARPERSONAL.cs</DependentUpon>
+    </Compile>
     <Compile Include="FR_CELMAIL.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +106,18 @@
     </Compile>
     <Compile Include="FR_DOCTOR.Designer.cs">
       <DependentUpon>FR_DOCTOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_DOCTOR2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_DOCTOR2.Designer.cs">
+      <DependentUpon>FR_DOCTOR2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_DOCTOR3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_DOCTOR3.Designer.cs">
+      <DependentUpon>FR_DOCTOR3.cs</DependentUpon>
     </Compile>
     <Compile Include="FR_ETIQUETA.cs">
       <SubType>Form</SubType>
@@ -107,17 +137,35 @@
     <Compile Include="FR_FACTURACION.Designer.cs">
       <DependentUpon>FR_FACTURACION.cs</DependentUpon>
     </Compile>
+    <Compile Include="FR_MENU1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_MENU1.Designer.cs">
+      <DependentUpon>FR_MENU1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_MENU2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_MENU2.Designer.cs">
+      <DependentUpon>FR_MENU2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_MENU3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_MENU3.Designer.cs">
+      <DependentUpon>FR_MENU3.cs</DependentUpon>
+    </Compile>
     <Compile Include="FR_MUESTRA.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FR_MUESTRA.Designer.cs">
       <DependentUpon>FR_MUESTRA.cs</DependentUpon>
     </Compile>
-    <Compile Include="FR_PACIENTE.cs">
+    <Compile Include="FR_PACIENTE1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FR_PACIENTE.Designer.cs">
-      <DependentUpon>FR_PACIENTE.cs</DependentUpon>
+    <Compile Include="FR_PACIENTE1.Designer.cs">
+      <DependentUpon>FR_PACIENTE1.cs</DependentUpon>
     </Compile>
     <Compile Include="FR_LOGIN.cs">
       <SubType>Form</SubType>
@@ -133,11 +181,35 @@
     <Compile Include="FR_NUEVOUSU.Designer.cs">
       <DependentUpon>FR_NUEVOUSU.cs</DependentUpon>
     </Compile>
+    <Compile Include="FR_PACIENTE2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_PACIENTE2.Designer.cs">
+      <DependentUpon>FR_PACIENTE2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_PACIENTE3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_PACIENTE3.Designer.cs">
+      <DependentUpon>FR_PACIENTE3.cs</DependentUpon>
+    </Compile>
     <Compile Include="FR_PERSONAL.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FR_PERSONAL.Designer.cs">
       <DependentUpon>FR_PERSONAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_PERSONAL2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_PERSONAL2.Designer.cs">
+      <DependentUpon>FR_PERSONAL2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_PERSONAL3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_PERSONAL3.Designer.cs">
+      <DependentUpon>FR_PERSONAL3.cs</DependentUpon>
     </Compile>
     <Compile Include="FR_REPORTES.cs">
       <SubType>Form</SubType>
@@ -165,6 +237,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FR_BELIMINARDOCTOR.resx">
+      <DependentUpon>FR_BELIMINARDOCTOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_BELIMINARPACIENTE.resx">
+      <DependentUpon>FR_BELIMINARPACIENTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_BELIMINARPERSONAL.resx">
+      <DependentUpon>FR_BELIMINARPERSONAL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FR_CELMAIL.resx">
       <DependentUpon>FR_CELMAIL.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +254,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FR_DOCTOR.resx">
       <DependentUpon>FR_DOCTOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_DOCTOR2.resx">
+      <DependentUpon>FR_DOCTOR2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_DOCTOR3.resx">
+      <DependentUpon>FR_DOCTOR3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FR_ETIQUETA.resx">
       <DependentUpon>FR_ETIQUETA.cs</DependentUpon>
@@ -183,11 +270,20 @@
     <EmbeddedResource Include="FR_FACTURACION.resx">
       <DependentUpon>FR_FACTURACION.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FR_MENU1.resx">
+      <DependentUpon>FR_MENU1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_MENU2.resx">
+      <DependentUpon>FR_MENU2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_MENU3.resx">
+      <DependentUpon>FR_MENU3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FR_MUESTRA.resx">
       <DependentUpon>FR_MUESTRA.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FR_PACIENTE.resx">
-      <DependentUpon>FR_PACIENTE.cs</DependentUpon>
+    <EmbeddedResource Include="FR_PACIENTE1.resx">
+      <DependentUpon>FR_PACIENTE1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FR_LOGIN.resx">
       <DependentUpon>FR_LOGIN.cs</DependentUpon>
@@ -196,8 +292,20 @@
     <EmbeddedResource Include="FR_NUEVOUSU.resx">
       <DependentUpon>FR_NUEVOUSU.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FR_PACIENTE2.resx">
+      <DependentUpon>FR_PACIENTE2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_PACIENTE3.resx">
+      <DependentUpon>FR_PACIENTE3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FR_PERSONAL.resx">
       <DependentUpon>FR_PERSONAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_PERSONAL2.resx">
+      <DependentUpon>FR_PERSONAL2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_PERSONAL3.resx">
+      <DependentUpon>FR_PERSONAL3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FR_REPORTES.resx">
       <DependentUpon>FR_REPORTES.cs</DependentUpon>

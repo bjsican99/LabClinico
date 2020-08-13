@@ -29,5 +29,12 @@ namespace Clinica
             FR_TELCORREO usu = new FR_TELCORREO();
             usu.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FR_TOTAL usu = new FR_TOTAL();
+            usu.Show();
+            this.Hide();
+        }
     }
 }

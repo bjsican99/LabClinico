@@ -179,8 +179,21 @@ C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\BarcodeStandard.dll
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\System.Drawing.Common.dll
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_ETIQUETA.resources
 C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CELMAIL.resources
-C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PACIENTE.resources
 C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PERSONAL.resources
 C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_TELCORREO.resources
 C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_DOCTOR.resources
 C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_TELMAIL.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_MUESTRA.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_BELIMINARPACIENTE.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PACIENTE1.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PACIENTE2.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_MENU1.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PACIENTE3.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_DOCTOR2.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_DOCTOR3.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_MENU2.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_MENU3.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_BELIMINARDOCTOR.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_BELIMINARPERSONAL.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PERSONAL2.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PERSONAL3.resources

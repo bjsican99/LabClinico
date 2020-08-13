@@ -1,6 +1,6 @@
 ﻿namespace Clinica
 {
-    partial class FR_PACIENTE
+    partial class FR_PACIENTE1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_PACIENTE));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_PACIENTE1));
             this.lbl_nombre = new System.Windows.Forms.Label();
             this.lbl_apellido = new System.Windows.Forms.Label();
             this.txt_genero = new System.Windows.Forms.TextBox();
@@ -52,6 +52,7 @@
             this.txt_direccion = new System.Windows.Forms.TextBox();
             this.lbl_dpi = new System.Windows.Forms.Label();
             this.txt_dpi = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -157,6 +158,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btn_celmail);
             this.panel1.Controls.Add(this.txt_ingreso);
             this.panel1.Controls.Add(this.lbl_ingreso);
@@ -309,7 +311,21 @@
             this.txt_dpi.Size = new System.Drawing.Size(167, 22);
             this.txt_dpi.TabIndex = 37;
             // 
-            // FR_PACIENTE
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(559, 259);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(161, 42);
+            this.button1.TabIndex = 77;
+            this.button1.Text = "Regresar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // FR_PACIENTE1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -319,7 +335,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "FR_PACIENTE";
+            this.Name = "FR_PACIENTE1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "INGRESO USUARIO";
             this.Load += new System.EventHandler(this.DatosUsuarioClini_Load);
@@ -354,5 +370,6 @@
         private System.Windows.Forms.Label lbl_nacimiento;
         private System.Windows.Forms.TextBox txt_nit;
         private System.Windows.Forms.Button btn_celmail;
+        private System.Windows.Forms.Button button1;
     }
 }

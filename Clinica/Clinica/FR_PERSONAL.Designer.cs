@@ -51,6 +51,7 @@
             this.cbo_estado = new System.Windows.Forms.ComboBox();
             this.lbl_telefono = new System.Windows.Forms.Label();
             this.lbl_correo = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_celmail
@@ -274,12 +275,27 @@
             this.lbl_correo.TabIndex = 61;
             this.lbl_correo.Text = "Genero";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(602, 268);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(161, 42);
+            this.button1.TabIndex = 99;
+            this.button1.Text = "Regresar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FR_PERSONAL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(900, 500);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_celmail);
             this.Controls.Add(this.txt_ingreso);
             this.Controls.Add(this.lbl_ingreso);
@@ -335,5 +351,6 @@
         private System.Windows.Forms.ComboBox cbo_estado;
         private System.Windows.Forms.Label lbl_telefono;
         private System.Windows.Forms.Label lbl_correo;
+        private System.Windows.Forms.Button button1;
     }
 }

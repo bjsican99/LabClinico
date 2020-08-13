@@ -13,9 +13,9 @@ using System.Data.Odbc;
 
 namespace Clinica
 {
-    public partial class FR_PACIENTE : Form
+    public partial class FR_PACIENTE1 : Form
     {
-        public FR_PACIENTE()
+        public FR_PACIENTE1()
         {
             InitializeComponent();
         }
@@ -98,6 +98,13 @@ namespace Clinica
             FR_CELMAIL usu = new FR_CELMAIL();
             usu.Show();
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FR_TOTAL usu = new FR_TOTAL();
+            usu.Show();
+            this.Hide();
         }
     }
 }

@@ -16,5 +16,17 @@ namespace Clinica
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FR_TOTAL usu = new FR_TOTAL();
+            usu.Show();
+            this.Hide();
+        }
+
+        private void FR_DOCTOR_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
