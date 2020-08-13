@@ -13,9 +13,9 @@ using System.Data.Odbc;
 
 namespace Clinica
 {
-    public partial class FR_INGRESOUSU : Form
+    public partial class FR_PACIENTE : Form
     {
-        public FR_INGRESOUSU()
+        public FR_PACIENTE()
         {
             InitializeComponent();
         }
@@ -43,8 +43,11 @@ namespace Clinica
 
         private void B_VALIDARUSUARIO_Click(object sender, EventArgs e)
         {
-            INSERTARUSUARIO();
-            LUSUARIO();
+            //INSERTARUSUARIO();
+            //LUSUARIO();
+            FR_CELMAIL usu = new FR_CELMAIL();
+            usu.Show();
+            this.Hide();
 
         }
 
@@ -57,9 +60,9 @@ namespace Clinica
 
             //CODIGO PARA PODER INSERTAR EN LA BASE DE DATOS
 
-            string cadena = "INSERT INTO usuario (pk_id_persona, nombre_persona, apellido_persona, telefono_persona, dpi_persona,direccion_persona, fecha_nacimiento_persona, genero_persona, estado_persona, tipo_persona ) VALUES ('"+"' , '" + txt_nombre.Text + "', '" + txt_apellido.Text + "', '" + txt_telefono.Text + "' ,'" + txt_correo.Text + "','" + cbo_estado.Text + "','" + txt_alergias.Text + "' );";
-            OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
-            consulta.ExecuteNonQuery();
+            //string cadena = "INSERT INTO usuario (pk_id_persona, nombre_persona, apellido_persona, telefono_persona, dpi_persona,direccion_persona, fecha_nacimiento_persona, genero_persona, estado_persona, tipo_persona ) VALUES ('"+"' , '" + txt_nombre.Text + "', '" + txt_apellido.Text + "', '" + txt_estado.Text + "' ,'" + txt_genero.Text + "','" + cbo_estado.Text + "','" + txt_alergias.Text + "' );";
+            //OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
+            //consulta.ExecuteNonQuery();
           
 
 
@@ -70,15 +73,31 @@ namespace Clinica
             //LIMPIAR
             txt_nombre.Text = "";
             txt_apellido.Text = "";
-            txt_telefono.Text = "";
-            txt_correo.Text = "";
+            txt_estado.Text = "";
+            txt_genero.Text = "";
             cbo_estado.Text = ("");
-            txt_alergias.Text = "";
+            
            
 
 
 
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_codigo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_celmail_Click(object sender, EventArgs e)
+        {
+            FR_CELMAIL usu = new FR_CELMAIL();
+            usu.Show();
+            
+        }
     }
 }

@@ -37,6 +37,7 @@
             this.pnl_blanco = new System.Windows.Forms.Panel();
             this.btn_agregarusu = new System.Windows.Forms.Button();
             this.btn_aceptar = new System.Windows.Forms.Button();
+            this.btn_salir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_imagen)).BeginInit();
             this.pnl_blanco.SuspendLayout();
             this.SuspendLayout();
@@ -101,6 +102,7 @@
             // pnl_blanco
             // 
             this.pnl_blanco.BackColor = System.Drawing.Color.White;
+            this.pnl_blanco.Controls.Add(this.btn_salir);
             this.pnl_blanco.Controls.Add(this.btn_agregarusu);
             this.pnl_blanco.Controls.Add(this.btn_aceptar);
             this.pnl_blanco.Controls.Add(this.ptb_imagen);
@@ -120,9 +122,9 @@
             // 
             this.btn_agregarusu.BackColor = System.Drawing.Color.White;
             this.btn_agregarusu.Image = ((System.Drawing.Image)(resources.GetObject("btn_agregarusu.Image")));
-            this.btn_agregarusu.Location = new System.Drawing.Point(29, 375);
+            this.btn_agregarusu.Location = new System.Drawing.Point(29, 359);
             this.btn_agregarusu.Name = "btn_agregarusu";
-            this.btn_agregarusu.Size = new System.Drawing.Size(89, 76);
+            this.btn_agregarusu.Size = new System.Drawing.Size(95, 92);
             this.btn_agregarusu.TabIndex = 6;
             this.btn_agregarusu.UseVisualStyleBackColor = false;
             this.btn_agregarusu.Click += new System.EventHandler(this.B_AGREGARUSU_Click);
@@ -137,6 +139,17 @@
             this.btn_aceptar.TabIndex = 5;
             this.btn_aceptar.UseVisualStyleBackColor = false;
             this.btn_aceptar.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // btn_salir
+            // 
+            this.btn_salir.BackColor = System.Drawing.Color.White;
+            this.btn_salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_salir.Image")));
+            this.btn_salir.Location = new System.Drawing.Point(211, 359);
+            this.btn_salir.Name = "btn_salir";
+            this.btn_salir.Size = new System.Drawing.Size(95, 92);
+            this.btn_salir.TabIndex = 7;
+            this.btn_salir.UseVisualStyleBackColor = false;
+            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
             // 
             // FR_LOGIN
             // 
@@ -169,6 +182,7 @@
         private System.Windows.Forms.Panel pnl_blanco;
         private System.Windows.Forms.Button btn_aceptar;
         private System.Windows.Forms.Button btn_agregarusu;
+        private System.Windows.Forms.Button btn_salir;
     }
 }
 

@@ -37,5 +37,13 @@ namespace Clinica
         {
 
         }
+
+        private void btn_muestra_Click(object sender, EventArgs e)
+        {
+            FR_MUESTRA usu = new FR_MUESTRA();
+            usu.Show();
+            
+
+        }
     }
 }

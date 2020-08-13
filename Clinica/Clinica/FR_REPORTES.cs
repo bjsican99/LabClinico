@@ -22,7 +22,7 @@ namespace Clinica
         {
             InitializeComponent();
             txt_codigopaciente.Text = "";
-            //cargar();
+            
 
 
         }
@@ -34,24 +34,7 @@ namespace Clinica
 
         }
 
-        void cargar()
-        {
-            //CODIGO PARA EXTRAER DE LA BASE DE DATOS LA TABLA PARA MOSTRAR EN EL DATAGRID
-            //BRIAN SANTIZO
-            try
-            {
-                string strCadena = "SELECT * FROM empleados";
-
-                OdbcDataAdapter datos = new OdbcDataAdapter(strCadena, cn.conexion());
-                DataTable dt = new DataTable();
-                datos.Fill(dt);
-                dgv_vista.DataSource = dt;
-            }
-            catch (Exception exError)
-            {
-                Console.WriteLine("Error en cargar", exError);
-            }
-        }
+        
         //FUNCION PARA BUSCAR SIRVE PARA BUSCAR A LA PERSONA A MODIFICAR Y A ELIMINAR
         //Bryan Mazariegos
         void buscar()
@@ -206,6 +189,11 @@ namespace Clinica
         }
 
         private void FR_REPORTES_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbo_final_ValueChanged(object sender, EventArgs e)
         {
 
         }

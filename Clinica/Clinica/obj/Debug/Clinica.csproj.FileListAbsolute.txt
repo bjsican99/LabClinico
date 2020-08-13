@@ -162,7 +162,6 @@ C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csprojAssemblyReference.cache
 C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CORREO.resources
 C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_EXAMEN.resources
 C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_FACTURACION.resources
-C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_INGRESOUSU.resources
 C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_LOGIN.resources
 C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_NUEVOUSU.resources
 C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_REPORTES.resources
@@ -179,3 +178,9 @@ C:\LabClinico\Clinica\Clinica\bin\Debug\System.Drawing.Common.dll
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\BarcodeStandard.dll
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\System.Drawing.Common.dll
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_ETIQUETA.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CELMAIL.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PACIENTE.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PERSONAL.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_TELCORREO.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_DOCTOR.resources
+C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_TELMAIL.resources

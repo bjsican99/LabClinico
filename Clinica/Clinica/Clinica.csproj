@@ -71,11 +71,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="FR_CELMAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_CELMAIL.Designer.cs">
+      <DependentUpon>FR_CELMAIL.cs</DependentUpon>
+    </Compile>
     <Compile Include="FR_CORREO.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FR_CORREO.Designer.cs">
       <DependentUpon>FR_CORREO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_DOCTOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_DOCTOR.Designer.cs">
+      <DependentUpon>FR_DOCTOR.cs</DependentUpon>
     </Compile>
     <Compile Include="FR_ETIQUETA.cs">
       <SubType>Form</SubType>
@@ -95,11 +107,17 @@
     <Compile Include="FR_FACTURACION.Designer.cs">
       <DependentUpon>FR_FACTURACION.cs</DependentUpon>
     </Compile>
-    <Compile Include="FR_INGRESOUSU.cs">
+    <Compile Include="FR_MUESTRA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FR_INGRESOUSU.Designer.cs">
-      <DependentUpon>FR_INGRESOUSU.cs</DependentUpon>
+    <Compile Include="FR_MUESTRA.Designer.cs">
+      <DependentUpon>FR_MUESTRA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_PACIENTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_PACIENTE.Designer.cs">
+      <DependentUpon>FR_PACIENTE.cs</DependentUpon>
     </Compile>
     <Compile Include="FR_LOGIN.cs">
       <SubType>Form</SubType>
@@ -115,11 +133,29 @@
     <Compile Include="FR_NUEVOUSU.Designer.cs">
       <DependentUpon>FR_NUEVOUSU.cs</DependentUpon>
     </Compile>
+    <Compile Include="FR_PERSONAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_PERSONAL.Designer.cs">
+      <DependentUpon>FR_PERSONAL.cs</DependentUpon>
+    </Compile>
     <Compile Include="FR_REPORTES.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FR_REPORTES.Designer.cs">
       <DependentUpon>FR_REPORTES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_TELCORREO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_TELCORREO.Designer.cs">
+      <DependentUpon>FR_TELCORREO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_TELMAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_TELMAIL.Designer.cs">
+      <DependentUpon>FR_TELMAIL.cs</DependentUpon>
     </Compile>
     <Compile Include="FR_TOTAL.cs">
       <SubType>Form</SubType>
@@ -129,8 +165,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FR_CELMAIL.resx">
+      <DependentUpon>FR_CELMAIL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FR_CORREO.resx">
       <DependentUpon>FR_CORREO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_DOCTOR.resx">
+      <DependentUpon>FR_DOCTOR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FR_ETIQUETA.resx">
       <DependentUpon>FR_ETIQUETA.cs</DependentUpon>
@@ -141,8 +183,11 @@
     <EmbeddedResource Include="FR_FACTURACION.resx">
       <DependentUpon>FR_FACTURACION.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FR_INGRESOUSU.resx">
-      <DependentUpon>FR_INGRESOUSU.cs</DependentUpon>
+    <EmbeddedResource Include="FR_MUESTRA.resx">
+      <DependentUpon>FR_MUESTRA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_PACIENTE.resx">
+      <DependentUpon>FR_PACIENTE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FR_LOGIN.resx">
       <DependentUpon>FR_LOGIN.cs</DependentUpon>
@@ -151,8 +196,17 @@
     <EmbeddedResource Include="FR_NUEVOUSU.resx">
       <DependentUpon>FR_NUEVOUSU.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FR_PERSONAL.resx">
+      <DependentUpon>FR_PERSONAL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FR_REPORTES.resx">
       <DependentUpon>FR_REPORTES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_TELCORREO.resx">
+      <DependentUpon>FR_TELCORREO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_TELMAIL.resx">
+      <DependentUpon>FR_TELMAIL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FR_TOTAL.resx">
       <DependentUpon>FR_TOTAL.cs</DependentUpon>

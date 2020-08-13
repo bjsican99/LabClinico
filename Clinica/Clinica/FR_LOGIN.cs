@@ -108,6 +108,11 @@ namespace Clinica
 
         }
 
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+             System.Windows.Forms.Application.Exit();
+        }
+
         private void B_AGREGARUSU_Click(object sender, EventArgs e)
         {
             FR_NUEVOUSU usu = new FR_NUEVOUSU();

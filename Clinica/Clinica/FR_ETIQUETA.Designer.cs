@@ -119,6 +119,7 @@
             this.Controls.Add(this.btn_generar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FR_ETIQUETA";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FR_ETIQUETA";
             this.Load += new System.EventHandler(this.FR_ETIQUETA_Load);
             this.ResumeLayout(false);

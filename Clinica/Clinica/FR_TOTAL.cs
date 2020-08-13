@@ -31,7 +31,7 @@ namespace Clinica
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<FR_INGRESOUSU>();
+            AbrirFormulario<FR_PACIENTE>();
         }
 
         
@@ -111,6 +111,33 @@ namespace Clinica
             FR_ETIQUETA usu = new FR_ETIQUETA();
             usu.Show();
             this.Hide();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormulario<FR_EXAMEN>();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            FR_ETIQUETA usu = new FR_ETIQUETA();
+            usu.Show();
+            this.Hide();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_personal_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FR_PERSONAL>();
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            AbrirFormulario <FR_DOCTOR>();
         }
     }
 
