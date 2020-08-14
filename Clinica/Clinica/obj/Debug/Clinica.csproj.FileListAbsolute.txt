@@ -201,3 +201,5 @@ C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CONSULTA.
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PACIENTE.resources
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_DOCTOR.resources
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_EMPLEADO.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CONSULTADOCTOR.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CONSULTAPACIENTE.resources

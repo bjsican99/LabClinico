@@ -12,22 +12,22 @@ using System.Windows.Forms;
 
 namespace Clinica
 {
-    public partial class FR_CONSULTA : Form
+    public partial class FR_CONSULTAPACIENTE : Form
     {
         CLS_METODOS metodos = new CLS_METODOS();
-
-        public FR_CONSULTA()
+        public FR_CONSULTAPACIENTE()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void FR_CONSULTAPACIENTE_Load(object sender, EventArgs e)
         {
-            this.Dispose();
+            dgv_consulta.Rows.Clear();
+            mostrar_consulta();
         }
         public void mostrar_consulta()
         {
-            OdbcDataReader mostrar = metodos.consulta_empleado();
+            OdbcDataReader mostrar = metodos.consulta_paciente();
             try
             {
                 while (mostrar.Read())
@@ -41,13 +41,7 @@ namespace Clinica
             }
         }
 
-        private void FR_CONSULTA_Load(object sender, EventArgs e)
-        {
-            dgv_consulta.Rows.Clear();
-            mostrar_consulta();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_actualizar_Click(object sender, EventArgs e)
         {
             dgv_consulta.Rows.Clear();
             mostrar_consulta();
@@ -64,6 +58,11 @@ namespace Clinica
                 DialogResult = DialogResult.OK;
                 Close();
             }
+        }
+
+        private void btn_cerrar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

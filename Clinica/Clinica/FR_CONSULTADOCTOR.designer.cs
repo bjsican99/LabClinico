@@ -1,6 +1,6 @@
 ﻿namespace Clinica
 {
-    partial class FR_CONSULTA
+    partial class FR_CONSULTADOCTOR
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_CONSULTA));
+            this.btn_seleccionar = new System.Windows.Forms.Button();
             this.btn_cerrar = new System.Windows.Forms.Button();
             this.btn_actualizar = new System.Windows.Forms.Button();
             this.dgv_consulta = new System.Windows.Forms.DataGridView();
@@ -45,35 +45,47 @@
             this.genero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadicivil = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_seleccionar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_consulta)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btn_seleccionar
+            // 
+            this.btn_seleccionar.BackColor = System.Drawing.Color.White;
+            this.btn_seleccionar.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_seleccionar.ForeColor = System.Drawing.Color.Black;
+            this.btn_seleccionar.Location = new System.Drawing.Point(258, 299);
+            this.btn_seleccionar.Name = "btn_seleccionar";
+            this.btn_seleccionar.Size = new System.Drawing.Size(121, 34);
+            this.btn_seleccionar.TabIndex = 97;
+            this.btn_seleccionar.Text = "Seleccionar";
+            this.btn_seleccionar.UseVisualStyleBackColor = false;
+            this.btn_seleccionar.Click += new System.EventHandler(this.btn_seleccionar_Click);
             // 
             // btn_cerrar
             // 
             this.btn_cerrar.BackColor = System.Drawing.Color.White;
             this.btn_cerrar.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cerrar.ForeColor = System.Drawing.Color.Black;
-            this.btn_cerrar.Location = new System.Drawing.Point(628, 303);
+            this.btn_cerrar.Location = new System.Drawing.Point(407, 299);
             this.btn_cerrar.Name = "btn_cerrar";
             this.btn_cerrar.Size = new System.Drawing.Size(121, 34);
-            this.btn_cerrar.TabIndex = 88;
+            this.btn_cerrar.TabIndex = 96;
             this.btn_cerrar.Text = "Cerrar";
             this.btn_cerrar.UseVisualStyleBackColor = false;
-            this.btn_cerrar.Click += new System.EventHandler(this.button2_Click);
+            this.btn_cerrar.Click += new System.EventHandler(this.btn_cerrar_Click);
             // 
             // btn_actualizar
             // 
             this.btn_actualizar.BackColor = System.Drawing.Color.White;
             this.btn_actualizar.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_actualizar.ForeColor = System.Drawing.Color.Black;
-            this.btn_actualizar.Location = new System.Drawing.Point(328, 303);
+            this.btn_actualizar.Location = new System.Drawing.Point(107, 299);
             this.btn_actualizar.Name = "btn_actualizar";
             this.btn_actualizar.Size = new System.Drawing.Size(121, 34);
-            this.btn_actualizar.TabIndex = 87;
+            this.btn_actualizar.TabIndex = 95;
             this.btn_actualizar.Text = "Actualizar";
             this.btn_actualizar.UseVisualStyleBackColor = false;
-            this.btn_actualizar.Click += new System.EventHandler(this.button1_Click);
+            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
             // 
             // dgv_consulta
             // 
@@ -97,7 +109,7 @@
             this.estadicivil,
             this.Estado});
             this.dgv_consulta.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dgv_consulta.Location = new System.Drawing.Point(21, 66);
+            this.dgv_consulta.Location = new System.Drawing.Point(23, 71);
             this.dgv_consulta.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_consulta.Name = "dgv_consulta";
             this.dgv_consulta.RowHeadersVisible = false;
@@ -105,7 +117,7 @@
             this.dgv_consulta.RowTemplate.Height = 24;
             this.dgv_consulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_consulta.Size = new System.Drawing.Size(855, 189);
-            this.dgv_consulta.TabIndex = 84;
+            this.dgv_consulta.TabIndex = 94;
             // 
             // codigo
             // 
@@ -172,35 +184,20 @@
             this.Estado.HeaderText = "Estado";
             this.Estado.Name = "Estado";
             // 
-            // btn_seleccionar
-            // 
-            this.btn_seleccionar.BackColor = System.Drawing.Color.White;
-            this.btn_seleccionar.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_seleccionar.ForeColor = System.Drawing.Color.Black;
-            this.btn_seleccionar.Location = new System.Drawing.Point(479, 303);
-            this.btn_seleccionar.Name = "btn_seleccionar";
-            this.btn_seleccionar.Size = new System.Drawing.Size(121, 34);
-            this.btn_seleccionar.TabIndex = 89;
-            this.btn_seleccionar.Text = "Seleccionar";
-            this.btn_seleccionar.UseVisualStyleBackColor = false;
-            this.btn_seleccionar.Click += new System.EventHandler(this.btn_seleccionar_Click);
-            // 
-            // FR_CONSULTA
+            // FR_CONSULTADOCTOR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(905, 406);
             this.Controls.Add(this.btn_seleccionar);
             this.Controls.Add(this.btn_cerrar);
             this.Controls.Add(this.btn_actualizar);
             this.Controls.Add(this.dgv_consulta);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FR_CONSULTA";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "FR_CONSULTADOCTOR";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FR_BELIMINARDOCTOR";
-            this.Load += new System.EventHandler(this.FR_CONSULTA_Load);
+            this.Text = "FR_BELIMINARPERSONAL";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_consulta)).EndInit();
             this.ResumeLayout(false);
 
@@ -208,8 +205,10 @@
 
         #endregion
 
+        private System.Windows.Forms.Button btn_seleccionar;
         private System.Windows.Forms.Button btn_cerrar;
         private System.Windows.Forms.Button btn_actualizar;
+        public System.Windows.Forms.DataGridView dgv_consulta;
         private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn apellido;
@@ -223,7 +222,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn genero;
         private System.Windows.Forms.DataGridViewTextBoxColumn estadicivil;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
-        private System.Windows.Forms.Button btn_seleccionar;
-        public System.Windows.Forms.DataGridView dgv_consulta;
     }
 }

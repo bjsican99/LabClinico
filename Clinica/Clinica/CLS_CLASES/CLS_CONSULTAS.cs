@@ -33,12 +33,12 @@ namespace Clinica.CLS_CLASES
             }
             return camporesultante;
         }
-        public OdbcDataReader Insertar_empleado(string str_codigo, string str_nombre, string str_apellido, string str_dpi, string str_direccion, string str_nit, string str_fechanacimiento, string str_fechaingreso, string str_telefono, string str_correo, string str_genero, string str_estadocivil, string str_estado)
+        public OdbcDataReader Insertar(String strTabla, string strCodigo, string strNombre, string strApellido, string strDpi, string strDireccion, string strNit, string strFechanacimiento, string strFechaingreso, string strTelefono, string strCorreo, string strGenero, string strEstadocivil, string strEstado)
         {
             try
             {
-                cn.conexion();
-                string str_consulta = "insert into tbl_empleado values("+str_codigo+",'" + str_nombre + "', '" + str_apellido + "' ," + str_dpi + ",'" + str_direccion + "'," + str_nit + ",'" + str_fechanacimiento + "','" + str_fechaingreso +"',"+str_telefono+",'"+str_correo +"',"+ str_genero+","+str_estadocivil+","+str_estado+");";
+                
+                string str_consulta = "insert into "+ strTabla +" values(" + strCodigo + ",'" + strNombre + "', '" + strApellido + "' ," + strDpi + ",'" + strDireccion + "'," + strNit + ",'" + strFechanacimiento + "','" + strFechaingreso + "'," + strTelefono + ",'" + strCorreo + "'," + strGenero + "," + strEstadocivil + "," + strEstado + ");";
                 comm = new OdbcCommand(str_consulta, cn.conexion());
                 OdbcDataReader mostrar = comm.ExecuteReader();
                 MessageBox.Show("Datos registrados.");
@@ -51,13 +51,24 @@ namespace Clinica.CLS_CLASES
                 return null;
             }
         }
-        public OdbcDataReader modificar_empleado(string str_codigo, string str_nombre, string str_apellido, string str_dpi, string str_direccion, string str_nit, string str_fechanacimiento, string str_fechaingreso, string str_telefono, string str_correo, string str_genero, string str_estadocivil, string str_estado)
+        public OdbcDataReader modificar(int intConsulta,string strCodigo, string strNombre, string strApellido, string strDpi, string strDireccion, string strNit, string strFechanacimiento, string strFechaingreso, string strTelefono, string strCorreo, string strGenero, string strEstadocivil, string strEstado)
         {
             try
             {
-                cn.conexion();
-                string str_consulta = "UPDATE tbl_empleado set nombre_empleado='" + str_nombre + "',apellido_empleado='" + str_apellido + "',dpi_empleado=" + str_dpi + ",direccion_empleado='" + str_direccion + "',nit_empleado=" + str_nit + ",fechanacimiento_empleado='" +str_fechanacimiento+ "',fechaingreso_empleado='"+str_fechaingreso+ "',telefono_empleado="+str_telefono+ ",correo_empleado='"+str_correo+ "',genero_empleado="+str_genero+ ",fk_idestadocivil_empleado="+str_estadocivil+ ",estado_empleado="+str_estado+" where pk_id_empleado='" + str_codigo + "';";
-                comm = new OdbcCommand(str_consulta, cn.conexion());
+                string strConsulta = "";
+                if (intConsulta==0)
+                {
+                    strConsulta = "UPDATE tbl_empleado set nombre_empleado='" + strNombre + "',apellido_empleado='" + strApellido + "',dpi_empleado=" + strDpi + ",direccion_empleado='" + strDireccion + "',nit_empleado=" + strNit + ",fechanacimiento_empleado='" + strFechanacimiento + "',fechaingreso_empleado='" + strFechaingreso + "',telefono_empleado=" + strTelefono + ",correo_empleado='" + strCorreo + "',genero_empleado=" + strGenero + ",fk_idestadocivil_empleado=" + strEstadocivil + ",estado_empleado=" + strEstado + " where pk_id_empleado='" + strCodigo + "';";
+                }else if (intConsulta == 1)
+                {
+                    strConsulta = "UPDATE tbl_paciente set nombre_paciente='" + strNombre + "',apellido_paciente='" + strApellido + "',dpi_paciente=" + strDpi + ",direccion_paciente='" + strDireccion + "',nit_paciente=" + strNit + ",fechanacimiento_paciente='" + strFechanacimiento + "',fechaingreso_paciente='" + strFechaingreso + "',telefono_paciente=" + strTelefono + ",correo_paciente='" + strCorreo + "',genero_paciente=" + strGenero + ",fk_idestadocivil_paciente=" + strEstadocivil + ",estado_paciente=" + strEstado + " where pk_id_paciente='" + strCodigo + "';";
+                }
+                else
+                {
+                    strConsulta = "UPDATE tbl_doctor set nombre_doctor='" + strNombre + "',apellido_doctor='" + strApellido + "',dpi_doctor=" + strDpi + ",direccion_doctor='" + strDireccion + "',nit_doctor=" + strNit + ",fechanacimiento_doctor='" + strFechanacimiento + "',fechaingreso_doctor='" + strFechaingreso + "',telefono_doctor=" + strTelefono + ",correo_doctor='" + strCorreo + "',genero_doctor=" + strGenero + ",fk_idestadocivil_doctor=" + strEstadocivil + ",estado_doctor=" + strEstado + " where pk_id_doctor='" + strCodigo + "';";
+                }
+
+                comm = new OdbcCommand(strConsulta, cn.conexion());
                 OdbcDataReader mostrar = comm.ExecuteReader();
                 MessageBox.Show("Datos modificados correctamente.");
                 return mostrar;
@@ -69,13 +80,25 @@ namespace Clinica.CLS_CLASES
                 return null;
             }
         }
-        public OdbcDataReader eliminar_empleado(string str_codigoo)
+        public OdbcDataReader eliminar(int intConsulta, string strCodigoo)
         {
             try
             {
-                cn.conexion();
-                string str_consulta = "UPDATE tbl_empleado set estado_empleado='0' where pk_id_empleado='" + str_codigoo + "';";
-                comm = new OdbcCommand(str_consulta, cn.conexion());
+                string strConsulta = "";
+                if (intConsulta == 0)
+                {
+                    strConsulta = "UPDATE tbl_empleado set estado_empleado='0' where pk_id_empleado='" + strCodigoo + "';";
+                }
+                else if (intConsulta == 1)
+                {
+                    strConsulta = "UPDATE tbl_paciente set estado_paciente='0' where pk_id_paciente='" + strCodigoo + "';";
+                }
+                else
+                {
+                    strConsulta = "UPDATE tbl_doctor set estado_doctor='0' where pk_id_doctor='" + strCodigoo + "';";
+                }
+                
+                comm = new OdbcCommand(strConsulta, cn.conexion());
                 OdbcDataReader mostrar = comm.ExecuteReader();
                 MessageBox.Show("Eliminado Correctamente.");
                 return mostrar;
@@ -89,12 +112,12 @@ namespace Clinica.CLS_CLASES
         }
         //---------------------------------------------------------------------------------------------------------------------------------------------------------//
 
-        public OdbcDataReader consulta_empleados( )
+        public OdbcDataReader consulta(string strTabla)
         {
             try
-            {
-                string str_consulta = "SELECT * FROM tbl_empleado;";
-                OdbcCommand command = new OdbcCommand(str_consulta, cn.conexion());
+            { 
+                string strConsulta = "SELECT * FROM "+ strTabla + ";";
+                OdbcCommand command = new OdbcCommand(strConsulta, cn.conexion());
                 OdbcDataReader reader = command.ExecuteReader();
                 reader.Read();
                 return reader;

@@ -100,6 +100,7 @@
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(126, 20);
             this.txt_nombre.TabIndex = 7;
+            this.txt_nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nombre_KeyPress);
             // 
             // lbl_estadocivil
             // 
@@ -115,6 +116,7 @@
             // 
             // cbo_estadocivil
             // 
+            this.cbo_estadocivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbo_estadocivil.FormattingEnabled = true;
             this.cbo_estadocivil.Items.AddRange(new object[] {
             "Soltero",
@@ -156,6 +158,7 @@
             this.txt_apellido.Name = "txt_apellido";
             this.txt_apellido.Size = new System.Drawing.Size(126, 20);
             this.txt_apellido.TabIndex = 24;
+            this.txt_apellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_apellido_KeyPress);
             // 
             // panel1
             // 
@@ -229,6 +232,7 @@
             // 
             // cbo_genero
             // 
+            this.cbo_genero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbo_genero.FormattingEnabled = true;
             this.cbo_genero.Items.AddRange(new object[] {
             "Masculino",
@@ -356,6 +360,7 @@
             // 
             // cbo_estado
             // 
+            this.cbo_estado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbo_estado.FormattingEnabled = true;
             this.cbo_estado.Items.AddRange(new object[] {
             "Activo",
@@ -373,6 +378,7 @@
             this.txt_correo.Name = "txt_correo";
             this.txt_correo.Size = new System.Drawing.Size(126, 20);
             this.txt_correo.TabIndex = 56;
+            this.txt_correo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_correo_KeyPress);
             // 
             // lbl_correo
             // 
@@ -393,6 +399,7 @@
             this.txt_telefono.Name = "txt_telefono";
             this.txt_telefono.Size = new System.Drawing.Size(126, 20);
             this.txt_telefono.TabIndex = 54;
+            this.txt_telefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_telefono_KeyPress);
             // 
             // lbl_telefono
             // 
@@ -437,6 +444,7 @@
             this.txt_nit.Name = "txt_nit";
             this.txt_nit.Size = new System.Drawing.Size(126, 20);
             this.txt_nit.TabIndex = 48;
+            this.txt_nit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nit_KeyPress);
             // 
             // lbl_nit
             // 
@@ -482,6 +490,7 @@
             this.txt_direccion.Name = "txt_direccion";
             this.txt_direccion.Size = new System.Drawing.Size(126, 20);
             this.txt_direccion.TabIndex = 39;
+            this.txt_direccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_direccion_KeyPress);
             // 
             // lbl_dpi
             // 
@@ -502,6 +511,7 @@
             this.txt_dpi.Name = "txt_dpi";
             this.txt_dpi.Size = new System.Drawing.Size(126, 20);
             this.txt_dpi.TabIndex = 37;
+            this.txt_dpi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_dpi_KeyPress);
             // 
             // FR_EMPLEADO
             // 

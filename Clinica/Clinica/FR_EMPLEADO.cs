@@ -11,23 +11,24 @@ namespace Clinica
     public partial class FR_EMPLEADO : Form
     {
         CLS_METODOS metodos = new CLS_METODOS();
-        string str_codigo="";
+        string strCodigo="";
+        CLS_VALIDACION validacion = new CLS_VALIDACION();
         public FR_EMPLEADO()
         {
             InitializeComponent();
             bloqueo();
         }
 
-        string str_fechanacimineto = "";
-        string str_fechaingreso = "";
-        string str_genero = "";
-        string str_estadocivil = "";
-        string str_estado = "";
+        string strFechanacimineto = "";
+        string strFechaingreso = "";
+        string strGenero = "";
+        string strEstadocivil = "";
+        string strEstado = "";
 
         public void obtenercodigo()
         {
-            str_codigo = metodos.siguiente("tbl_empleado", "pk_id_empleado");
-            txt_codigo.Text = str_codigo;
+            strCodigo = metodos.siguiente("tbl_empleado", "pk_id_empleado");
+            txt_codigo.Text = strCodigo;
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -54,8 +55,9 @@ namespace Clinica
             btn_eliminar.Enabled = false;
             btn_guardar.Enabled = false;
             btn_consultar.Enabled = true;
+            btn_nuevo.Enabled = true;
         }
-        public void desbloqueo()
+        public void desbloqueo_ingreso()
         {
             txt_codigo.Enabled = false;
             txt_nombre.Enabled = true;
@@ -70,14 +72,36 @@ namespace Clinica
             cbo_genero.Enabled = true;
             txt_telefono.Enabled = true;
             txt_correo.Enabled = true;
-            btn_consultar.Enabled = false;
+            btn_consultar.Enabled = true;
             btn_eliminar.Enabled = false;
             btn_modificar.Enabled = false;
             btn_guardar.Enabled = true;
         }
+        public void desbloqueo_modificar_eliminar()
+        {
+            txt_codigo.Enabled = false;
+            txt_nombre.Enabled = true;
+            txt_apellido.Enabled = true;
+            txt_direccion.Enabled = true;
+            txt_dpi.Enabled = true;
+            txt_nit.Enabled = true;
+            dtp_fechaingreso.Enabled = true;
+            dtp_fechanacimiento.Enabled = true;
+            cbo_estado.Enabled = true;
+            cbo_estadocivil.Enabled = true;
+            cbo_genero.Enabled = true;
+            txt_telefono.Enabled = true;
+            txt_correo.Enabled = true;
+            btn_consultar.Enabled = true;
+            btn_eliminar.Enabled = true;
+            btn_modificar.Enabled = true;
+            btn_guardar.Enabled = false;
+            btn_nuevo.Enabled = true;
+        }
         public void limpiar()
         {
             //LIMPIAR
+            txt_codigo.Text = "";
             txt_nombre.Text = "";
             txt_apellido.Text = "";
             txt_direccion.Text = "";
@@ -96,34 +120,62 @@ namespace Clinica
         
         public void Fechas()
         {
-            str_fechanacimineto = dtp_fechanacimiento.Value.ToString(dtp_fechanacimiento.CustomFormat = "yyyy-MM-dd");
-            str_fechaingreso = dtp_fechaingreso.Value.ToString(dtp_fechaingreso.CustomFormat = "yyyy-MM-dd");
+            strFechanacimineto = dtp_fechanacimiento.Value.ToString(dtp_fechanacimiento.CustomFormat = "yyyy-MM-dd");
+            strFechaingreso = dtp_fechaingreso.Value.ToString(dtp_fechaingreso.CustomFormat = "yyyy-MM-dd");
         }
         public void comparacioncombobox()
         {
             if (cbo_genero.SelectedItem.ToString() == "Masculino")
             {
-                str_genero = "1";
+                strGenero = "1";
             }
             else
             {
-                str_genero = "0";
+                strGenero = "0";
             }
             if (cbo_estadocivil.SelectedItem.ToString() == "Casado")
             {
-                str_estadocivil = "1";
+                strEstadocivil = "1";
             }
             else
             {
-                str_estadocivil = "0";
+                strEstadocivil = "0";
             }
             if (cbo_estado.SelectedItem.ToString() == "Activo")
             {
-                str_estado = "1";
+                strEstado = "1";
             }
             else
             {
-                str_estado = "0";
+                strEstado = "0";
+            }
+        }
+
+        public void llenadocombobox(string strLlenadogenero,string strLlenadoestadocivil, string strLlenadoestado)
+        {
+            if (strLlenadogenero == "1")
+            {
+                strGenero = "Masculino";
+            }
+            else
+            {
+                strGenero = "Femenino";
+            }
+            if (strLlenadoestadocivil=="1")
+            {
+                strEstadocivil = "Casado";
+            }
+            else
+            {
+                strEstadocivil = "Soltero";
+            }
+            if (strLlenadoestado=="1")
+            {
+                strEstado = "Activo";
+            }
+            else
+            {
+                strEstado = "Desactivo";
             }
         }
 
@@ -141,7 +193,7 @@ namespace Clinica
         {
             Fechas();
             comparacioncombobox();
-            OdbcDataReader cita = metodos.Insertar_empleado(str_codigo, txt_nombre.Text,txt_apellido.Text,txt_dpi.Text,txt_direccion.Text,txt_nit.Text,str_fechanacimineto,str_fechaingreso,txt_telefono.Text,txt_correo.Text,str_genero,str_estadocivil,str_estado);
+            OdbcDataReader cita = metodos.Insertar_empleado(strCodigo, txt_nombre.Text,txt_apellido.Text,txt_dpi.Text,txt_direccion.Text,txt_nit.Text,strFechanacimineto,strFechaingreso,txt_telefono.Text,txt_correo.Text,strGenero,strEstadocivil,strEstado);
             limpiar();
             bloqueo();
         }
@@ -150,43 +202,100 @@ namespace Clinica
         {
             Fechas();
             comparacioncombobox();
-            OdbcDataReader cita = metodos.modificar_empleado(txt_codigo.Text, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, str_fechanacimineto, str_fechaingreso, txt_telefono.Text, txt_correo.Text, str_genero, str_estadocivil, str_estado);
+            OdbcDataReader cita = metodos.modificar_empleado(txt_codigo.Text, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
             limpiar();
+            bloqueo();
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
             OdbcDataReader cita = metodos.eliminar_empleado(txt_codigo.Text);
             limpiar();
+            bloqueo();
         }
 
         private void btn_nuevo_Click(object sender, EventArgs e)
         {
+            limpiar();
             obtenercodigo();
-            desbloqueo();
+            desbloqueo_ingreso();
         }
 
         private void btn_consultar_Click(object sender, EventArgs e)
         {
+            limpiar();
             FR_CONSULTA consulta = new FR_CONSULTA();
             consulta.ShowDialog();
 
             if (consulta.DialogResult == DialogResult.OK)
             {
-                /*Txt_Cod.Text = concep.Dgv_consulta.Rows[concep.Dgv_consulta.CurrentRow.Index].
-                      Cells[0].Value.ToString();
-                Txt_nombre.Text = concep.Dgv_consulta.Rows[concep.Dgv_consulta.CurrentRow.Index].
-                      Cells[1].Value.ToString();
-                txt_descripcion.Text = concep.Dgv_consulta.Rows[concep.Dgv_consulta.CurrentRow.Index].
-                      Cells[2].Value.ToString();
-                txt_valor.Text = concep.Dgv_consulta.Rows[concep.Dgv_consulta.CurrentRow.Index].
-                      Cells[3].Value.ToString();*/
+                txt_codigo.Text = consulta.dgv_consulta.Rows[consulta.dgv_consulta.CurrentRow.Index].
+                    Cells[0].Value.ToString();
+                txt_nombre.Text = consulta.dgv_consulta.Rows[consulta.dgv_consulta.CurrentRow.Index].
+                    Cells[1].Value.ToString();
+                txt_apellido.Text = consulta.dgv_consulta.Rows[consulta.dgv_consulta.CurrentRow.Index].
+                    Cells[2].Value.ToString();
+                txt_dpi.Text = consulta.dgv_consulta.Rows[consulta.dgv_consulta.CurrentRow.Index].
+                    Cells[3].Value.ToString();
+                txt_direccion.Text = consulta.dgv_consulta.Rows[consulta.dgv_consulta.CurrentRow.Index].
+                    Cells[4].Value.ToString();
+                txt_nit.Text = consulta.dgv_consulta.Rows[consulta.dgv_consulta.CurrentRow.Index].
+                    Cells[5].Value.ToString();
+                dtp_fechanacimiento.Text = consulta.dgv_consulta.Rows[consulta.dgv_consulta.CurrentRow.Index].
+                    Cells[6].Value.ToString();
+                dtp_fechaingreso.Text = consulta.dgv_consulta.Rows[consulta.dgv_consulta.CurrentRow.Index].
+                    Cells[7].Value.ToString();
+                txt_telefono.Text = consulta.dgv_consulta.Rows[consulta.dgv_consulta.CurrentRow.Index].
+                    Cells[8].Value.ToString();
+                txt_correo.Text = consulta.dgv_consulta.Rows[consulta.dgv_consulta.CurrentRow.Index].
+                    Cells[9].Value.ToString();
+                llenadocombobox(consulta.dgv_consulta.Rows[consulta.dgv_consulta.CurrentRow.Index].Cells[10].Value.ToString(), consulta.dgv_consulta.Rows[consulta.dgv_consulta.CurrentRow.Index].Cells[11].Value.ToString(), consulta.dgv_consulta.Rows[consulta.dgv_consulta.CurrentRow.Index].Cells[12].Value.ToString());
+
+                cbo_genero.Text = strGenero;
+                cbo_estadocivil.Text = strEstadocivil;
+                cbo_estado.Text = strEstado;
+                desbloqueo_modificar_eliminar();
             }
         }
 
         private void FR_EMPLEADO_Load(object sender, EventArgs e)
         {
             bloqueo();
+        }
+
+        private void txt_nombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacion.CamposLetrasTexto(e);
+        }
+
+        private void txt_apellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacion.CamposLetrasTexto(e);
+        }
+
+        private void txt_dpi_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacion.CampoNumerico(e);
+        }
+
+        private void txt_direccion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacion.CamposNumerosYLetras(e);
+        }
+
+        private void txt_nit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacion.CampoNumerico(e);
+        }
+
+        private void txt_telefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacion.CampoNumerico(e);
+        }
+
+        private void txt_correo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacion.CamposNumerosYLetras(e);
         }
     }
 }

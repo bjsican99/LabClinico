@@ -74,6 +74,18 @@
     <Compile Include="CLS_CLASES\CLS_METODOS.cs" />
     <Compile Include="CLS_CLASES\CLS_VALIDACION.cs" />
     <Compile Include="Conexion.cs" />
+    <Compile Include="FR_CONSULTADOCTOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_CONSULTADOCTOR.designer.cs">
+      <DependentUpon>FR_CONSULTADOCTOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR_CONSULTAPACIENTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR_CONSULTAPACIENTE.designer.cs">
+      <DependentUpon>FR_CONSULTAPACIENTE.cs</DependentUpon>
+    </Compile>
     <Compile Include="FR_CONSULTA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +168,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FR_CONSULTADOCTOR.resx">
+      <DependentUpon>FR_CONSULTADOCTOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR_CONSULTAPACIENTE.resx">
+      <DependentUpon>FR_CONSULTAPACIENTE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FR_CONSULTA.resx">
       <DependentUpon>FR_CONSULTA.cs</DependentUpon>
     </EmbeddedResource>
