@@ -70,6 +70,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bitacora.cs" />
+    <Compile Include="Clase_Global.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="FR_BELIMINARDOCTOR.cs">
       <SubType>Form</SubType>

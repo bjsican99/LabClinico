@@ -32,6 +32,8 @@ namespace Clinica
         private void button1_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FR_MENU1>();
+            Bitacora bit = new Bitacora();
+            bit.grabar("2");
         }
 
         
@@ -67,7 +69,8 @@ namespace Clinica
 
         private void button5_Click(object sender, EventArgs e)
         {
-           
+            Bitacora bit = new Bitacora();
+            bit.grabar("9");
             System.Windows.Forms.Application.Exit();
         }
 
@@ -79,11 +82,14 @@ namespace Clinica
         private void button3_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FR_REPORTES>();
+            Bitacora bit = new Bitacora();
+            bit.grabar("3");
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
+            Bitacora bit = new Bitacora();
+            bit.grabar("4");
 
             AbrirFormulario<FR_FACTURACION>();
         }
@@ -115,11 +121,15 @@ namespace Clinica
 
         private void button3_Click_1(object sender, EventArgs e)
         {
+            Bitacora bit = new Bitacora();
+            bit.grabar("6");
             AbrirFormulario<FR_EXAMEN>();
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            Bitacora bit = new Bitacora();
+            bit.grabar("7");
             FR_ETIQUETA usu = new FR_ETIQUETA();
             usu.Show();
             this.Hide();
@@ -132,11 +142,15 @@ namespace Clinica
 
         private void btn_personal_Click(object sender, EventArgs e)
         {
+            Bitacora bit = new Bitacora();
+            bit.grabar("5");
             AbrirFormulario<FR_MENU3>();
         }
 
         private void button1_Click_2(object sender, EventArgs e)
         {
+            Bitacora bit = new Bitacora();
+            bit.grabar("8");
             AbrirFormulario <FR_MENU2>();
         }
     }
