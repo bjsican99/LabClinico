@@ -5,24 +5,24 @@ create table if not exists tbl_login(
 	pk_id_login 					int,
     usuario_login 					varchar(45),
     contraseña_login 				varchar(45),
-    estado_login					int,
-    fk_idempleado_login				int,#fk
-    fk_idpermiso_login				int
+    estado_login					int(2),
+    fk_idempleado_login				int(9),#fk
+    fk_idpermiso_login				int(9)
 );
 create table if not exists tbl_empleado(
 	pk_id_empleado 					int,#pk
     nombre_empleado					varchar(20),
     apellido_empleado				varchar(20),
-    dpi_empleado					int,
+    dpi_empleado					int(15),
     direccion_empleado				varchar(50),
-    nit_empleado					int,
+    nit_empleado					int(15),
     fechanacimiento_empleado		date,
     fechaingreso_empleado			date,
-    telefono_empleado				int,
+    telefono_empleado				int(9),
     correo_empleado					varchar(50),
-    genero_empleado					int,#genero
-    fk_idestadocivil_empleado		int,#fk estado civil
-    estado_empleado					int#estado activo o suspendido.
+    genero_empleado					int(2),#genero
+    fk_idestadocivil_empleado		int(9),#fk estado civil
+    estado_empleado					int(2)#estado activo o suspendido.
 );
 create table if not exists tbl_permiso(
 	pk_id_permiso					int,
@@ -32,8 +32,8 @@ create table if not exists tbl_permiso(
 #---bitacora-parte2-------------------------------------------
 create table if not exists tbl_bitacora(
 	pk_id_bitacora					int, #pk
-    fk_iduser_bitacora				int,#fk
-    fk_idtipoevent_bitacora			int, #fk
+    fk_iduser_bitacora				int(9),#fk
+    fk_idtipoevent_bitacora			int(9), #fk
     horaingreso_bitacora			date,
     direchost_bitacora				varchar(20)
 );
@@ -43,48 +43,48 @@ create table if not exists tbl_tipoevento(
 );
 create table if not exists tbl_detallebitacora(
 	pk_id_detallebitacora			int,
-    fk_idbitacora_detallebitacora	int not null,
-    estado_detallebitacora			int not null
+    fk_idbitacora_detallebitacora	int(9) not null,
+    estado_detallebitacora			int(2) not null
 );
 #---pacientes-doctores-parte3---------------------------------
 create table if not exists tbl_paciente(
 	pk_id_paciente 					int,#pk
     nombre_paciente					varchar(20),
     apellido_paciente				varchar(20),
-    dpi_paciente					int,
+    dpi_paciente					int(15),
     direccion_paciente				varchar(50),
-    nit_paciente					int,
+    nit_paciente					int(15),
     fechanacimiento_paciente		date,
     fechaingreso_paciente			date,
-    telefono_paciente				int,
+    telefono_paciente				int(9),
     correo_paciente					varchar(50),
-    genero_paciente					int,#genero
-    fk_idestadocivil_paciente		int,#fk estado civil
-    estado_paciente					int#estado activo o suspendido.
+    genero_paciente					int(2),#genero
+    fk_idestadocivil_paciente		int(9),#fk estado civil
+    estado_paciente					int(2)#estado activo o suspendido.
 );
 create table if not exists tbl_referencia(
 	pk_id_referencia				int,
-    fk_idpaciente_referencia		int,
-    fk_iddoctor_referencia			int
+    fk_idpaciente_referencia		int(9),
+    fk_iddoctor_referencia			int(9)
 );
 create table if not exists tbl_alergia(
 	pk_id_alergia					int,
-    fk_idpaciente_alergia			int,
+    fk_idpaciente_alergia			int(9),
     descripcion_alergia				varchar(50)
 );
 #---muestras-parte4-------------------------------------------
 create table if not exists tbl_muestra(
 	pk_id_muestra					int,
-    fk_idpaciente_muestra			int,
+    fk_idpaciente_muestra			int(9),
     fechaobtencion_muestra			date,
     descripcion_muestra				varchar(50),
-    estado_muestra					int
+    estado_muestra					int(2)
 );
 create table if not exists tbl_procesomuestra(
 	pk_id_procesomuestra			int,
-    fk_idmuestra_procesomuestra		int,
-    fk_idexman_procesomuestra		int,
-    fk_iddoctor_procesomuestra		int,
+    fk_idmuestra_procesomuestra		int(9),
+    fk_idexman_procesomuestra		int(9),
+    fk_iddoctor_procesomuestra		int(9),
     fecha_procesomuestra			date,
     observaciones_procesomuestra	varchar(50)
 );
@@ -95,15 +95,15 @@ Create table if not exists tbl_encabezadofactura(
     numfactura_encabezadofactura	varchar(50),
     nombre_encabezadofactura		varchar(30),
     apellido_encabezadofactura		varchar(30),
-    nit_encabezadofactura			int,
+    nit_encabezadofactura			int(15),
     fechaorden_encabezadofactura	datetime,
     total_encabezadofactura			double,
-    fk_idtipopago_encabezadofactura	int #fk
+    fk_idtipopago_encabezadofactura	int(9) #fk
 );
 create table if not exists tbl_detallefactura(
 	pk_id_detallefactura			int,
-    fk_idencabezado_detallefactura	int,
-    fk_idexamen_detallefactura		int,
+    fk_idencabezado_detallefactura	int(9),
+    fk_idexamen_detallefactura		int(9),
     subtotal_detallefactura			double
 );
 create table if not exists tbl_pago(
@@ -115,16 +115,16 @@ create table if not exists tbl_doctor(
 	pk_id_doctor 					int,#PK
     nombre_doctor					varchar(20),
     apellido_doctor					varchar(20),
-    dpi_doctor						int,
+    dpi_doctor						int(15),
     direccion_doctor				varchar(50),
-    nit_doctor						int,
+    nit_doctor						int(15),
     fechanacimiento_doctor			date,
     fechaingreso_doctor				date,
-    telefono_doctor					int,
+    telefono_doctor					int(9),
     correo_doctor					varchar(50),
-    genero_doctor					int,#genero
-    fk_idestadocivil_doctor			int,#fk estado civil
-    estado_doctor					int#Estado activo o suspendido.
+    genero_doctor					int(2),#genero
+    fk_idestadocivil_doctor			int(9),#fk estado civil
+    estado_doctor					int(2)#Estado activo o suspendido.
 );
 #---laboratorio-parte7------------------------------------------
 create table if not exists tbl_laboratorio(
@@ -133,21 +133,21 @@ create table if not exists tbl_laboratorio(
     direccion_laboratorio			varchar(30),
     telefono_laboratorio			varchar(15),
     email_laboratorio				varchar(50),
-    estado_laboratorio				int
+    estado_laboratorio				int(2)
 );
 create table if not exists tbl_examen(
 	pk_id_examen					int,
     nombre_examen					varchar(30),
     precio_examen					double,
-    fk_idtipoexam_examen			int,
-    fk_idlaboratorio_examen			int,
-    estado_laboratorio				int
+    fk_idtipoexam_examen			int(9),
+    fk_idlaboratorio_examen			int(9),
+    estado_laboratorio				int(2)
 );
 create table if not exists tbl_tipoexamen(
 	pk_id_tipoexamen				int,
     nom_tipoexamen					varchar(35),
     descripcion_tipoexamen			varchar(35),
-    estado_laboratorio				int
+    estado_laboratorio				int(2)
 );
 #---tablas adicionales-parte8-----------------------------------
 create table if not exists tbl_estadocivil(
@@ -158,32 +158,32 @@ create table if not exists tbl_estadocivil(
 
 ##-----llavez-primarias---------------------------------------
 #---------------llaves-primarias-parte1-----------------------
-alter table tbl_login change pk_id_login pk_id_login int auto_increment primary key;
-alter table tbl_empleado change pk_id_empleado pk_id_empleado int auto_increment primary key;
-alter table tbl_permiso change pk_id_permiso pk_id_permiso int auto_increment primary key;
+alter table tbl_login change pk_id_login pk_id_login int(9) auto_increment primary key;
+alter table tbl_empleado change pk_id_empleado pk_id_empleado int(9) auto_increment primary key;
+alter table tbl_permiso change pk_id_permiso pk_id_permiso int(9) auto_increment primary key;
 #---------------llaves-primarias-parte2-----------------------
-alter table tbl_bitacora change pk_id_bitacora pk_id_bitacora int auto_increment primary key;
-alter table tbl_tipoevento change pk_id_tipoevento pk_id_tipoevento int auto_increment primary key;
-alter table tbl_detallebitacora change pk_id_detallebitacora pk_id_detallebitacora int auto_increment primary key;
+alter table tbl_bitacora change pk_id_bitacora pk_id_bitacora int(9) auto_increment primary key;
+alter table tbl_tipoevento change pk_id_tipoevento pk_id_tipoevento int(9) auto_increment primary key;
+alter table tbl_detallebitacora change pk_id_detallebitacora pk_id_detallebitacora int(9) auto_increment primary key;
 #---------------llaves-primarias-parte3-----------------------
-alter table tbl_paciente change pk_id_paciente pk_id_paciente int auto_increment primary key;
-alter table tbl_referencia change pk_id_referencia pk_id_referencia int auto_increment primary key;
-alter table tbl_alergia change pk_id_alergia pk_id_alergia int auto_increment primary key;
+alter table tbl_paciente change pk_id_paciente pk_id_paciente int(9) auto_increment primary key;
+alter table tbl_referencia change pk_id_referencia pk_id_referencia int(9) auto_increment primary key;
+alter table tbl_alergia change pk_id_alergia pk_id_alergia int(9) auto_increment primary key;
 #---------------llaves-primarias-parte4-----------------------
-alter table tbl_muestra change pk_id_muestra pk_id_muestra int auto_increment primary key;
-alter table tbl_procesomuestra change pk_id_procesomuestra pk_id_procesomuestra int auto_increment primary key;
+alter table tbl_muestra change pk_id_muestra pk_id_muestra int(9) auto_increment primary key;
+alter table tbl_procesomuestra change pk_id_procesomuestra pk_id_procesomuestra int(9) auto_increment primary key;
 #---------------llaves-primarias-parte5-----------------------
-alter table tbl_encabezadofactura change pk_id_encabezadofactura pk_id_encabezadofactura int auto_increment primary key;
-alter table tbl_detallefactura change pk_id_detallefactura pk_id_detallefactura int auto_increment primary key;
-alter table tbl_pago change pk_id_pago pk_id_pago int auto_increment primary key;
+alter table tbl_encabezadofactura change pk_id_encabezadofactura pk_id_encabezadofactura int(9) auto_increment primary key;
+alter table tbl_detallefactura change pk_id_detallefactura pk_id_detallefactura int(9) auto_increment primary key;
+alter table tbl_pago change pk_id_pago pk_id_pago int(9) auto_increment primary key;
 #---------------llaves-primarias-parte6-----------------------
-alter table tbl_doctor change pk_id_doctor pk_id_doctor int auto_increment primary key;
+alter table tbl_doctor change pk_id_doctor pk_id_doctor int(9) auto_increment primary key;
 #---------------llaves-primarias-parte7-----------------------
-alter table tbl_examen change pk_id_examen pk_id_examen int auto_increment primary key;
-alter table tbl_tipoexamen change pk_id_tipoexamen pk_id_tipoexamen int auto_increment primary key;
-alter table tbl_laboratorio change pk_id_laboratorio pk_id_laboratorio int auto_increment primary key;
+alter table tbl_examen change pk_id_examen pk_id_examen int(9) auto_increment primary key;
+alter table tbl_tipoexamen change pk_id_tipoexamen pk_id_tipoexamen int(9) auto_increment primary key;
+alter table tbl_laboratorio change pk_id_laboratorio pk_id_laboratorio int(9) auto_increment primary key;
 #---------------llaves-primarias-parte8-----------------------
-alter table tbl_estadocivil change pk_id_estadocivil pk_id_estadocivil int auto_increment primary key;
+alter table tbl_estadocivil change pk_id_estadocivil pk_id_estadocivil int(9) auto_increment primary key;
 
 ##----llaves-foraneas-----------------------------------------
 #--------------llaves-foraneas-parte1-------------------------
