@@ -130,7 +130,6 @@ C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\stdole.dll
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CORREO.resources
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_EXAMEN.resources
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_FACTURACION.resources
-C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_INGRESOUSU.resources
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_LOGIN.resources
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_NUEVOUSU.resources
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_REPORTES.resources
@@ -197,3 +196,11 @@ C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_BELIMINARDOCTOR.resources
 C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_BELIMINARPERSONAL.resources
 C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PERSONAL2.resources
 C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PERSONAL3.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CELMAIL.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_MUESTRA.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_TELCORREO.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_TELMAIL.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CONSULTA.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PACIENTE.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_DOCTOR.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_EMPLEADO.resources

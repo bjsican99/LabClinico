@@ -31,7 +31,7 @@ namespace Clinica
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<FR_MENU1>();
+            AbrirFormulario<FR_PACIENTE>();
         }
 
         
@@ -132,12 +132,12 @@ namespace Clinica
 
         private void btn_personal_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<FR_MENU3>();
+            AbrirFormulario<FR_EMPLEADO>();
         }
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-            AbrirFormulario <FR_MENU2>();
+            AbrirFormulario <FR_DOCTOR>();
         }
     }
 

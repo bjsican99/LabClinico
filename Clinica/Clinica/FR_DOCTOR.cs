@@ -24,9 +24,10 @@ namespace Clinica
             this.Hide();
         }
 
-        private void FR_DOCTOR_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            FR_CONSULTA usu = new FR_CONSULTA();
+            usu.Show();
         }
     }
 }
