@@ -80,16 +80,10 @@
     <Compile Include="FR_CONSULTA.Designer.cs">
       <DependentUpon>FR_CONSULTA.cs</DependentUpon>
     </Compile>
-    <Compile Include="FR_CELMAIL.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FR_CELMAIL.Designer.cs">
-      <DependentUpon>FR_CELMAIL.cs</DependentUpon>
-    </Compile>
     <Compile Include="FR_CORREO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FR_CORREO.Designer.cs">
+    <Compile Include="FR_CORREO.designer.cs">
       <DependentUpon>FR_CORREO.cs</DependentUpon>
     </Compile>
     <Compile Include="FR_DOCTOR.cs">
@@ -154,18 +148,6 @@
     <Compile Include="FR_REPORTES.Designer.cs">
       <DependentUpon>FR_REPORTES.cs</DependentUpon>
     </Compile>
-    <Compile Include="FR_TELCORREO.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FR_TELCORREO.Designer.cs">
-      <DependentUpon>FR_TELCORREO.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FR_TELMAIL.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FR_TELMAIL.Designer.cs">
-      <DependentUpon>FR_TELMAIL.cs</DependentUpon>
-    </Compile>
     <Compile Include="FR_TOTAL.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,9 +158,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FR_CONSULTA.resx">
       <DependentUpon>FR_CONSULTA.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FR_CELMAIL.resx">
-      <DependentUpon>FR_CELMAIL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FR_CORREO.resx">
       <DependentUpon>FR_CORREO.cs</DependentUpon>
@@ -213,12 +192,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FR_REPORTES.resx">
       <DependentUpon>FR_REPORTES.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FR_TELCORREO.resx">
-      <DependentUpon>FR_TELCORREO.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FR_TELMAIL.resx">
-      <DependentUpon>FR_TELMAIL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FR_TOTAL.resx">
       <DependentUpon>FR_TOTAL.cs</DependentUpon>

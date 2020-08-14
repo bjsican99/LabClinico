@@ -17,17 +17,11 @@ namespace Clinica
             InitializeComponent();
         }
 
-        private void btn_celmail_Click(object sender, EventArgs e)
-        {
-            FR_TELCORREO usu = new FR_TELCORREO();
-            usu.Show();
 
-        }
 
         private void btn_validar_Click(object sender, EventArgs e)
         {
-            FR_TELCORREO usu = new FR_TELCORREO();
-            usu.Show();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
