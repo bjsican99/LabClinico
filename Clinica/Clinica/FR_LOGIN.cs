@@ -9,7 +9,7 @@ namespace Clinica
 {
     public partial class FR_LOGIN : Form
     {
-        string strUsuarioDB, strContrasenaDB, strIdLoginDB;
+        string strUsuarioDB, strContrasenaDB, strIdLoginDB, strTipoDB;
         
 
         public FR_LOGIN()
@@ -59,8 +59,10 @@ namespace Clinica
                     return 0;
                 }
                 else
-
+                {
+                    TipoDB();
                     return 1;
+                }
             }
             catch (Exception ex)
             {
@@ -70,6 +72,22 @@ namespace Clinica
             }
         }
 
+        public void TipoDB()
+        {
+            try
+            {
+                OdbcCommand command3 = new OdbcCommand("SELECT fk_idpermiso_login FROM tbl_login WHERE usuario_login='" + txt_usuario.Text + "' AND contraseña_login='" + txt_password.Text + "';", cn.conexion());
+                OdbcDataReader reader3 = command3.ExecuteReader();
+                reader3.Read();
+                strTipoDB = reader3.GetString(0);
+                reader3.Close();
+                Clase_Global.TipoGlobal = strTipoDB;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
         private void tBIngresoUsu_TextChanged(object sender, EventArgs e)
         {
 

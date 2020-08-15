@@ -19,7 +19,16 @@ namespace Clinica
         public FR_TOTAL()
         {
             InitializeComponent();
-          
+          if(Clase_Global.TipoGlobal != "1")
+            {
+                btn_personal.Enabled = false;
+                button1.Enabled = false;
+            }
+          else
+            {
+                btn_personal.Enabled = true;
+                button1.Enabled = true;
+            }
            
            
         }
@@ -70,7 +79,6 @@ namespace Clinica
         private void button5_Click(object sender, EventArgs e)
         {
             Bitacora bit = new Bitacora();
-            Clase_Global.idGlobal = "";
             bit.grabar("9");
             System.Windows.Forms.Application.Exit();
         }

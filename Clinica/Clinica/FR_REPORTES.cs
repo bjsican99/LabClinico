@@ -22,7 +22,17 @@ namespace Clinica
         {
             InitializeComponent();
             txt_codigopaciente.Text = "";
-            
+            if (Clase_Global.TipoGlobal != "1")
+            {
+                btn_eliminar.Enabled = false;
+                btn_modificar.Enabled = false;
+            }
+            else
+            {
+                btn_eliminar.Enabled = true;
+                btn_modificar.Enabled = true;
+            }
+
 
 
         }

@@ -29,12 +29,13 @@ namespace Clinica
                 string cadena = "INSERT INTO tbl_bitacora (fk_iduser_bitacora, fk_idtipoevent_bitacora, horaingreso_bitacora, direchost_bitacora, detalle_bitacora) VALUES ('" + idLogin1 + "', '" + idEvento + "','" + horabitacora + "','" + direhost + "','" + tipoBit + "') ;";
                 OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
                 consulta.ExecuteNonQuery();
-                Clase_Global.EventoGlobal="";
             }
             catch (Exception ex)
             {
-                Console.WriteLine("No se pudo ingresar a bitacora");
+                MessageBox.Show(ex.ToString());
+                Console.WriteLine("Error");
             }
+            Clase_Global.EventoGlobal = " ";
         }
         public void ip()
         {

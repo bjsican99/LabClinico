@@ -27,6 +27,12 @@ namespace Clinica
             get { return v_EventoGlobal; }
             set { v_EventoGlobal = value; }
         }
+        private static string v_TipoGlobal = "";
+        public static string TipoGlobal
+        {
+            get { return v_TipoGlobal; }
+            set { v_TipoGlobal = value; }
+        }
     }
 }
 
