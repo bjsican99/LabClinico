@@ -1,4 +1,6 @@
-﻿using System;
+﻿//BRIAN SANTIZO FORM
+//0901-17-1483
+using System;
 using System.Data.Odbc;
 using System.Drawing;
 using System.Windows.Forms;
@@ -7,8 +9,9 @@ namespace Clinica
 {
     public partial class FR_LOGIN : Form
     {
-        string strUsuarioDB, strContrasenaDB;
-        public string strIdLoginDB { get; set; }
+        string strUsuarioDB, strContrasenaDB, strIdLoginDB;
+        
+
         public FR_LOGIN()
         {
             InitializeComponent();
@@ -20,8 +23,26 @@ namespace Clinica
         {
 
         }
+        public void bitacoralogin()
+        {
+            try
+            {
+                OdbcCommand command = new OdbcCommand("SELECT pk_id_login, usuario_login, contraseña_login FROM tbl_login WHERE usuario_login='" + txt_usuario.Text + "' AND contraseña_login='" + txt_password.Text + "';", cn.conexion());
+                OdbcDataReader reader = command.ExecuteReader();
+                reader.Read();
+                strIdLoginDB = reader.GetString(0);
+                reader.Close();
+                Clase_Global.idGlobal = strIdLoginDB;
+                Bitacora bit = new Bitacora();
+                bit.grabar("1");
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show(ex.ToString());
+                Console.WriteLine("Error: ingreso a bitacora");
+            }
+        }
         Conexion cn = new Conexion();
-        
         public int logins()
         {
             try
@@ -38,7 +59,7 @@ namespace Clinica
                     return 0;
                 }
                 else
-                    
+
                     return 1;
             }
             catch (Exception ex)
@@ -46,26 +67,6 @@ namespace Clinica
                 //MessageBox.Show(ex.ToString());
                 MessageBox.Show("Usuario o Password no validos");
                 return 0;
-            }
-
-        }
-        public void bitacoralogin()
-        { 
-            try
-            {
-                OdbcCommand command = new OdbcCommand("SELECT pk_id_login, usuario_login, contraseña_login FROM tbl_login WHERE usuario_login='" + txt_usuario.Text + "' AND contraseña_login='" + txt_password.Text + "';", cn.conexion());
-                OdbcDataReader reader = command.ExecuteReader();
-                reader.Read();
-                strIdLoginDB = reader.GetString(0);
-                reader.Close();
-                Clase_Global.idGlobal = strIdLoginDB;
-                Bitacora bit = new Bitacora();
-                bit.grabar("1");      
-            }
-            catch (Exception ex)
-            {
-                //MessageBox.Show(ex.ToString());
-                Console.WriteLine("Error: ingreso a bitacora");
             }
         }
 
@@ -103,6 +104,7 @@ namespace Clinica
                     {
                         txt_usuario.Text = "";
                         txt_password.Text = "";
+                        txt_usuario.Focus();
                     }
                 }
             }

@@ -17,20 +17,19 @@ namespace Clinica
         public void grabar(string idEvento)
         {
             ip();
+            string tipoBit = Clase_Global.EventoGlobal;
             string idLogin1 = Clase_Global.idGlobal;
             Conexion cn = new Conexion();
             string direhost = Clase_Global.ipGlobal;
             string fecha = DateTime.Now.ToString("HH:mm:ss");
             string hora1 = DateTime.Now.ToLongDateString();
             string horabitacora = fecha + " " + hora1;
-
-
-            // Console.WriteLine(idLogin1 +"    8749846    "+ hora + direhost);
             try
             {
-                string cadena = "INSERT INTO tbl_bitacora (fk_iduser_bitacora, fk_idtipoevent_bitacora, horaingreso_bitacora, direchost_bitacora) VALUES ('" + idLogin1 + "', '" + idEvento + "','" + horabitacora + "','" + direhost + "') ;";
+                string cadena = "INSERT INTO tbl_bitacora (fk_iduser_bitacora, fk_idtipoevent_bitacora, horaingreso_bitacora, direchost_bitacora, detalle_bitacora) VALUES ('" + idLogin1 + "', '" + idEvento + "','" + horabitacora + "','" + direhost + "','" + tipoBit + "') ;";
                 OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
                 consulta.ExecuteNonQuery();
+                Clase_Global.EventoGlobal="";
             }
             catch (Exception ex)
             {

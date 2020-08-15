@@ -1,6 +1,6 @@
 ﻿namespace Clinica
 {
-    partial class FR_DOCTOR
+    partial class FR_PACIENTE
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_DOCTOR));
-            this.pnl_doctor = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_PACIENTE));
+            this.pnl_paciente = new System.Windows.Forms.Panel();
             this.lbl_nuevo = new System.Windows.Forms.Label();
             this.btn_nuevo = new System.Windows.Forms.Button();
             this.cbo_genero = new System.Windows.Forms.ComboBox();
@@ -66,55 +66,55 @@
             this.cbo_estadocivil = new System.Windows.Forms.ComboBox();
             this.lbl_estado = new System.Windows.Forms.Label();
             this.lbl_genero = new System.Windows.Forms.Label();
-            this.pnl_doctor.SuspendLayout();
+            this.pnl_paciente.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pnl_doctor
+            // pnl_paciente
             // 
-            this.pnl_doctor.BackColor = System.Drawing.Color.White;
-            this.pnl_doctor.Controls.Add(this.lbl_nuevo);
-            this.pnl_doctor.Controls.Add(this.btn_nuevo);
-            this.pnl_doctor.Controls.Add(this.cbo_genero);
-            this.pnl_doctor.Controls.Add(this.dtp_fechaingreso);
-            this.pnl_doctor.Controls.Add(this.dtp_fechanacimiento);
-            this.pnl_doctor.Controls.Add(this.lbl_guardar);
-            this.pnl_doctor.Controls.Add(this.lbl_eliminar);
-            this.pnl_doctor.Controls.Add(this.btn_eliminar);
-            this.pnl_doctor.Controls.Add(this.lbl_modificar);
-            this.pnl_doctor.Controls.Add(this.btn_modificar);
-            this.pnl_doctor.Controls.Add(this.btn_consultar);
-            this.pnl_doctor.Controls.Add(this.lbl_consultar);
-            this.pnl_doctor.Controls.Add(this.txt_codigo);
-            this.pnl_doctor.Controls.Add(this.lbl_codigo);
-            this.pnl_doctor.Controls.Add(this.cbo_estado);
-            this.pnl_doctor.Controls.Add(this.txt_correo);
-            this.pnl_doctor.Controls.Add(this.lbl_correo);
-            this.pnl_doctor.Controls.Add(this.txt_telefono);
-            this.pnl_doctor.Controls.Add(this.lbl_telefono);
-            this.pnl_doctor.Controls.Add(this.lbl_ingreso);
-            this.pnl_doctor.Controls.Add(this.lbl_nacimiento);
-            this.pnl_doctor.Controls.Add(this.txt_nit);
-            this.pnl_doctor.Controls.Add(this.lbl_nit);
-            this.pnl_doctor.Controls.Add(this.btn_guardar);
-            this.pnl_doctor.Controls.Add(this.lbl_direccion);
-            this.pnl_doctor.Controls.Add(this.txt_direccion);
-            this.pnl_doctor.Controls.Add(this.lbl_dpi);
-            this.pnl_doctor.Controls.Add(this.txt_dpi);
-            this.pnl_doctor.Controls.Add(this.lbl_nombre);
-            this.pnl_doctor.Controls.Add(this.lbl_apellido);
-            this.pnl_doctor.Controls.Add(this.txt_apellido);
-            this.pnl_doctor.Controls.Add(this.txt_nombre);
-            this.pnl_doctor.Controls.Add(this.lbl_estadocivil);
-            this.pnl_doctor.Controls.Add(this.cbo_estadocivil);
-            this.pnl_doctor.Controls.Add(this.lbl_estado);
-            this.pnl_doctor.Controls.Add(this.lbl_genero);
-            this.pnl_doctor.Location = new System.Drawing.Point(22, 18);
-            this.pnl_doctor.Margin = new System.Windows.Forms.Padding(2);
-            this.pnl_doctor.Name = "pnl_doctor";
-            this.pnl_doctor.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pnl_doctor.Size = new System.Drawing.Size(655, 415);
-            this.pnl_doctor.TabIndex = 28;
-            this.pnl_doctor.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_doctor_Paint);
+            this.pnl_paciente.BackColor = System.Drawing.Color.White;
+            this.pnl_paciente.Controls.Add(this.lbl_nuevo);
+            this.pnl_paciente.Controls.Add(this.btn_nuevo);
+            this.pnl_paciente.Controls.Add(this.cbo_genero);
+            this.pnl_paciente.Controls.Add(this.dtp_fechaingreso);
+            this.pnl_paciente.Controls.Add(this.dtp_fechanacimiento);
+            this.pnl_paciente.Controls.Add(this.lbl_guardar);
+            this.pnl_paciente.Controls.Add(this.lbl_eliminar);
+            this.pnl_paciente.Controls.Add(this.btn_eliminar);
+            this.pnl_paciente.Controls.Add(this.lbl_modificar);
+            this.pnl_paciente.Controls.Add(this.btn_modificar);
+            this.pnl_paciente.Controls.Add(this.btn_consultar);
+            this.pnl_paciente.Controls.Add(this.lbl_consultar);
+            this.pnl_paciente.Controls.Add(this.txt_codigo);
+            this.pnl_paciente.Controls.Add(this.lbl_codigo);
+            this.pnl_paciente.Controls.Add(this.cbo_estado);
+            this.pnl_paciente.Controls.Add(this.txt_correo);
+            this.pnl_paciente.Controls.Add(this.lbl_correo);
+            this.pnl_paciente.Controls.Add(this.txt_telefono);
+            this.pnl_paciente.Controls.Add(this.lbl_telefono);
+            this.pnl_paciente.Controls.Add(this.lbl_ingreso);
+            this.pnl_paciente.Controls.Add(this.lbl_nacimiento);
+            this.pnl_paciente.Controls.Add(this.txt_nit);
+            this.pnl_paciente.Controls.Add(this.lbl_nit);
+            this.pnl_paciente.Controls.Add(this.btn_guardar);
+            this.pnl_paciente.Controls.Add(this.lbl_direccion);
+            this.pnl_paciente.Controls.Add(this.txt_direccion);
+            this.pnl_paciente.Controls.Add(this.lbl_dpi);
+            this.pnl_paciente.Controls.Add(this.txt_dpi);
+            this.pnl_paciente.Controls.Add(this.lbl_nombre);
+            this.pnl_paciente.Controls.Add(this.lbl_apellido);
+            this.pnl_paciente.Controls.Add(this.txt_apellido);
+            this.pnl_paciente.Controls.Add(this.txt_nombre);
+            this.pnl_paciente.Controls.Add(this.lbl_estadocivil);
+            this.pnl_paciente.Controls.Add(this.cbo_estadocivil);
+            this.pnl_paciente.Controls.Add(this.lbl_estado);
+            this.pnl_paciente.Controls.Add(this.lbl_genero);
+            this.pnl_paciente.Location = new System.Drawing.Point(22, 18);
+            this.pnl_paciente.Margin = new System.Windows.Forms.Padding(2);
+            this.pnl_paciente.Name = "pnl_paciente";
+            this.pnl_paciente.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.pnl_paciente.Size = new System.Drawing.Size(655, 415);
+            this.pnl_paciente.TabIndex = 28;
+            this.pnl_paciente.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_paciente_Paint);
             // 
             // lbl_nuevo
             // 
@@ -137,7 +137,7 @@
             this.btn_nuevo.Size = new System.Drawing.Size(83, 76);
             this.btn_nuevo.TabIndex = 70;
             this.btn_nuevo.UseVisualStyleBackColor = false;
-            this.btn_nuevo.Click += new System.EventHandler(this.btn_nuevo_Click);
+            this.btn_nuevo.Click += new System.EventHandler(this.btn_nuevo_Click_1);
             // 
             // cbo_genero
             // 
@@ -199,7 +199,7 @@
             this.btn_eliminar.Size = new System.Drawing.Size(79, 72);
             this.btn_eliminar.TabIndex = 64;
             this.btn_eliminar.UseVisualStyleBackColor = true;
-            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click_1);
             // 
             // lbl_modificar
             // 
@@ -220,7 +220,7 @@
             this.btn_modificar.Size = new System.Drawing.Size(79, 72);
             this.btn_modificar.TabIndex = 62;
             this.btn_modificar.UseVisualStyleBackColor = true;
-            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
+            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click_1);
             // 
             // btn_consultar
             // 
@@ -233,7 +233,7 @@
             this.btn_consultar.Size = new System.Drawing.Size(79, 72);
             this.btn_consultar.TabIndex = 61;
             this.btn_consultar.UseVisualStyleBackColor = false;
-            this.btn_consultar.Click += new System.EventHandler(this.btn_consultar_Click);
+            this.btn_consultar.Click += new System.EventHandler(this.btn_consultar_Click_1);
             // 
             // lbl_consultar
             // 
@@ -286,6 +286,7 @@
             this.txt_correo.Name = "txt_correo";
             this.txt_correo.Size = new System.Drawing.Size(126, 20);
             this.txt_correo.TabIndex = 56;
+            this.txt_correo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_correo_KeyPress);
             // 
             // lbl_correo
             // 
@@ -306,6 +307,7 @@
             this.txt_telefono.Name = "txt_telefono";
             this.txt_telefono.Size = new System.Drawing.Size(126, 20);
             this.txt_telefono.TabIndex = 54;
+            this.txt_telefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_telefono_KeyPress);
             // 
             // lbl_telefono
             // 
@@ -350,6 +352,7 @@
             this.txt_nit.Name = "txt_nit";
             this.txt_nit.Size = new System.Drawing.Size(126, 20);
             this.txt_nit.TabIndex = 48;
+            this.txt_nit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nit_KeyPress);
             // 
             // lbl_nit
             // 
@@ -373,7 +376,7 @@
             this.btn_guardar.Size = new System.Drawing.Size(83, 76);
             this.btn_guardar.TabIndex = 35;
             this.btn_guardar.UseVisualStyleBackColor = false;
-            this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
+            this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click_1);
             // 
             // lbl_direccion
             // 
@@ -394,6 +397,7 @@
             this.txt_direccion.Name = "txt_direccion";
             this.txt_direccion.Size = new System.Drawing.Size(126, 20);
             this.txt_direccion.TabIndex = 39;
+            this.txt_direccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_direccion_KeyPress);
             // 
             // lbl_dpi
             // 
@@ -414,6 +418,7 @@
             this.txt_dpi.Name = "txt_dpi";
             this.txt_dpi.Size = new System.Drawing.Size(126, 20);
             this.txt_dpi.TabIndex = 37;
+            this.txt_dpi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_dpi_KeyPress);
             // 
             // lbl_nombre
             // 
@@ -446,6 +451,7 @@
             this.txt_apellido.Name = "txt_apellido";
             this.txt_apellido.Size = new System.Drawing.Size(126, 20);
             this.txt_apellido.TabIndex = 24;
+            this.txt_apellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_apellido_KeyPress);
             // 
             // txt_nombre
             // 
@@ -454,6 +460,7 @@
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(126, 20);
             this.txt_nombre.TabIndex = 7;
+            this.txt_nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nombre_KeyPress);
             // 
             // lbl_estadocivil
             // 
@@ -504,28 +511,27 @@
             this.lbl_genero.TabIndex = 16;
             this.lbl_genero.Text = "Genero";
             // 
-            // FR_DOCTOR
+            // FR_PACIENTE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(699, 450);
-            this.Controls.Add(this.pnl_doctor);
+            this.Controls.Add(this.pnl_paciente);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FR_DOCTOR";
+            this.Name = "FR_PACIENTE";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FR_DOCTOR3";
-            this.Load += new System.EventHandler(this.FR_DOCTOR_Load);
-            this.pnl_doctor.ResumeLayout(false);
-            this.pnl_doctor.PerformLayout();
+            this.Text = "FR_PERSONAL";
+            this.pnl_paciente.ResumeLayout(false);
+            this.pnl_paciente.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel pnl_doctor;
+        private System.Windows.Forms.Panel pnl_paciente;
         private System.Windows.Forms.Label lbl_nuevo;
         private System.Windows.Forms.Button btn_nuevo;
         private System.Windows.Forms.ComboBox cbo_genero;

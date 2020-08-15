@@ -61,6 +61,9 @@ namespace Clinica
                             DataTable dt = new DataTable();
                             datos.Fill(dt);
                             dgv_vista.DataSource = dt;
+                            Bitacora bit = new Bitacora();
+                            Clase_Global.EventoGlobal = (strCadena);
+                            bit.grabar("24");
                         }
                         catch (Exception exError)
                         {

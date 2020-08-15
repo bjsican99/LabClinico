@@ -65,6 +65,8 @@ namespace Clinica
         {
             //BRIAN SANTIZO
             //IMPRIMIR
+            Bitacora bit = new Bitacora();
+            bit.grabar("25");
             printDocument1.Print();
         }
 

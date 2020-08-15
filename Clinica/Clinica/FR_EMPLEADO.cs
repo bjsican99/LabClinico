@@ -1,32 +1,24 @@
-﻿using Clinica.CLS_CLASES;
+﻿//BRIAN SANTIZO FORM
+//0901-17-1483
+using Clinica.CLS_CLASES;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.Odbc;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Clinica
 {
-    public partial class FR_DOCTOR : Form
+    public partial class FR_EMPLEADO : Form
     {
         CLS_METODOS metodos = new CLS_METODOS();
+        string strCodigo="";
         CLS_VALIDACION validacion = new CLS_VALIDACION();
-        string strCodigo = "";
-        public FR_DOCTOR()
+        public FR_EMPLEADO()
         {
             InitializeComponent();
             bloqueo();
         }
 
-        private void FR_DOCTOR_Load(object sender, EventArgs e)
-        {
-
-        }
         string strFechanacimineto = "";
         string strFechaingreso = "";
         string strGenero = "";
@@ -35,13 +27,13 @@ namespace Clinica
 
         public void obtenercodigo()
         {
-            strCodigo = metodos.siguiente("tbl_doctor", "pk_id_doctor");
+            strCodigo = metodos.siguiente("tbl_empleado", "pk_id_empleado");
             txt_codigo.Text = strCodigo;
         }
-        private void pnl_doctor_Paint(object sender, PaintEventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
             //CODIGO PARA HACER TRASLUCIDO EL PANEL
-            pnl_doctor.BackColor = Color.FromArgb(25, 0, 0, 0);
+            panel1.BackColor = Color.FromArgb(25, 0, 0, 0);
         }
 
         public void bloqueo()
@@ -125,7 +117,7 @@ namespace Clinica
             txt_apellido.Text = "";
             cbo_estadocivil.Text = ("");
         }
-
+        
         public void Fechas()
         {
             strFechanacimineto = dtp_fechanacimiento.Value.ToString(dtp_fechanacimiento.CustomFormat = "yyyy-MM-dd");
@@ -159,7 +151,7 @@ namespace Clinica
             }
         }
 
-        public void llenadocombobox(string strLlenadogenero, string strLlenadoestadocivil, string strLlenadoestado)
+        public void llenadocombobox(string strLlenadogenero,string strLlenadoestadocivil, string strLlenadoestado)
         {
             if (strLlenadogenero == "1")
             {
@@ -169,7 +161,7 @@ namespace Clinica
             {
                 strGenero = "Femenino";
             }
-            if (strLlenadoestadocivil == "1")
+            if (strLlenadoestadocivil=="1")
             {
                 strEstadocivil = "Casado";
             }
@@ -177,7 +169,7 @@ namespace Clinica
             {
                 strEstadocivil = "Soltero";
             }
-            if (strLlenadoestado == "1")
+            if (strLlenadoestado=="1")
             {
                 strEstado = "Activo";
             }
@@ -187,7 +179,10 @@ namespace Clinica
             }
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
 
+        }
 
         private void dt_fecha_ValueChanged(object sender, EventArgs e)
         {
@@ -198,7 +193,7 @@ namespace Clinica
         {
             Fechas();
             comparacioncombobox();
-            OdbcDataReader cita = metodos.Insertar_doctor(strCodigo, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
+            OdbcDataReader cita = metodos.Insertar_empleado(strCodigo, txt_nombre.Text,txt_apellido.Text,txt_dpi.Text,txt_direccion.Text,txt_nit.Text,strFechanacimineto,strFechaingreso,txt_telefono.Text,txt_correo.Text,strGenero,strEstadocivil,strEstado);
             limpiar();
             bloqueo();
         }
@@ -207,14 +202,14 @@ namespace Clinica
         {
             Fechas();
             comparacioncombobox();
-            OdbcDataReader cita = metodos.modificar_doctor(txt_codigo.Text, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
+            OdbcDataReader cita = metodos.modificar_empleado(txt_codigo.Text, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
             limpiar();
             bloqueo();
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
-            OdbcDataReader cita = metodos.eliminar_doctor(txt_codigo.Text);
+            OdbcDataReader cita = metodos.eliminar_empleado(txt_codigo.Text);
             limpiar();
             bloqueo();
         }
@@ -229,7 +224,7 @@ namespace Clinica
         private void btn_consultar_Click(object sender, EventArgs e)
         {
             limpiar();
-            FR_CONSULTADOCTOR consulta = new FR_CONSULTADOCTOR();
+            FR_CONSULTA consulta = new FR_CONSULTA();
             consulta.ShowDialog();
 
             if (consulta.DialogResult == DialogResult.OK)
@@ -262,6 +257,12 @@ namespace Clinica
                 desbloqueo_modificar_eliminar();
             }
         }
+
+        private void FR_EMPLEADO_Load(object sender, EventArgs e)
+        {
+            bloqueo();
+        }
+
         private void txt_nombre_KeyPress(object sender, KeyPressEventArgs e)
         {
             validacion.CamposLetrasTexto(e);

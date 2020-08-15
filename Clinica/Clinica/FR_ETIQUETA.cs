@@ -38,6 +38,8 @@ namespace Clinica
             Codigo.IncludeLabel = true;
             pnl_codigobarras.BackgroundImage = Codigo.Encode(BarcodeLib.TYPE.CODE128,txt_codigo.Text,Color.Black, Color.White, 400,100);
             Image imgFinal = (Image)pnl_codigobarras.BackgroundImage.Clone();
+            Bitacora bit = new Bitacora();
+            bit.grabar("23");
         }
 
         private void button2_Click(object sender, EventArgs e)

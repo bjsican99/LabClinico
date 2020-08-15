@@ -130,7 +130,6 @@ C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\stdole.dll
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CORREO.resources
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_EXAMEN.resources
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_FACTURACION.resources
-C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_INGRESOUSU.resources
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_LOGIN.resources
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_NUEVOUSU.resources
 C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_REPORTES.resources
@@ -197,6 +196,13 @@ C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_BELIMINARDOCTOR.resources
 C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_BELIMINARPERSONAL.resources
 C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PERSONAL2.resources
 C:\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PERSONAL3.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_MUESTRA.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CONSULTA.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PACIENTE.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_DOCTOR.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_EMPLEADO.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CONSULTADOCTOR.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CONSULTAPACIENTE.resources
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\FR_LOGIN.resx
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\FR_LOGIN.cs
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\FR_LOGIN.Designer.cs
@@ -205,32 +211,34 @@ C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\Clinica.exe
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\Clinica.pdb
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\BarcodeStandard.dll
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\System.Drawing.Common.dll
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_BELIMINARDOCTOR.resources
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_BELIMINARPACIENTE.resources
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_BELIMINARPERSONAL.resources
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CELMAIL.resources
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\bin\Debug\stdole.dll
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csprojAssemblyReference.cache
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CONSULTADOCTOR.resources
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CONSULTAPACIENTE.resources
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CONSULTA.resources
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_CORREO.resources
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_DOCTOR.resources
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_DOCTOR2.resources
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_DOCTOR3.resources
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_ETIQUETA.resources
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_EXAMEN.resources
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_FACTURACION.resources
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_MENU1.resources
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_MENU2.resources
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_MENU3.resources
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_MUESTRA.resources
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PACIENTE1.resources
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_EMPLEADO.resources
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_LOGIN.resources
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_NUEVOUSU.resources
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PACIENTE2.resources
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PACIENTE3.resources
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PERSONAL.resources
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PERSONAL2.resources
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PERSONAL3.resources
+C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_PACIENTE.resources
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_REPORTES.resources
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_TELCORREO.resources
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_TELMAIL.resources
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.FR_TOTAL.resources
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Properties.Resources.resources
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csproj.GenerateResource.cache
@@ -238,4 +246,3 @@ C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.cspro
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csproj.CopyComplete
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.exe
 C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.pdb
-C:\Users\jmora\Desktop\GITACA\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csprojAssemblyReference.cache

@@ -12,21 +12,17 @@ using System.Windows.Forms;
 
 namespace Clinica
 {
-    public partial class FR_DOCTOR : Form
+    public partial class FR_PACIENTE : Form
     {
         CLS_METODOS metodos = new CLS_METODOS();
         CLS_VALIDACION validacion = new CLS_VALIDACION();
         string strCodigo = "";
-        public FR_DOCTOR()
+        public FR_PACIENTE()
         {
             InitializeComponent();
             bloqueo();
         }
 
-        private void FR_DOCTOR_Load(object sender, EventArgs e)
-        {
-
-        }
         string strFechanacimineto = "";
         string strFechaingreso = "";
         string strGenero = "";
@@ -35,13 +31,13 @@ namespace Clinica
 
         public void obtenercodigo()
         {
-            strCodigo = metodos.siguiente("tbl_doctor", "pk_id_doctor");
+            strCodigo = metodos.siguiente("tbl_paciente", "pk_id_paciente");
             txt_codigo.Text = strCodigo;
         }
-        private void pnl_doctor_Paint(object sender, PaintEventArgs e)
+        private void pnl_paciente_Paint(object sender, PaintEventArgs e)
         {
             //CODIGO PARA HACER TRASLUCIDO EL PANEL
-            pnl_doctor.BackColor = Color.FromArgb(25, 0, 0, 0);
+            pnl_paciente.BackColor = Color.FromArgb(25, 0, 0, 0);
         }
 
         public void bloqueo()
@@ -187,49 +183,17 @@ namespace Clinica
             }
         }
 
-
-
-        private void dt_fecha_ValueChanged(object sender, EventArgs e)
+        private void FR_EMPLEADO_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void btn_guardar_Click(object sender, EventArgs e)
-        {
-            Fechas();
-            comparacioncombobox();
-            OdbcDataReader cita = metodos.Insertar_doctor(strCodigo, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
-            limpiar();
             bloqueo();
         }
 
-        private void btn_modificar_Click(object sender, EventArgs e)
+        private void btn_consultar_Click_1(object sender, EventArgs e)
         {
-            Fechas();
-            comparacioncombobox();
-            OdbcDataReader cita = metodos.modificar_doctor(txt_codigo.Text, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
+            Bitacora bit = new Bitacora();
+            bit.grabar("14");
             limpiar();
-            bloqueo();
-        }
-
-        private void btn_eliminar_Click(object sender, EventArgs e)
-        {
-            OdbcDataReader cita = metodos.eliminar_doctor(txt_codigo.Text);
-            limpiar();
-            bloqueo();
-        }
-
-        private void btn_nuevo_Click(object sender, EventArgs e)
-        {
-            limpiar();
-            obtenercodigo();
-            desbloqueo_ingreso();
-        }
-
-        private void btn_consultar_Click(object sender, EventArgs e)
-        {
-            limpiar();
-            FR_CONSULTADOCTOR consulta = new FR_CONSULTADOCTOR();
+            FR_CONSULTAPACIENTE consulta = new FR_CONSULTAPACIENTE();
             consulta.ShowDialog();
 
             if (consulta.DialogResult == DialogResult.OK)
@@ -261,6 +225,46 @@ namespace Clinica
                 cbo_estado.Text = strEstado;
                 desbloqueo_modificar_eliminar();
             }
+        }
+
+        private void btn_nuevo_Click_1(object sender, EventArgs e)
+        {
+            limpiar();
+            obtenercodigo();
+            desbloqueo_ingreso();
+            Bitacora bit = new Bitacora();
+            bit.grabar("10");
+        }
+
+        private void btn_guardar_Click_1(object sender, EventArgs e)
+        {
+            Fechas();
+            comparacioncombobox();
+            OdbcDataReader cita = metodos.Insertar_paciente(strCodigo, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
+            Bitacora bit = new Bitacora();
+            bit.grabar("11");
+            limpiar();
+            bloqueo();
+        }
+
+        private void btn_modificar_Click_1(object sender, EventArgs e)
+        {
+            Bitacora bit = new Bitacora();
+            bit.grabar("12");
+            Fechas();
+            comparacioncombobox();
+            OdbcDataReader cita = metodos.modificar_paciente(txt_codigo.Text, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
+            limpiar();
+            bloqueo();
+        }
+
+        private void btn_eliminar_Click_1(object sender, EventArgs e)
+        {
+            Bitacora bit = new Bitacora();
+            bit.grabar("13");
+            OdbcDataReader cita = metodos.eliminar_paciente(txt_codigo.Text);
+            limpiar();
+            bloqueo();
         }
         private void txt_nombre_KeyPress(object sender, KeyPressEventArgs e)
         {

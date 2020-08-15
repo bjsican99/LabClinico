@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clinica
 {
-    class Clase_Global
+    class Clase_Global 
     {
         private static string v_idGlobal = "";
         public static string idGlobal
@@ -21,6 +21,13 @@ namespace Clinica
             get { return v_ipGlobal; }
             set { v_ipGlobal = value; }
         }
+        private static string v_EventoGlobal = "";
+        public static string EventoGlobal
+        {
+            get { return v_EventoGlobal; }
+            set { v_EventoGlobal = value; }
+        }
     }
 }
+
 

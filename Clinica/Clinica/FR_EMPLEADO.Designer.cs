@@ -1,6 +1,6 @@
 ﻿namespace Clinica
 {
-    partial class FR_DOCTOR
+    partial class FR_EMPLEADO
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_DOCTOR));
-            this.pnl_doctor = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_EMPLEADO));
+            this.lbl_nombre = new System.Windows.Forms.Label();
+            this.lbl_apellido = new System.Windows.Forms.Label();
+            this.txt_nombre = new System.Windows.Forms.TextBox();
+            this.lbl_estadocivil = new System.Windows.Forms.Label();
+            this.cbo_estadocivil = new System.Windows.Forms.ComboBox();
+            this.lbl_estado = new System.Windows.Forms.Label();
+            this.lbl_genero = new System.Windows.Forms.Label();
+            this.txt_apellido = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_nuevo = new System.Windows.Forms.Label();
             this.btn_nuevo = new System.Windows.Forms.Button();
             this.cbo_genero = new System.Windows.Forms.ComboBox();
@@ -58,63 +66,146 @@
             this.txt_direccion = new System.Windows.Forms.TextBox();
             this.lbl_dpi = new System.Windows.Forms.Label();
             this.txt_dpi = new System.Windows.Forms.TextBox();
-            this.lbl_nombre = new System.Windows.Forms.Label();
-            this.lbl_apellido = new System.Windows.Forms.Label();
-            this.txt_apellido = new System.Windows.Forms.TextBox();
-            this.txt_nombre = new System.Windows.Forms.TextBox();
-            this.lbl_estadocivil = new System.Windows.Forms.Label();
-            this.cbo_estadocivil = new System.Windows.Forms.ComboBox();
-            this.lbl_estado = new System.Windows.Forms.Label();
-            this.lbl_genero = new System.Windows.Forms.Label();
-            this.pnl_doctor.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pnl_doctor
+            // lbl_nombre
             // 
-            this.pnl_doctor.BackColor = System.Drawing.Color.White;
-            this.pnl_doctor.Controls.Add(this.lbl_nuevo);
-            this.pnl_doctor.Controls.Add(this.btn_nuevo);
-            this.pnl_doctor.Controls.Add(this.cbo_genero);
-            this.pnl_doctor.Controls.Add(this.dtp_fechaingreso);
-            this.pnl_doctor.Controls.Add(this.dtp_fechanacimiento);
-            this.pnl_doctor.Controls.Add(this.lbl_guardar);
-            this.pnl_doctor.Controls.Add(this.lbl_eliminar);
-            this.pnl_doctor.Controls.Add(this.btn_eliminar);
-            this.pnl_doctor.Controls.Add(this.lbl_modificar);
-            this.pnl_doctor.Controls.Add(this.btn_modificar);
-            this.pnl_doctor.Controls.Add(this.btn_consultar);
-            this.pnl_doctor.Controls.Add(this.lbl_consultar);
-            this.pnl_doctor.Controls.Add(this.txt_codigo);
-            this.pnl_doctor.Controls.Add(this.lbl_codigo);
-            this.pnl_doctor.Controls.Add(this.cbo_estado);
-            this.pnl_doctor.Controls.Add(this.txt_correo);
-            this.pnl_doctor.Controls.Add(this.lbl_correo);
-            this.pnl_doctor.Controls.Add(this.txt_telefono);
-            this.pnl_doctor.Controls.Add(this.lbl_telefono);
-            this.pnl_doctor.Controls.Add(this.lbl_ingreso);
-            this.pnl_doctor.Controls.Add(this.lbl_nacimiento);
-            this.pnl_doctor.Controls.Add(this.txt_nit);
-            this.pnl_doctor.Controls.Add(this.lbl_nit);
-            this.pnl_doctor.Controls.Add(this.btn_guardar);
-            this.pnl_doctor.Controls.Add(this.lbl_direccion);
-            this.pnl_doctor.Controls.Add(this.txt_direccion);
-            this.pnl_doctor.Controls.Add(this.lbl_dpi);
-            this.pnl_doctor.Controls.Add(this.txt_dpi);
-            this.pnl_doctor.Controls.Add(this.lbl_nombre);
-            this.pnl_doctor.Controls.Add(this.lbl_apellido);
-            this.pnl_doctor.Controls.Add(this.txt_apellido);
-            this.pnl_doctor.Controls.Add(this.txt_nombre);
-            this.pnl_doctor.Controls.Add(this.lbl_estadocivil);
-            this.pnl_doctor.Controls.Add(this.cbo_estadocivil);
-            this.pnl_doctor.Controls.Add(this.lbl_estado);
-            this.pnl_doctor.Controls.Add(this.lbl_genero);
-            this.pnl_doctor.Location = new System.Drawing.Point(22, 18);
-            this.pnl_doctor.Margin = new System.Windows.Forms.Padding(2);
-            this.pnl_doctor.Name = "pnl_doctor";
-            this.pnl_doctor.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pnl_doctor.Size = new System.Drawing.Size(655, 415);
-            this.pnl_doctor.TabIndex = 28;
-            this.pnl_doctor.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_doctor_Paint);
+            this.lbl_nombre.AutoSize = true;
+            this.lbl_nombre.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_nombre.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nombre.Location = new System.Drawing.Point(15, 50);
+            this.lbl_nombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_nombre.Name = "lbl_nombre";
+            this.lbl_nombre.Size = new System.Drawing.Size(96, 29);
+            this.lbl_nombre.TabIndex = 0;
+            this.lbl_nombre.Text = "Nombre";
+            // 
+            // lbl_apellido
+            // 
+            this.lbl_apellido.AutoSize = true;
+            this.lbl_apellido.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_apellido.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_apellido.Location = new System.Drawing.Point(15, 89);
+            this.lbl_apellido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_apellido.Name = "lbl_apellido";
+            this.lbl_apellido.Size = new System.Drawing.Size(98, 29);
+            this.lbl_apellido.TabIndex = 1;
+            this.lbl_apellido.Text = "Apellido";
+            // 
+            // txt_nombre
+            // 
+            this.txt_nombre.Location = new System.Drawing.Point(170, 61);
+            this.txt_nombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Size = new System.Drawing.Size(126, 20);
+            this.txt_nombre.TabIndex = 7;
+            this.txt_nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nombre_KeyPress);
+            // 
+            // lbl_estadocivil
+            // 
+            this.lbl_estadocivil.AutoSize = true;
+            this.lbl_estadocivil.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_estadocivil.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_estadocivil.Location = new System.Drawing.Point(326, 93);
+            this.lbl_estadocivil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_estadocivil.Name = "lbl_estadocivil";
+            this.lbl_estadocivil.Size = new System.Drawing.Size(132, 29);
+            this.lbl_estadocivil.TabIndex = 8;
+            this.lbl_estadocivil.Text = "Estado Civil";
+            // 
+            // cbo_estadocivil
+            // 
+            this.cbo_estadocivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo_estadocivil.FormattingEnabled = true;
+            this.cbo_estadocivil.Items.AddRange(new object[] {
+            "Soltero",
+            "Casado"});
+            this.cbo_estadocivil.Location = new System.Drawing.Point(481, 104);
+            this.cbo_estadocivil.Margin = new System.Windows.Forms.Padding(2);
+            this.cbo_estadocivil.Name = "cbo_estadocivil";
+            this.cbo_estadocivil.Size = new System.Drawing.Size(126, 21);
+            this.cbo_estadocivil.TabIndex = 9;
+            // 
+            // lbl_estado
+            // 
+            this.lbl_estado.AutoSize = true;
+            this.lbl_estado.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_estado.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_estado.Location = new System.Drawing.Point(326, 140);
+            this.lbl_estado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_estado.Name = "lbl_estado";
+            this.lbl_estado.Size = new System.Drawing.Size(84, 29);
+            this.lbl_estado.TabIndex = 10;
+            this.lbl_estado.Text = "Estado";
+            // 
+            // lbl_genero
+            // 
+            this.lbl_genero.AutoSize = true;
+            this.lbl_genero.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_genero.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_genero.Location = new System.Drawing.Point(326, 49);
+            this.lbl_genero.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_genero.Name = "lbl_genero";
+            this.lbl_genero.Size = new System.Drawing.Size(87, 29);
+            this.lbl_genero.TabIndex = 16;
+            this.lbl_genero.Text = "Genero";
+            // 
+            // txt_apellido
+            // 
+            this.txt_apellido.Location = new System.Drawing.Point(170, 99);
+            this.txt_apellido.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_apellido.Name = "txt_apellido";
+            this.txt_apellido.Size = new System.Drawing.Size(126, 20);
+            this.txt_apellido.TabIndex = 24;
+            this.txt_apellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_apellido_KeyPress);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.lbl_nuevo);
+            this.panel1.Controls.Add(this.btn_nuevo);
+            this.panel1.Controls.Add(this.cbo_genero);
+            this.panel1.Controls.Add(this.dtp_fechaingreso);
+            this.panel1.Controls.Add(this.dtp_fechanacimiento);
+            this.panel1.Controls.Add(this.lbl_guardar);
+            this.panel1.Controls.Add(this.lbl_eliminar);
+            this.panel1.Controls.Add(this.btn_eliminar);
+            this.panel1.Controls.Add(this.lbl_modificar);
+            this.panel1.Controls.Add(this.btn_modificar);
+            this.panel1.Controls.Add(this.btn_consultar);
+            this.panel1.Controls.Add(this.lbl_consultar);
+            this.panel1.Controls.Add(this.txt_codigo);
+            this.panel1.Controls.Add(this.lbl_codigo);
+            this.panel1.Controls.Add(this.cbo_estado);
+            this.panel1.Controls.Add(this.txt_correo);
+            this.panel1.Controls.Add(this.lbl_correo);
+            this.panel1.Controls.Add(this.txt_telefono);
+            this.panel1.Controls.Add(this.lbl_telefono);
+            this.panel1.Controls.Add(this.lbl_ingreso);
+            this.panel1.Controls.Add(this.lbl_nacimiento);
+            this.panel1.Controls.Add(this.txt_nit);
+            this.panel1.Controls.Add(this.lbl_nit);
+            this.panel1.Controls.Add(this.btn_guardar);
+            this.panel1.Controls.Add(this.lbl_direccion);
+            this.panel1.Controls.Add(this.txt_direccion);
+            this.panel1.Controls.Add(this.lbl_dpi);
+            this.panel1.Controls.Add(this.txt_dpi);
+            this.panel1.Controls.Add(this.lbl_nombre);
+            this.panel1.Controls.Add(this.lbl_apellido);
+            this.panel1.Controls.Add(this.txt_apellido);
+            this.panel1.Controls.Add(this.txt_nombre);
+            this.panel1.Controls.Add(this.lbl_estadocivil);
+            this.panel1.Controls.Add(this.cbo_estadocivil);
+            this.panel1.Controls.Add(this.lbl_estado);
+            this.panel1.Controls.Add(this.lbl_genero);
+            this.panel1.Location = new System.Drawing.Point(18, 17);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.panel1.Size = new System.Drawing.Size(655, 415);
+            this.panel1.TabIndex = 27;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lbl_nuevo
             // 
@@ -168,6 +259,7 @@
             this.dtp_fechanacimiento.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dtp_fechanacimiento.Size = new System.Drawing.Size(126, 20);
             this.dtp_fechanacimiento.TabIndex = 67;
+            this.dtp_fechanacimiento.ValueChanged += new System.EventHandler(this.dt_fecha_ValueChanged);
             // 
             // lbl_guardar
             // 
@@ -286,6 +378,7 @@
             this.txt_correo.Name = "txt_correo";
             this.txt_correo.Size = new System.Drawing.Size(126, 20);
             this.txt_correo.TabIndex = 56;
+            this.txt_correo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_correo_KeyPress);
             // 
             // lbl_correo
             // 
@@ -306,6 +399,7 @@
             this.txt_telefono.Name = "txt_telefono";
             this.txt_telefono.Size = new System.Drawing.Size(126, 20);
             this.txt_telefono.TabIndex = 54;
+            this.txt_telefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_telefono_KeyPress);
             // 
             // lbl_telefono
             // 
@@ -350,6 +444,7 @@
             this.txt_nit.Name = "txt_nit";
             this.txt_nit.Size = new System.Drawing.Size(126, 20);
             this.txt_nit.TabIndex = 48;
+            this.txt_nit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nit_KeyPress);
             // 
             // lbl_nit
             // 
@@ -362,6 +457,7 @@
             this.lbl_nit.Size = new System.Drawing.Size(45, 29);
             this.lbl_nit.TabIndex = 47;
             this.lbl_nit.Text = "Nit";
+            this.lbl_nit.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_guardar
             // 
@@ -394,6 +490,7 @@
             this.txt_direccion.Name = "txt_direccion";
             this.txt_direccion.Size = new System.Drawing.Size(126, 20);
             this.txt_direccion.TabIndex = 39;
+            this.txt_direccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_direccion_KeyPress);
             // 
             // lbl_dpi
             // 
@@ -414,122 +511,55 @@
             this.txt_dpi.Name = "txt_dpi";
             this.txt_dpi.Size = new System.Drawing.Size(126, 20);
             this.txt_dpi.TabIndex = 37;
+            this.txt_dpi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_dpi_KeyPress);
             // 
-            // lbl_nombre
-            // 
-            this.lbl_nombre.AutoSize = true;
-            this.lbl_nombre.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_nombre.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nombre.Location = new System.Drawing.Point(15, 50);
-            this.lbl_nombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_nombre.Name = "lbl_nombre";
-            this.lbl_nombre.Size = new System.Drawing.Size(96, 29);
-            this.lbl_nombre.TabIndex = 0;
-            this.lbl_nombre.Text = "Nombre";
-            // 
-            // lbl_apellido
-            // 
-            this.lbl_apellido.AutoSize = true;
-            this.lbl_apellido.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_apellido.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_apellido.Location = new System.Drawing.Point(15, 89);
-            this.lbl_apellido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_apellido.Name = "lbl_apellido";
-            this.lbl_apellido.Size = new System.Drawing.Size(98, 29);
-            this.lbl_apellido.TabIndex = 1;
-            this.lbl_apellido.Text = "Apellido";
-            // 
-            // txt_apellido
-            // 
-            this.txt_apellido.Location = new System.Drawing.Point(170, 99);
-            this.txt_apellido.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_apellido.Name = "txt_apellido";
-            this.txt_apellido.Size = new System.Drawing.Size(126, 20);
-            this.txt_apellido.TabIndex = 24;
-            // 
-            // txt_nombre
-            // 
-            this.txt_nombre.Location = new System.Drawing.Point(170, 61);
-            this.txt_nombre.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(126, 20);
-            this.txt_nombre.TabIndex = 7;
-            // 
-            // lbl_estadocivil
-            // 
-            this.lbl_estadocivil.AutoSize = true;
-            this.lbl_estadocivil.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_estadocivil.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_estadocivil.Location = new System.Drawing.Point(326, 93);
-            this.lbl_estadocivil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_estadocivil.Name = "lbl_estadocivil";
-            this.lbl_estadocivil.Size = new System.Drawing.Size(132, 29);
-            this.lbl_estadocivil.TabIndex = 8;
-            this.lbl_estadocivil.Text = "Estado Civil";
-            // 
-            // cbo_estadocivil
-            // 
-            this.cbo_estadocivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbo_estadocivil.FormattingEnabled = true;
-            this.cbo_estadocivil.Items.AddRange(new object[] {
-            "Soltero",
-            "Casado"});
-            this.cbo_estadocivil.Location = new System.Drawing.Point(481, 104);
-            this.cbo_estadocivil.Margin = new System.Windows.Forms.Padding(2);
-            this.cbo_estadocivil.Name = "cbo_estadocivil";
-            this.cbo_estadocivil.Size = new System.Drawing.Size(126, 21);
-            this.cbo_estadocivil.TabIndex = 9;
-            // 
-            // lbl_estado
-            // 
-            this.lbl_estado.AutoSize = true;
-            this.lbl_estado.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_estado.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_estado.Location = new System.Drawing.Point(326, 140);
-            this.lbl_estado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_estado.Name = "lbl_estado";
-            this.lbl_estado.Size = new System.Drawing.Size(84, 29);
-            this.lbl_estado.TabIndex = 10;
-            this.lbl_estado.Text = "Estado";
-            // 
-            // lbl_genero
-            // 
-            this.lbl_genero.AutoSize = true;
-            this.lbl_genero.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_genero.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_genero.Location = new System.Drawing.Point(326, 49);
-            this.lbl_genero.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_genero.Name = "lbl_genero";
-            this.lbl_genero.Size = new System.Drawing.Size(87, 29);
-            this.lbl_genero.TabIndex = 16;
-            this.lbl_genero.Text = "Genero";
-            // 
-            // FR_DOCTOR
+            // FR_EMPLEADO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(699, 450);
-            this.Controls.Add(this.pnl_doctor);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FR_DOCTOR";
+            this.Name = "FR_EMPLEADO";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FR_DOCTOR3";
-            this.Load += new System.EventHandler(this.FR_DOCTOR_Load);
-            this.pnl_doctor.ResumeLayout(false);
-            this.pnl_doctor.PerformLayout();
+            this.Text = "INGRESO USUARIO";
+            this.Load += new System.EventHandler(this.FR_EMPLEADO_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel pnl_doctor;
-        private System.Windows.Forms.Label lbl_nuevo;
-        private System.Windows.Forms.Button btn_nuevo;
-        private System.Windows.Forms.ComboBox cbo_genero;
-        private System.Windows.Forms.DateTimePicker dtp_fechaingreso;
+        private System.Windows.Forms.Label lbl_nombre;
+        private System.Windows.Forms.Label lbl_apellido;
+        private System.Windows.Forms.TextBox txt_nombre;
+        private System.Windows.Forms.Label lbl_estadocivil;
+        private System.Windows.Forms.ComboBox cbo_estadocivil;
+        private System.Windows.Forms.Label lbl_estado;
+        private System.Windows.Forms.Label lbl_genero;
+        private System.Windows.Forms.TextBox txt_apellido;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_guardar;
+        private System.Windows.Forms.Label lbl_direccion;
+        private System.Windows.Forms.TextBox txt_direccion;
+        private System.Windows.Forms.Label lbl_dpi;
+        private System.Windows.Forms.TextBox txt_dpi;
+        private System.Windows.Forms.Label lbl_nit;
+        private System.Windows.Forms.Label lbl_ingreso;
+        private System.Windows.Forms.Label lbl_nacimiento;
+        private System.Windows.Forms.TextBox txt_nit;
+        private System.Windows.Forms.ComboBox cbo_estado;
+        private System.Windows.Forms.TextBox txt_correo;
+        private System.Windows.Forms.Label lbl_correo;
+        private System.Windows.Forms.TextBox txt_telefono;
+        private System.Windows.Forms.Label lbl_telefono;
+        private System.Windows.Forms.TextBox txt_codigo;
+        private System.Windows.Forms.Label lbl_codigo;
         private System.Windows.Forms.DateTimePicker dtp_fechanacimiento;
         private System.Windows.Forms.Label lbl_guardar;
         private System.Windows.Forms.Label lbl_eliminar;
@@ -538,29 +568,9 @@
         private System.Windows.Forms.Button btn_modificar;
         private System.Windows.Forms.Button btn_consultar;
         private System.Windows.Forms.Label lbl_consultar;
-        private System.Windows.Forms.TextBox txt_codigo;
-        private System.Windows.Forms.Label lbl_codigo;
-        private System.Windows.Forms.ComboBox cbo_estado;
-        private System.Windows.Forms.TextBox txt_correo;
-        private System.Windows.Forms.Label lbl_correo;
-        private System.Windows.Forms.TextBox txt_telefono;
-        private System.Windows.Forms.Label lbl_telefono;
-        private System.Windows.Forms.Label lbl_ingreso;
-        private System.Windows.Forms.Label lbl_nacimiento;
-        private System.Windows.Forms.TextBox txt_nit;
-        private System.Windows.Forms.Label lbl_nit;
-        private System.Windows.Forms.Button btn_guardar;
-        private System.Windows.Forms.Label lbl_direccion;
-        private System.Windows.Forms.TextBox txt_direccion;
-        private System.Windows.Forms.Label lbl_dpi;
-        private System.Windows.Forms.TextBox txt_dpi;
-        private System.Windows.Forms.Label lbl_nombre;
-        private System.Windows.Forms.Label lbl_apellido;
-        private System.Windows.Forms.TextBox txt_apellido;
-        private System.Windows.Forms.TextBox txt_nombre;
-        private System.Windows.Forms.Label lbl_estadocivil;
-        private System.Windows.Forms.ComboBox cbo_estadocivil;
-        private System.Windows.Forms.Label lbl_estado;
-        private System.Windows.Forms.Label lbl_genero;
+        private System.Windows.Forms.DateTimePicker dtp_fechaingreso;
+        private System.Windows.Forms.ComboBox cbo_genero;
+        private System.Windows.Forms.Label lbl_nuevo;
+        private System.Windows.Forms.Button btn_nuevo;
     }
 }
