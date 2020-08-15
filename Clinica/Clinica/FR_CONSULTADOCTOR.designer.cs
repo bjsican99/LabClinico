@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_CONSULTADOCTOR));
             this.btn_seleccionar = new System.Windows.Forms.Button();
             this.btn_cerrar = new System.Windows.Forms.Button();
             this.btn_actualizar = new System.Windows.Forms.Button();
@@ -54,7 +55,7 @@
             this.btn_seleccionar.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_seleccionar.ForeColor = System.Drawing.Color.Black;
             this.btn_seleccionar.Location = new System.Drawing.Point(344, 368);
-            this.btn_seleccionar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_seleccionar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_seleccionar.Name = "btn_seleccionar";
             this.btn_seleccionar.Size = new System.Drawing.Size(161, 42);
             this.btn_seleccionar.TabIndex = 97;
@@ -68,7 +69,7 @@
             this.btn_cerrar.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cerrar.ForeColor = System.Drawing.Color.Black;
             this.btn_cerrar.Location = new System.Drawing.Point(543, 368);
-            this.btn_cerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_cerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cerrar.Name = "btn_cerrar";
             this.btn_cerrar.Size = new System.Drawing.Size(161, 42);
             this.btn_cerrar.TabIndex = 96;
@@ -82,7 +83,7 @@
             this.btn_actualizar.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_actualizar.ForeColor = System.Drawing.Color.Black;
             this.btn_actualizar.Location = new System.Drawing.Point(143, 368);
-            this.btn_actualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_actualizar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_actualizar.Name = "btn_actualizar";
             this.btn_actualizar.Size = new System.Drawing.Size(161, 42);
             this.btn_actualizar.TabIndex = 95;
@@ -119,7 +120,7 @@
             this.dgv_consulta.RowHeadersWidth = 51;
             this.dgv_consulta.RowTemplate.Height = 24;
             this.dgv_consulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_consulta.Size = new System.Drawing.Size(1140, 233);
+            this.dgv_consulta.Size = new System.Drawing.Size(827, 233);
             this.dgv_consulta.TabIndex = 94;
             // 
             // codigo
@@ -217,7 +218,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1207, 500);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(900, 550);
             this.Controls.Add(this.btn_seleccionar);
             this.Controls.Add(this.btn_cerrar);
             this.Controls.Add(this.btn_actualizar);

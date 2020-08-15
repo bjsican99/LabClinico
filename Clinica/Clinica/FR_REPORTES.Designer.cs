@@ -73,10 +73,10 @@
             this.pnl_blanco.Controls.Add(this.Txt_Generar);
             this.pnl_blanco.Controls.Add(this.Txt_Regresar);
             this.pnl_blanco.Controls.Add(this.dgv_vista);
-            this.pnl_blanco.Location = new System.Drawing.Point(53, 28);
+            this.pnl_blanco.Location = new System.Drawing.Point(45, 28);
             this.pnl_blanco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_blanco.Name = "pnl_blanco";
-            this.pnl_blanco.Size = new System.Drawing.Size(852, 476);
+            this.pnl_blanco.Size = new System.Drawing.Size(823, 492);
             this.pnl_blanco.TabIndex = 29;
             this.pnl_blanco.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -96,7 +96,7 @@
             // 
             this.btn_eliminar.Image = ((System.Drawing.Image)(resources.GetObject("btn_eliminar.Image")));
             this.btn_eliminar.Location = new System.Drawing.Point(427, 354);
-            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_eliminar.Name = "btn_eliminar";
             this.btn_eliminar.Size = new System.Drawing.Size(105, 89);
             this.btn_eliminar.TabIndex = 51;
@@ -119,7 +119,7 @@
             // 
             this.btn_modificar.Image = ((System.Drawing.Image)(resources.GetObject("btn_modificar.Image")));
             this.btn_modificar.Location = new System.Drawing.Point(567, 354);
-            this.btn_modificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_modificar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_modificar.Name = "btn_modificar";
             this.btn_modificar.Size = new System.Drawing.Size(105, 89);
             this.btn_modificar.TabIndex = 48;
@@ -129,7 +129,7 @@
             // txt_codigopaciente
             // 
             this.txt_codigopaciente.Location = new System.Drawing.Point(545, 82);
-            this.txt_codigopaciente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_codigopaciente.Margin = new System.Windows.Forms.Padding(4);
             this.txt_codigopaciente.Name = "txt_codigopaciente";
             this.txt_codigopaciente.Size = new System.Drawing.Size(208, 22);
             this.txt_codigopaciente.TabIndex = 45;
@@ -277,7 +277,7 @@
             this.dgv_vista.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_vista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_vista.Location = new System.Drawing.Point(29, 162);
-            this.dgv_vista.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_vista.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_vista.Name = "dgv_vista";
             this.dgv_vista.RowHeadersWidth = 51;
             this.dgv_vista.Size = new System.Drawing.Size(725, 185);
@@ -289,7 +289,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(952, 534);
+            this.ClientSize = new System.Drawing.Size(900, 550);
             this.Controls.Add(this.pnl_blanco);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

@@ -142,7 +142,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(900, 500);
+            this.ClientSize = new System.Drawing.Size(900, 550);
             this.Controls.Add(this.btn_regresar);
             this.Controls.Add(this.btn_ingresar);
             this.Controls.Add(this.txt_estado);

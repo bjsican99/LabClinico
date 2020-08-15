@@ -212,7 +212,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(900, 532);
+            this.ClientSize = new System.Drawing.Size(900, 550);
             this.Controls.Add(this.pnl_blanco);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FR_EXAMEN";

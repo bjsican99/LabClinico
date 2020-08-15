@@ -114,7 +114,7 @@
             this.pnl_blanco.Location = new System.Drawing.Point(21, 22);
             this.pnl_blanco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_blanco.Name = "pnl_blanco";
-            this.pnl_blanco.Size = new System.Drawing.Size(538, 470);
+            this.pnl_blanco.Size = new System.Drawing.Size(556, 502);
             this.pnl_blanco.TabIndex = 6;
             this.pnl_blanco.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -157,7 +157,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(582, 503);
+            this.ClientSize = new System.Drawing.Size(600, 550);
             this.Controls.Add(this.pnl_blanco);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
