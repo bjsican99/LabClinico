@@ -16,9 +16,9 @@ namespace Clinica.CLS_CLASES
             return strCodigo;
         }
         //------------------------------------------------------------------------------------------------------INSERTS-------------------------------------------------------//
-        public OdbcDataReader Insertar_empleado(string str_codigo, string str_nombre, string str_apellido, string str_dpi, string str_direccion, string str_nit,  string str_fechanacimiento, string str_fechaingreso, string str_telefono, string str_correo, string str_genero, string str_estadocivil, string str_estado)
+        public OdbcDataReader Insertar_empleado(string str_codigo, string str_nombre, string str_apellido, string str_dpi, string str_direccion, string str_nit, string str_fechanacimiento, string str_fechaingreso, string str_telefono, string str_correo, string str_genero, string str_estadocivil, string str_estado)
         {
-            return consulta.Insertar("tbl_empleado",str_codigo,str_nombre, str_apellido, str_dpi, str_direccion, str_nit,  str_fechanacimiento, str_fechaingreso, str_telefono, str_correo, str_genero, str_estadocivil, str_estado);
+            return consulta.Insertar("tbl_empleado", str_codigo, str_nombre, str_apellido, str_dpi, str_direccion, str_nit, str_fechanacimiento, str_fechaingreso, str_telefono, str_correo, str_genero, str_estadocivil, str_estado);
 
         }
         public OdbcDataReader Insertar_paciente(string str_codigo, string str_nombre, string str_apellido, string str_dpi, string str_direccion, string str_nit, string str_fechanacimiento, string str_fechaingreso, string str_telefono, string str_correo, string str_genero, string str_estadocivil, string str_estado)
@@ -36,7 +36,7 @@ namespace Clinica.CLS_CLASES
         //------------------------------------------------------------------------------------------------------UPDATE-------------------------------------------------------//
         public OdbcDataReader modificar_empleado(string str_codigo, string str_nombre, string str_apellido, string str_dpi, string str_direccion, string str_nit, string str_fechanacimiento, string str_fechaingreso, string str_telefono, string str_correo, string str_genero, string str_estadocivil, string str_estado)
         {
-            return consulta.modificar(0,str_codigo, str_nombre, str_apellido, str_dpi, str_direccion, str_nit, str_fechanacimiento, str_fechaingreso, str_telefono, str_correo, str_genero, str_estadocivil, str_estado);
+            return consulta.modificar(0, str_codigo, str_nombre, str_apellido, str_dpi, str_direccion, str_nit, str_fechanacimiento, str_fechaingreso, str_telefono, str_correo, str_genero, str_estadocivil, str_estado);
 
         }
         public OdbcDataReader modificar_paciente(string str_codigo, string str_nombre, string str_apellido, string str_dpi, string str_direccion, string str_nit, string str_fechanacimiento, string str_fechaingreso, string str_telefono, string str_correo, string str_genero, string str_estadocivil, string str_estado)
@@ -53,7 +53,7 @@ namespace Clinica.CLS_CLASES
         //------------------------------------------------------------------------------------------------------UPDATE-------------------------------------------------------//
         public OdbcDataReader eliminar_empleado(string str_codigo)
         {
-            return consulta.eliminar(0,str_codigo);
+            return consulta.eliminar(0, str_codigo);
 
         }
         public OdbcDataReader eliminar_paciente(string str_codigo)

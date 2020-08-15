@@ -18,7 +18,7 @@ namespace Clinica
     public partial class FR_ETIQUETA : Form
     {
         private Image imgFinal;
-       
+
 
         public FR_ETIQUETA()
         {
@@ -36,8 +36,10 @@ namespace Clinica
             //CODIGO PARA LA GENERACION DE EL CODIGO DE BARRAS DENTRO DEL PANEL
             BarcodeLib.Barcode Codigo = new BarcodeLib.Barcode();
             Codigo.IncludeLabel = true;
-            pnl_codigobarras.BackgroundImage = Codigo.Encode(BarcodeLib.TYPE.CODE128,txt_codigo.Text,Color.Black, Color.White, 400,100);
+            pnl_codigobarras.BackgroundImage = Codigo.Encode(BarcodeLib.TYPE.CODE128, txt_codigo.Text, Color.Black, Color.White, 400, 100);
             Image imgFinal = (Image)pnl_codigobarras.BackgroundImage.Clone();
+            Bitacora bit = new Bitacora();
+            bit.grabar("23");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -63,7 +65,7 @@ namespace Clinica
             //BRIAN SANTIZO
             //EXTRAE TODO LO QUE ESTE DENTRO DEL PANEL A SI ANCHO Y ALTO 
             //SE PONE AQUI PARA QUE SEA LO QUE ESTE DENTRO DEL DOCUMENTO DE IMPRESION
-            Bitmap bm = new Bitmap(pnl_codigobarras.Width,pnl_codigobarras.Height);
+            Bitmap bm = new Bitmap(pnl_codigobarras.Width, pnl_codigobarras.Height);
             pnl_codigobarras.DrawToBitmap(bm, new Rectangle(0, 0, pnl_codigobarras.Width, pnl_codigobarras.Height));
             e.Graphics.DrawImage(bm, 0, 0);
             bm.Dispose();

@@ -28,7 +28,7 @@ namespace Clinica
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
 
         }
 
@@ -39,7 +39,7 @@ namespace Clinica
             System.Net.Mail.MailMessage mmsg = new System.Net.Mail.MailMessage();
 
             mmsg.To.Add(txt_para.Text);
-            mmsg.Subject =txt_asunto.Text;
+            mmsg.Subject = txt_asunto.Text;
             mmsg.SubjectEncoding = System.Text.Encoding.UTF8;
             mmsg.Bcc.Add(txt_cc.Text);
             mmsg.Body = txt_mensaje.Text;

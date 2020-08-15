@@ -21,6 +21,16 @@ namespace Clinica
         {
             InitializeComponent();
             bloqueo();
+            if (Clase_Global.TipoGlobal != "1")
+            {
+                btn_eliminar.Enabled = false;
+                btn_modificar.Enabled = false;
+            }
+            else
+            {
+                btn_eliminar.Enabled = true;
+                btn_modificar.Enabled = true;
+            }
         }
 
         string strFechanacimineto = "";
@@ -190,6 +200,8 @@ namespace Clinica
 
         private void btn_consultar_Click_1(object sender, EventArgs e)
         {
+            Bitacora bit = new Bitacora();
+            bit.grabar("14");
             limpiar();
             FR_CONSULTAPACIENTE consulta = new FR_CONSULTAPACIENTE();
             consulta.ShowDialog();
@@ -230,6 +242,8 @@ namespace Clinica
             limpiar();
             obtenercodigo();
             desbloqueo_ingreso();
+            Bitacora bit = new Bitacora();
+            bit.grabar("10");
         }
 
         private void btn_guardar_Click_1(object sender, EventArgs e)
@@ -237,12 +251,16 @@ namespace Clinica
             Fechas();
             comparacioncombobox();
             OdbcDataReader cita = metodos.Insertar_paciente(strCodigo, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
+            Bitacora bit = new Bitacora();
+            bit.grabar("11");
             limpiar();
             bloqueo();
         }
 
         private void btn_modificar_Click_1(object sender, EventArgs e)
         {
+            Bitacora bit = new Bitacora();
+            bit.grabar("12");
             Fechas();
             comparacioncombobox();
             OdbcDataReader cita = metodos.modificar_paciente(txt_codigo.Text, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
@@ -252,6 +270,8 @@ namespace Clinica
 
         private void btn_eliminar_Click_1(object sender, EventArgs e)
         {
+            Bitacora bit = new Bitacora();
+            bit.grabar("13");
             OdbcDataReader cita = metodos.eliminar_paciente(txt_codigo.Text);
             limpiar();
             bloqueo();

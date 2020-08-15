@@ -42,7 +42,12 @@ namespace Clinica
         {
             FR_MUESTRA usu = new FR_MUESTRA();
             usu.Show();
-            
+
+
+        }
+
+        private void txt_estado_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -20,7 +20,7 @@ namespace Clinica
         private float width;
 
         //RUTA DE LA IMAGEN/MARCA DE AGUA DE LA FACTURA
-        string umglogo = @"C:\LabClinico\Clinica\Iconos\umglogo.png";  
+        string umglogo = @"C:\LabClinico\Clinica\Iconos\umglogo.png";
 
         public FR_FACTURACION()
         {
@@ -42,17 +42,17 @@ namespace Clinica
             e.Graphics.DrawString("Guatemala, Ciudad de Guatemala", font, Brushes.Black, new RectangleF(0, y += 20, width, 20));
             e.Graphics.DrawString("Dirección: 15 calle A, Zona 10", font, Brushes.Black, new RectangleF(0, y += 20, width, 20));
             e.Graphics.DrawString("Telefono: 5000-4020", font, Brushes.Black, new RectangleF(0, y += 20, width, 20));
-            e.Graphics.DrawString("N# Factura: " +txt_serie.Text  , font, Brushes.Black, new RectangleF(0, y += 20, width, 20));
+            e.Graphics.DrawString("N# Factura: " + txt_serie.Text, font, Brushes.Black, new RectangleF(0, y += 20, width, 20));
             e.Graphics.DrawString("------------------------------------", font, Brushes.Black, new RectangleF(0, y += 20, width, 20));
-            e.Graphics.DrawString("Fecha: " +txt_factura.Text, font, Brushes.Black, new RectangleF(0, y += 20, width, 20));
-            e.Graphics.DrawString("Nombre: "+txt_nombre.Text, font, Brushes.Black, new RectangleF(0, y += 20, width, 20));
-            e.Graphics.DrawString("Examen: "+txt_apellido.Text, font, Brushes.Black, new RectangleF(0, y += 20, width, 20));
-            e.Graphics.DrawString("Total a pagar: "+txt_total.Text, font, Brushes.Black, new RectangleF(0, y += 20, width, 20));
+            e.Graphics.DrawString("Fecha: " + txt_factura.Text, font, Brushes.Black, new RectangleF(0, y += 20, width, 20));
+            e.Graphics.DrawString("Nombre: " + txt_nombre.Text, font, Brushes.Black, new RectangleF(0, y += 20, width, 20));
+            e.Graphics.DrawString("Examen: " + txt_apellido.Text, font, Brushes.Black, new RectangleF(0, y += 20, width, 20));
+            e.Graphics.DrawString("Total a pagar: " + txt_total.Text, font, Brushes.Black, new RectangleF(0, y += 20, width, 20));
             e.Graphics.DrawString("------------------------------------", font, Brushes.Black, new RectangleF(0, y += 20, width, 20));
             e.Graphics.DrawString("Dicen que algunos nacen para sanadores", font, Brushes.Black, new RectangleF(0, y += 20, width, 20));
             e.Graphics.DrawString("unos pocos selectos.", font, Brushes.Black, new RectangleF(0, y += 20, width, 20));
 
-            
+
 
 
 
@@ -65,6 +65,8 @@ namespace Clinica
         {
             //BRIAN SANTIZO
             //IMPRIMIR
+            Bitacora bit = new Bitacora();
+            bit.grabar("25");
             printDocument1.Print();
         }
 

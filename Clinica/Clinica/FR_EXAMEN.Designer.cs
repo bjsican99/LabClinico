@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_EXAMEN));
             this.lbl_nombre = new System.Windows.Forms.Label();
             this.pnl_blanco = new System.Windows.Forms.Panel();
+            this.btn_muestra = new System.Windows.Forms.Button();
             this.txt_estado = new System.Windows.Forms.TextBox();
             this.cbn_tipo = new System.Windows.Forms.ComboBox();
             this.btn_mensaje = new System.Windows.Forms.Button();
@@ -43,7 +44,6 @@
             this.lbl_tipo = new System.Windows.Forms.Label();
             this.lbl_valor = new System.Windows.Forms.Label();
             this.lbl_codigo = new System.Windows.Forms.Label();
-            this.btn_muestra = new System.Windows.Forms.Button();
             this.pnl_blanco.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,12 +80,25 @@
             this.pnl_blanco.Size = new System.Drawing.Size(820, 463);
             this.pnl_blanco.TabIndex = 2;
             // 
+            // btn_muestra
+            // 
+            this.btn_muestra.BackColor = System.Drawing.Color.White;
+            this.btn_muestra.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_muestra.Location = new System.Drawing.Point(513, 251);
+            this.btn_muestra.Name = "btn_muestra";
+            this.btn_muestra.Size = new System.Drawing.Size(253, 41);
+            this.btn_muestra.TabIndex = 20;
+            this.btn_muestra.Text = "Muestra";
+            this.btn_muestra.UseVisualStyleBackColor = false;
+            this.btn_muestra.Click += new System.EventHandler(this.btn_muestra_Click);
+            // 
             // txt_estado
             // 
             this.txt_estado.Location = new System.Drawing.Point(243, 364);
             this.txt_estado.Name = "txt_estado";
             this.txt_estado.Size = new System.Drawing.Size(189, 22);
             this.txt_estado.TabIndex = 19;
+            this.txt_estado.TextChanged += new System.EventHandler(this.txt_estado_TextChanged);
             // 
             // cbn_tipo
             // 
@@ -193,18 +206,6 @@
             this.lbl_codigo.Size = new System.Drawing.Size(110, 37);
             this.lbl_codigo.TabIndex = 3;
             this.lbl_codigo.Text = "Codigo";
-            // 
-            // btn_muestra
-            // 
-            this.btn_muestra.BackColor = System.Drawing.Color.White;
-            this.btn_muestra.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_muestra.Location = new System.Drawing.Point(513, 251);
-            this.btn_muestra.Name = "btn_muestra";
-            this.btn_muestra.Size = new System.Drawing.Size(253, 41);
-            this.btn_muestra.TabIndex = 20;
-            this.btn_muestra.Text = "Muestra";
-            this.btn_muestra.UseVisualStyleBackColor = false;
-            this.btn_muestra.Click += new System.EventHandler(this.btn_muestra_Click);
             // 
             // FR_EXAMEN
             // 

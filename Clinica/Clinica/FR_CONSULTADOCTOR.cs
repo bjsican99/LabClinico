@@ -61,5 +61,10 @@ namespace Clinica
         {
             this.Dispose();
         }
+
+        private void FR_CONSULTADOCTOR_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -11,7 +11,7 @@ namespace Clinica
     public partial class FR_EMPLEADO : Form
     {
         CLS_METODOS metodos = new CLS_METODOS();
-        string strCodigo="";
+        string strCodigo = "";
         CLS_VALIDACION validacion = new CLS_VALIDACION();
         public FR_EMPLEADO()
         {
@@ -117,7 +117,7 @@ namespace Clinica
             txt_apellido.Text = "";
             cbo_estadocivil.Text = ("");
         }
-        
+
         public void Fechas()
         {
             strFechanacimineto = dtp_fechanacimiento.Value.ToString(dtp_fechanacimiento.CustomFormat = "yyyy-MM-dd");
@@ -151,7 +151,7 @@ namespace Clinica
             }
         }
 
-        public void llenadocombobox(string strLlenadogenero,string strLlenadoestadocivil, string strLlenadoestado)
+        public void llenadocombobox(string strLlenadogenero, string strLlenadoestadocivil, string strLlenadoestado)
         {
             if (strLlenadogenero == "1")
             {
@@ -161,7 +161,7 @@ namespace Clinica
             {
                 strGenero = "Femenino";
             }
-            if (strLlenadoestadocivil=="1")
+            if (strLlenadoestadocivil == "1")
             {
                 strEstadocivil = "Casado";
             }
@@ -169,7 +169,7 @@ namespace Clinica
             {
                 strEstadocivil = "Soltero";
             }
-            if (strLlenadoestado=="1")
+            if (strLlenadoestado == "1")
             {
                 strEstado = "Activo";
             }
@@ -193,7 +193,7 @@ namespace Clinica
         {
             Fechas();
             comparacioncombobox();
-            OdbcDataReader cita = metodos.Insertar_empleado(strCodigo, txt_nombre.Text,txt_apellido.Text,txt_dpi.Text,txt_direccion.Text,txt_nit.Text,strFechanacimineto,strFechaingreso,txt_telefono.Text,txt_correo.Text,strGenero,strEstadocivil,strEstado);
+            OdbcDataReader cita = metodos.Insertar_empleado(strCodigo, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
             limpiar();
             bloqueo();
         }

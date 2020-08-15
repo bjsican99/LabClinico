@@ -22,7 +22,17 @@ namespace Clinica
         {
             InitializeComponent();
             txt_codigopaciente.Text = "";
-            
+            if (Clase_Global.TipoGlobal != "1")
+            {
+                btn_eliminar.Enabled = false;
+                btn_modificar.Enabled = false;
+            }
+            else
+            {
+                btn_eliminar.Enabled = true;
+                btn_modificar.Enabled = true;
+            }
+
 
 
         }
@@ -30,11 +40,11 @@ namespace Clinica
         Conexion cn = new Conexion();
         private void btn_imprimir_Click(object sender, EventArgs e)
         {
-           
+
 
         }
 
-        
+
         //FUNCION PARA BUSCAR SIRVE PARA BUSCAR A LA PERSONA A MODIFICAR Y A ELIMINAR
         //Bryan Mazariegos
         void buscar()
@@ -61,6 +71,9 @@ namespace Clinica
                             DataTable dt = new DataTable();
                             datos.Fill(dt);
                             dgv_vista.DataSource = dt;
+                            Bitacora bit = new Bitacora();
+                            Clase_Global.EventoGlobal = (strCadena);
+                            bit.grabar("24");
                         }
                         catch (Exception exError)
                         {
@@ -83,7 +96,7 @@ namespace Clinica
         //Bryan Mazariegos
         void modificar()
         {
-            if (txt_codigopaciente.Text == ""|| intValido!=1)
+            if (txt_codigopaciente.Text == "" || intValido != 1)
             {
                 MessageBox.Show("No se a buscado una persona");
                 txt_codigopaciente.Enabled = true;
@@ -159,7 +172,7 @@ namespace Clinica
 
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
-           
+
 
 
 

@@ -70,6 +70,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bitacora.cs" />
+    <Compile Include="Clase_Global.cs" />
     <Compile Include="CLS_CLASES\CLS_CONSULTAS.cs" />
     <Compile Include="CLS_CLASES\CLS_METODOS.cs" />
     <Compile Include="CLS_CLASES\CLS_VALIDACION.cs" />
