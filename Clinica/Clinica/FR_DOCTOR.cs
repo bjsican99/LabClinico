@@ -20,12 +20,16 @@ namespace Clinica
         public FR_DOCTOR()
         {
             InitializeComponent();
+            limpiar();
             bloqueo();
-        }
-
-        private void FR_DOCTOR_Load(object sender, EventArgs e)
-        {
-
+            if (Clase_Global.TipoGlobal != "1")
+            {
+                btn_consultar.Enabled = false;
+            }
+            else
+            {
+                btn_consultar.Enabled = true;
+            }
         }
         string strFechanacimineto = "";
         string strFechaingreso = "";
@@ -80,7 +84,7 @@ namespace Clinica
             cbo_genero.Enabled = true;
             txt_telefono.Enabled = true;
             txt_correo.Enabled = true;
-            btn_consultar.Enabled = true;
+            btn_consultar.Enabled = false;
             btn_eliminar.Enabled = false;
             btn_modificar.Enabled = false;
             btn_guardar.Enabled = true;
@@ -126,6 +130,58 @@ namespace Clinica
             cbo_estadocivil.Text = ("");
         }
 
+        //validacion de Campos vacios
+        public bool validacion_campos_vacios()
+        {
+            if (txt_codigo.Text == "")
+            {
+                MessageBox.Show("El campo codigo no puede estar vacío");
+                return false;
+            }
+            if (txt_nombre.Text == "")
+            {
+                MessageBox.Show("Debe llenar el campo: Nombres");
+                return false;
+            }
+            if (txt_apellido.Text == "")
+            {
+                MessageBox.Show("Debe llenar el campo: Apellidos");
+                return false;
+            }
+            if (txt_dpi.Text == "")
+            {
+                MessageBox.Show("Debe llenar el campo: DPI");
+                return false;
+            }
+            if (txt_direccion.Text == "")
+            {
+                MessageBox.Show("Debe llenar el campo: Dirección");
+                return false;
+            }
+            if (txt_nit.Text == "")
+            {
+                MessageBox.Show("Debe llenar el campo: NIT solo digitos");
+                return false;
+            }
+            if (cbo_genero.Text == "")
+            {
+                MessageBox.Show("Debe seleccionar un elemento del campo: Genero");
+                return false;
+            }
+            if (cbo_estadocivil.Text == "")
+            {
+                MessageBox.Show("Debe seleccionar un elemento del campo: Estado civil");
+                return false;
+            }
+            if (cbo_estado.Text == "")
+            {
+                MessageBox.Show("Debe seleccionar un elemento del campo: Estado");
+                return false;
+            }
+            return true;
+
+        }
+
         public void Fechas()
         {
             strFechanacimineto = dtp_fechanacimiento.Value.ToString(dtp_fechanacimiento.CustomFormat = "yyyy-MM-dd");
@@ -133,6 +189,7 @@ namespace Clinica
         }
         public void comparacioncombobox()
         {
+            //comparacion de genero
             if (cbo_genero.SelectedItem.ToString() == "Masculino")
             {
                 strGenero = "1";
@@ -141,14 +198,24 @@ namespace Clinica
             {
                 strGenero = "0";
             }
+            //comparacion estado civil
             if (cbo_estadocivil.SelectedItem.ToString() == "Casado")
             {
                 strEstadocivil = "1";
             }
+            else if (cbo_estadocivil.SelectedItem.ToString() == "Soltero")
+            {
+                strEstadocivil = "2";
+            }
+            else if (cbo_estadocivil.SelectedItem.ToString() == "Divorciado")
+            {
+                strEstadocivil = "3";
+            }
             else
             {
-                strEstadocivil = "0";
+                strEstadocivil = "4";
             }
+            //comparacion para ver si esta activo o no 
             if (cbo_estado.SelectedItem.ToString() == "Activo")
             {
                 strEstado = "1";
@@ -161,6 +228,7 @@ namespace Clinica
 
         public void llenadocombobox(string strLlenadogenero, string strLlenadoestadocivil, string strLlenadoestado)
         {
+            //comparacion para cbo_genero
             if (strLlenadogenero == "1")
             {
                 strGenero = "Masculino";
@@ -169,14 +237,24 @@ namespace Clinica
             {
                 strGenero = "Femenino";
             }
+            //comparacion para cbo_estadocivil
             if (strLlenadoestadocivil == "1")
             {
                 strEstadocivil = "Casado";
             }
-            else
+            else if (strLlenadoestadocivil == "2")
             {
                 strEstadocivil = "Soltero";
             }
+            else if (strLlenadoestadocivil == "3")
+            {
+                strEstadocivil = "Divorciado";
+            }
+            else if (strLlenadoestadocivil == "4")
+            {
+                strEstadocivil = "Viudo";
+            }
+            //comparacion para cbo_estado
             if (strLlenadoestado == "1")
             {
                 strEstado = "Activo";
@@ -188,39 +266,49 @@ namespace Clinica
         }
 
 
-
-        private void dt_fecha_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_guardar_Click(object sender, EventArgs e)
         {
-            Fechas();
-            comparacioncombobox();
-            OdbcDataReader cita = metodos.Insertar_doctor(strCodigo, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
-            limpiar();
-            bloqueo();
+            if (validacion_campos_vacios())
+            {
+                Bitacora bit = new Bitacora();
+                bit.grabar("11");
+                Fechas();
+                comparacioncombobox();
+                metodos.Insertar_doctor(strCodigo, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
+                limpiar();
+                bloqueo();
+            }
+            
         }
 
         private void btn_modificar_Click(object sender, EventArgs e)
         {
-            Fechas();
-            comparacioncombobox();
-            OdbcDataReader cita = metodos.modificar_doctor(txt_codigo.Text, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
-            limpiar();
-            bloqueo();
+            if (validacion_campos_vacios())
+            {
+                Bitacora bit = new Bitacora();
+                bit.grabar("12");
+                Fechas();
+                comparacioncombobox();
+                metodos.modificar_doctor(txt_codigo.Text, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
+                limpiar();
+                bloqueo();
+            }
+            
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
-            OdbcDataReader cita = metodos.eliminar_doctor(txt_codigo.Text);
+            Bitacora bit = new Bitacora();
+            bit.grabar("13");
+            metodos.eliminar_doctor(txt_codigo.Text);
             limpiar();
             bloqueo();
         }
 
         private void btn_nuevo_Click(object sender, EventArgs e)
         {
+            Bitacora bit = new Bitacora();
+            bit.grabar("10");
             limpiar();
             obtenercodigo();
             desbloqueo_ingreso();
@@ -228,6 +316,14 @@ namespace Clinica
 
         private void btn_consultar_Click(object sender, EventArgs e)
         {
+ /*
+  * Codigo Estraido del  usuario de github imogollonh del repositorio Bienestar_SCM 
+  * del link https://github.com/imogollonh/Bienestar_SCM 
+  * 
+  * adaptado a proyecto por Bryan Mazariegos 0901-17-1001 al proyecto LabClinico 
+  */
+            Bitacora bit = new Bitacora();
+            bit.grabar("14");
             limpiar();
             FR_CONSULTADOCTOR consulta = new FR_CONSULTADOCTOR();
             consulta.ShowDialog();

@@ -1,5 +1,7 @@
-﻿//BRIAN SANTIZO FORM
-//0901-17-1483
+﻿/*
+ * Diseño de form por BRIAN SANTIZO 0901-17-1483
+ * 
+ */
 
 using Clinica;
 using System;
@@ -22,27 +24,15 @@ namespace Clinica
             if (Clase_Global.TipoGlobal != "1")
             {
                 btn_personal.Enabled = false;
-                button1.Enabled = false;
+                btn_doctor.Enabled = false;
             }
             else
             {
                 btn_personal.Enabled = true;
-                button1.Enabled = true;
+                btn_doctor.Enabled = true;
             }
 
 
-        }
-
-        private void P_CONTENEDOR_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<FR_PACIENTE>();
-            Bitacora bit = new Bitacora();
-            bit.grabar("2");
         }
 
 
@@ -72,47 +62,26 @@ namespace Clinica
 
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
+        private void btn_paciente_Click(object sender, EventArgs e)
         {
             Bitacora bit = new Bitacora();
-            bit.grabar("9");
-            System.Windows.Forms.Application.Exit();
+            bit.grabar("2");
+            AbrirFormulario<FR_PACIENTE>();     
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_reportes_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<FR_EXAMEN>();
-        }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<FR_REPORTES>();
             Bitacora bit = new Bitacora();
             bit.grabar("3");
+            AbrirFormulario<FR_REPORTES>();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btn_facturacion_Click(object sender, EventArgs e)
         {
             Bitacora bit = new Bitacora();
             bit.grabar("4");
             AbrirFormulario<FR_FACTURACION>();
-        }
-
-        private void CK_PICTURE(object sender, EventArgs e)
-        {
-
-
-
-        }
-
-        private void lbl_hora_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -121,46 +90,42 @@ namespace Clinica
             lbl_fecha.Text = DateTime.Now.ToLongDateString();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            FR_ETIQUETA usu = new FR_ETIQUETA();
-            usu.Show();
-            this.Hide();
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
+        private void btn_examen_Click_(object sender, EventArgs e)
         {
             AbrirFormulario<FR_EXAMEN>();
             Bitacora bit = new Bitacora();
             bit.grabar("6");
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void btn_etiqueta_Click(object sender, EventArgs e)
         {
             Bitacora bit = new Bitacora();
             bit.grabar("7");
-            FR_ETIQUETA usu = new FR_ETIQUETA();
-            usu.Show();
-            this.Hide();
+            AbrirFormulario<FR_ETIQUETA>();
+        
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void btn_personal_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<FR_EMPLEADO>();
             Bitacora bit = new Bitacora();
             bit.grabar("5");
+            AbrirFormulario<FR_EMPLEADO>();
+            
         }
 
-        private void button1_Click_2(object sender, EventArgs e)
+        private void btn_doctor_Click(object sender, EventArgs e)
         {
             Bitacora bit = new Bitacora();
             bit.grabar("8");
             AbrirFormulario<FR_DOCTOR>();
+        }
+
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            Bitacora bit = new Bitacora();
+            bit.grabar("9");
+            System.Windows.Forms.Application.Exit();
         }
     }
 

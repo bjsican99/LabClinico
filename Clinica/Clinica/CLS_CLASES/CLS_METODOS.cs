@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Estructura de clase Estraida del  usuario de github imogollonh del repositorio Bienestar_SCM 
+ * del link https://github.com/imogollonh/Bienestar_SCM 
+ * 
+ * adaptado a proyecto por Bryan Mazariegos 0901-17-1001 al proyecto LabClinico 
+ */
+using System;
 using System.Collections.Generic;
 using System.Data.Odbc;
 using System.Linq;
@@ -15,7 +21,7 @@ namespace Clinica.CLS_CLASES
             string strCodigo = consulta.obtenerfinal(strTabla, strCampo);
             return strCodigo;
         }
-        //------------------------------------------------------------------------------------------------------INSERTS-------------------------------------------------------//
+        //----------------------------------metodos de insercion a tablas-------------------------------------------------------//
         public OdbcDataReader Insertar_empleado(string str_codigo, string str_nombre, string str_apellido, string str_dpi, string str_direccion, string str_nit, string str_fechanacimiento, string str_fechaingreso, string str_telefono, string str_correo, string str_genero, string str_estadocivil, string str_estado)
         {
             return consulta.Insertar("tbl_empleado", str_codigo, str_nombre, str_apellido, str_dpi, str_direccion, str_nit, str_fechanacimiento, str_fechaingreso, str_telefono, str_correo, str_genero, str_estadocivil, str_estado);
@@ -33,7 +39,7 @@ namespace Clinica.CLS_CLASES
         }
         //-------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
-        //------------------------------------------------------------------------------------------------------UPDATE-------------------------------------------------------//
+        //---------------------------------metodos de modificacion en tablas -------------------------------------------------------//
         public OdbcDataReader modificar_empleado(string str_codigo, string str_nombre, string str_apellido, string str_dpi, string str_direccion, string str_nit, string str_fechanacimiento, string str_fechaingreso, string str_telefono, string str_correo, string str_genero, string str_estadocivil, string str_estado)
         {
             return consulta.modificar(0, str_codigo, str_nombre, str_apellido, str_dpi, str_direccion, str_nit, str_fechanacimiento, str_fechaingreso, str_telefono, str_correo, str_genero, str_estadocivil, str_estado);
@@ -50,7 +56,7 @@ namespace Clinica.CLS_CLASES
 
         }
         //-------------------------------------------------------------------------------------------------------------------------------------------------------------//
-        //------------------------------------------------------------------------------------------------------UPDATE-------------------------------------------------------//
+        //---------------------------------metodos de eliminacion en tablas-------------------------------------------------------//
         public OdbcDataReader eliminar_empleado(string str_codigo)
         {
             return consulta.eliminar(0, str_codigo);
@@ -66,7 +72,7 @@ namespace Clinica.CLS_CLASES
             return consulta.eliminar(2, str_codigo);
 
         }
-        //-----------------------------------------------------------------CONSULTAS---------------------------------------
+        //-----------------------------------------metodos de consulta de tablas---------------------------------------//
         public OdbcDataReader consulta_empleado()
         {
             return consulta.consulta("tbl_empleado");

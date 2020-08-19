@@ -1,4 +1,7 @@
-﻿using Clinica.CLS_CLASES;
+﻿/*
+ *  Bryan Mazariegos 0901-17-1001 
+ */
+using Clinica.CLS_CLASES;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,17 +23,8 @@ namespace Clinica
         public FR_PACIENTE()
         {
             InitializeComponent();
+            limpiar();
             bloqueo();
-            if (Clase_Global.TipoGlobal != "1")
-            {
-                btn_eliminar.Enabled = false;
-                btn_modificar.Enabled = false;
-            }
-            else
-            {
-                btn_eliminar.Enabled = true;
-                btn_modificar.Enabled = true;
-            }
         }
 
         string strFechanacimineto = "";
@@ -139,6 +133,7 @@ namespace Clinica
         }
         public void comparacioncombobox()
         {
+            //comparacion de genero
             if (cbo_genero.SelectedItem.ToString() == "Masculino")
             {
                 strGenero = "1";
@@ -147,14 +142,24 @@ namespace Clinica
             {
                 strGenero = "0";
             }
+            //comparacion estado civil
             if (cbo_estadocivil.SelectedItem.ToString() == "Casado")
             {
                 strEstadocivil = "1";
             }
+            else if (cbo_estadocivil.SelectedItem.ToString() == "Soltero")
+            {
+                strEstadocivil = "2";
+            }
+            else if (cbo_estadocivil.SelectedItem.ToString() == "Divorciado")
+            {
+                strEstadocivil = "3";
+            }
             else
             {
-                strEstadocivil = "0";
+                strEstadocivil = "4";
             }
+            //comparacion para ver si esta activo o no 
             if (cbo_estado.SelectedItem.ToString() == "Activo")
             {
                 strEstado = "1";
@@ -167,6 +172,7 @@ namespace Clinica
 
         public void llenadocombobox(string strLlenadogenero, string strLlenadoestadocivil, string strLlenadoestado)
         {
+            //comparacion para cbo_genero
             if (strLlenadogenero == "1")
             {
                 strGenero = "Masculino";
@@ -175,14 +181,24 @@ namespace Clinica
             {
                 strGenero = "Femenino";
             }
+            //comparacion para cbo_estadocivil
             if (strLlenadoestadocivil == "1")
             {
                 strEstadocivil = "Casado";
             }
-            else
+            else if (strLlenadoestadocivil == "2")
             {
                 strEstadocivil = "Soltero";
             }
+            else if (strLlenadoestadocivil == "3")
+            {
+                strEstadocivil = "Divorciado";
+            }
+            else if (strLlenadoestadocivil == "4")
+            {
+                strEstadocivil = "Viudo";
+            }
+            //comparacion para cbo_estado
             if (strLlenadoestado == "1")
             {
                 strEstado = "Activo";
@@ -193,6 +209,58 @@ namespace Clinica
             }
         }
 
+        //validacion de Campos vacios
+        public bool validacion_campos_vacios()
+        {
+            if (txt_codigo.Text == "")
+            {
+                MessageBox.Show("El campo codigo no puede estar vacío");
+                return false;
+            }
+            if (txt_nombre.Text == "")
+            {
+                MessageBox.Show("Debe llenar el campo: Nombres");
+                return false;
+            }
+            if (txt_apellido.Text == "")
+            {
+                MessageBox.Show("Debe llenar el campo: Apellidos");
+                return false;
+            }
+            if (txt_dpi.Text == "")
+            {
+                MessageBox.Show("Debe llenar el campo: DPI");
+                return false;
+            }
+            if (txt_direccion.Text == "")
+            {
+                MessageBox.Show("Debe llenar el campo: Dirección");
+                return false;
+            }
+            if (txt_nit.Text == "")
+            {
+                MessageBox.Show("Debe llenar el campo: NIT solo digitos");
+                return false;
+            }
+            if (cbo_genero.Text == "")
+            {
+                MessageBox.Show("Debe seleccionar un elemento del campo: Genero");
+                return false;
+            }
+            if (cbo_estadocivil.Text == "")
+            {
+                MessageBox.Show("Debe seleccionar un elemento del campo: Estado civil");
+                return false;
+            }
+            if (cbo_estado.Text == "")
+            {
+                MessageBox.Show("Debe seleccionar un elemento del campo: Estado");
+                return false;
+            }
+            return true;
+
+        }
+
         private void FR_EMPLEADO_Load(object sender, EventArgs e)
         {
             bloqueo();
@@ -200,6 +268,12 @@ namespace Clinica
 
         private void btn_consultar_Click_1(object sender, EventArgs e)
         {
+ /*
+  * Codigo Estraido del  usuario de github imogollonh del repositorio Bienestar_SCM 
+  * del link https://github.com/imogollonh/Bienestar_SCM 
+  * 
+  * adaptado a proyecto por Bryan Mazariegos 0901-17-1001 al proyecto LabClinico 
+  */
             Bitacora bit = new Bitacora();
             bit.grabar("14");
             limpiar();
@@ -248,31 +322,37 @@ namespace Clinica
 
         private void btn_guardar_Click_1(object sender, EventArgs e)
         {
-            Fechas();
-            comparacioncombobox();
-            OdbcDataReader cita = metodos.Insertar_paciente(strCodigo, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
-            Bitacora bit = new Bitacora();
-            bit.grabar("11");
-            limpiar();
-            bloqueo();
+            if (validacion_campos_vacios())
+            {
+                Fechas();
+                comparacioncombobox();
+                metodos.Insertar_paciente(strCodigo, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
+                Bitacora bit = new Bitacora();
+                bit.grabar("11");
+                limpiar();
+                bloqueo();
+            }
         }
 
         private void btn_modificar_Click_1(object sender, EventArgs e)
         {
-            Bitacora bit = new Bitacora();
-            bit.grabar("12");
-            Fechas();
-            comparacioncombobox();
-            OdbcDataReader cita = metodos.modificar_paciente(txt_codigo.Text, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
-            limpiar();
-            bloqueo();
+            if (validacion_campos_vacios())
+            { 
+                Bitacora bit = new Bitacora();
+                bit.grabar("12");
+                Fechas();
+                comparacioncombobox();
+                metodos.modificar_paciente(txt_codigo.Text, txt_nombre.Text, txt_apellido.Text, txt_dpi.Text, txt_direccion.Text, txt_nit.Text, strFechanacimineto, strFechaingreso, txt_telefono.Text, txt_correo.Text, strGenero, strEstadocivil, strEstado);
+                limpiar();
+                bloqueo();
+            }
         }
 
         private void btn_eliminar_Click_1(object sender, EventArgs e)
         {
             Bitacora bit = new Bitacora();
             bit.grabar("13");
-            OdbcDataReader cita = metodos.eliminar_paciente(txt_codigo.Text);
+            metodos.eliminar_paciente(txt_codigo.Text);
             limpiar();
             bloqueo();
         }

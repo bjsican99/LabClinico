@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Estructura de clase Estraida del  usuario de github imogollonh del repositorio Bienestar_SCM 
+ * del link https://github.com/imogollonh/Bienestar_SCM 
+ * 
+ * adaptado a proyecto por Bryan Mazariegos 0901-17-1001 al proyecto LabClinico 
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +21,7 @@ namespace Clinica.CLS_CLASES
         char punto = (char)46;
         char bs = (char)8;
         char dosp = (char)58;
-        //char arr = (char)64;
+        char arr = (char)64;
         int contador;
         int contadordp = 0;
         public void CamposNumerosYLetras(KeyPressEventArgs e)
@@ -37,6 +43,18 @@ namespace Clinica.CLS_CLASES
                     e.Handled = false;
                 }
                 else if (Char.IsLetter(e.KeyChar))
+                {
+                    e.Handled = false;
+                }
+                else if (e.KeyChar == guionb)
+                {
+                    e.Handled = false;
+                }
+                else if (e.KeyChar == punto)
+                {
+                    e.Handled = false;
+                }
+                else if (e.KeyChar == arr)
                 {
                     e.Handled = false;
                 }

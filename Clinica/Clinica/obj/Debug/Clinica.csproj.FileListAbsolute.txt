@@ -246,3 +246,6 @@ C:\Users\jmora\Desktop\Prueba1\LabClinico\Clinica\Clinica\obj\Debug\Clinica.cspr
 C:\Users\jmora\Desktop\Prueba1\LabClinico\Clinica\Clinica\obj\Debug\Clinica.csproj.CopyComplete
 C:\Users\jmora\Desktop\Prueba1\LabClinico\Clinica\Clinica\obj\Debug\Clinica.exe
 C:\Users\jmora\Desktop\Prueba1\LabClinico\Clinica\Clinica\obj\Debug\Clinica.pdb
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.Shared.dll
