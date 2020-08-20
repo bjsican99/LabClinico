@@ -69,21 +69,21 @@
             // 
             // txt_usuario
             // 
-            this.txt_usuario.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_usuario.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_usuario.Location = new System.Drawing.Point(97, 213);
             this.txt_usuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_usuario.Name = "txt_usuario";
-            this.txt_usuario.Size = new System.Drawing.Size(321, 23);
+            this.txt_usuario.Size = new System.Drawing.Size(321, 40);
             this.txt_usuario.TabIndex = 2;
             this.txt_usuario.TextChanged += new System.EventHandler(this.tBIngresoUsu_TextChanged);
             // 
             // txt_password
             // 
-            this.txt_password.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_password.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_password.Location = new System.Drawing.Point(97, 309);
             this.txt_password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(321, 23);
+            this.txt_password.Size = new System.Drawing.Size(321, 40);
             this.txt_password.TabIndex = 4;
             this.txt_password.TextChanged += new System.EventHandler(this.TX_INGRESOPASSWORD_TextChanged);
             // 
