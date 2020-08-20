@@ -41,11 +41,11 @@
             this.btn_paciente = new System.Windows.Forms.Button();
             this.pnl_contenedor = new System.Windows.Forms.Panel();
             this.pnl_negro = new System.Windows.Forms.Panel();
+            this.BTN_AYUDA = new System.Windows.Forms.Button();
             this.lbl_fecha = new System.Windows.Forms.Label();
             this.lbl_hora = new System.Windows.Forms.Label();
             this.ptb_imagen = new System.Windows.Forms.PictureBox();
             this.timer_horafecha = new System.Windows.Forms.Timer(this.components);
-            this.BTN_AYUDA = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnl_contenedor.SuspendLayout();
             this.pnl_negro.SuspendLayout();
@@ -230,6 +230,17 @@
             this.pnl_negro.Size = new System.Drawing.Size(932, 50);
             this.pnl_negro.TabIndex = 1;
             // 
+            // BTN_AYUDA
+            // 
+            this.BTN_AYUDA.BackColor = System.Drawing.Color.White;
+            this.BTN_AYUDA.Image = ((System.Drawing.Image)(resources.GetObject("BTN_AYUDA.Image")));
+            this.BTN_AYUDA.Location = new System.Drawing.Point(18, 3);
+            this.BTN_AYUDA.Name = "BTN_AYUDA";
+            this.BTN_AYUDA.Size = new System.Drawing.Size(77, 45);
+            this.BTN_AYUDA.TabIndex = 2;
+            this.BTN_AYUDA.UseVisualStyleBackColor = false;
+            this.BTN_AYUDA.Click += new System.EventHandler(this.BTN_AYUDA_Click);
+            // 
             // lbl_fecha
             // 
             this.lbl_fecha.AutoSize = true;
@@ -267,16 +278,6 @@
             // 
             this.timer_horafecha.Enabled = true;
             this.timer_horafecha.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // BTN_AYUDA
-            // 
-            this.BTN_AYUDA.Location = new System.Drawing.Point(3, 8);
-            this.BTN_AYUDA.Name = "BTN_AYUDA";
-            this.BTN_AYUDA.Size = new System.Drawing.Size(77, 37);
-            this.BTN_AYUDA.TabIndex = 2;
-            this.BTN_AYUDA.Text = "Ayuda";
-            this.BTN_AYUDA.UseVisualStyleBackColor = true;
-            this.BTN_AYUDA.Click += new System.EventHandler(this.BTN_AYUDA_Click);
             // 
             // FR_TOTAL
             // 

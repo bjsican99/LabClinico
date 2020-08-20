@@ -35,10 +35,10 @@
             this.txt_password = new System.Windows.Forms.TextBox();
             this.lbl_password = new System.Windows.Forms.Label();
             this.pnl_blanco = new System.Windows.Forms.Panel();
+            this.BTN_AYUDA = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_agregarusu = new System.Windows.Forms.Button();
             this.btn_aceptar = new System.Windows.Forms.Button();
-            this.BTN_AYUDA = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_imagen)).BeginInit();
             this.pnl_blanco.SuspendLayout();
             this.SuspendLayout();
@@ -120,6 +120,18 @@
             this.pnl_blanco.TabIndex = 6;
             this.pnl_blanco.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // BTN_AYUDA
+            // 
+            this.BTN_AYUDA.BackColor = System.Drawing.Color.White;
+            this.BTN_AYUDA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_AYUDA.Image = ((System.Drawing.Image)(resources.GetObject("BTN_AYUDA.Image")));
+            this.BTN_AYUDA.Location = new System.Drawing.Point(10, 18);
+            this.BTN_AYUDA.Name = "BTN_AYUDA";
+            this.BTN_AYUDA.Size = new System.Drawing.Size(83, 83);
+            this.BTN_AYUDA.TabIndex = 8;
+            this.BTN_AYUDA.UseVisualStyleBackColor = false;
+            this.BTN_AYUDA.Click += new System.EventHandler(this.BTN_AYUDA_Click);
+            // 
             // btn_salir
             // 
             this.btn_salir.BackColor = System.Drawing.Color.White;
@@ -152,18 +164,6 @@
             this.btn_aceptar.TabIndex = 5;
             this.btn_aceptar.UseVisualStyleBackColor = false;
             this.btn_aceptar.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // BTN_AYUDA
-            // 
-            this.BTN_AYUDA.BackColor = System.Drawing.Color.White;
-            this.BTN_AYUDA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_AYUDA.Location = new System.Drawing.Point(25, 25);
-            this.BTN_AYUDA.Name = "BTN_AYUDA";
-            this.BTN_AYUDA.Size = new System.Drawing.Size(114, 66);
-            this.BTN_AYUDA.TabIndex = 8;
-            this.BTN_AYUDA.Text = "?   Ayuda";
-            this.BTN_AYUDA.UseVisualStyleBackColor = false;
-            this.BTN_AYUDA.Click += new System.EventHandler(this.BTN_AYUDA_Click);
             // 
             // FR_LOGIN
             // 
