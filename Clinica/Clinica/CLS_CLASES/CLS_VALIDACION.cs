@@ -22,8 +22,19 @@ namespace Clinica.CLS_CLASES
         char bs = (char)8;
         char dosp = (char)58;
         char arr = (char)64;
+        char enter = (char)10;
         int contador;
         int contadordp = 0;
+        public bool validacion_enter(KeyPressEventArgs e)
+        {
+            
+            if (e.KeyChar == enter)
+            {
+                return true;
+            }
+            return false;
+
+        }
         public void CamposNumerosYLetras(KeyPressEventArgs e)
         {
             try

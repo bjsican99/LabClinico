@@ -167,10 +167,10 @@
             this.txt_nombre.Size = new System.Drawing.Size(189, 22);
             this.txt_nombre.TabIndex = 7;
             // 
-            // txt_codigo
+            // txt_codigo_KeyPress
             // 
             this.txt_codigo.Location = new System.Drawing.Point(243, 111);
-            this.txt_codigo.Name = "txt_codigo";
+            this.txt_codigo.Name = "txt_codigo_KeyPress";
             this.txt_codigo.Size = new System.Drawing.Size(189, 22);
             this.txt_codigo.TabIndex = 6;
             // 

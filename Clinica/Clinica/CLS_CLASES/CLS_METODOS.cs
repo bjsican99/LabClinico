@@ -85,5 +85,10 @@ namespace Clinica.CLS_CLASES
         {
             return consulta.consulta("tbl_doctor");
         }
+        //--------------------------Consulta etiqueta--------------------//
+        public OdbcDataReader consulta_etiqueta(string strCodigo)
+        {
+            return consulta.consulta_etiqueta(strCodigo);
+        }
     }
 }

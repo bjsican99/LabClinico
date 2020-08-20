@@ -246,11 +246,11 @@
             this.lbl_consultar.TabIndex = 60;
             this.lbl_consultar.Text = "Consultar";
             // 
-            // txt_codigo
+            // txt_codigo_KeyPress
             // 
             this.txt_codigo.Location = new System.Drawing.Point(170, 23);
             this.txt_codigo.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_codigo.Name = "txt_codigo";
+            this.txt_codigo.Name = "txt_codigo_KeyPress";
             this.txt_codigo.Size = new System.Drawing.Size(126, 20);
             this.txt_codigo.TabIndex = 59;
             // 

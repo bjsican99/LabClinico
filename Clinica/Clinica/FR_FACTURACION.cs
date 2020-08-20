@@ -26,6 +26,11 @@ namespace Clinica
         {
             InitializeComponent();
         }
+        private void pnl_factura_Paint(object sender, PaintEventArgs e)
+        {
+            //CODIGO PARA HACER TRASLUCIDO EL PANEL
+            pnl_factura.BackColor = Color.FromArgb(25, 0, 0, 0);
+        }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {

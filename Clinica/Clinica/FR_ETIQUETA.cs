@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Odbc;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Drawing.Printing;
@@ -12,37 +13,48 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BarcodeLib; //LIBRERIA DE CODIGO DE BARRAS
+using Clinica.CLS_CLASES;
 
 namespace Clinica
 {
     public partial class FR_ETIQUETA : Form
     {
         private Image imgFinal;
-
+        CLS_METODOS metodos = new CLS_METODOS();
+        CLS_VALIDACION validacion = new CLS_VALIDACION();
 
         public FR_ETIQUETA()
         {
             InitializeComponent();
+            bloquear();
         }
 
         private void FR_ETIQUETA_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void pnl_etiqueta_Paint(object sender, PaintEventArgs e)
         {
-            //BRIAN SANTIZO
-            //CODIGO PARA LA GENERACION DE EL CODIGO DE BARRAS DENTRO DEL PANEL
-            BarcodeLib.Barcode Codigo = new BarcodeLib.Barcode();
-            Codigo.IncludeLabel = true;
-            pnl_codigobarras.BackgroundImage = Codigo.Encode(BarcodeLib.TYPE.CODE128, txt_codigo.Text, Color.Black, Color.White, 400, 100);
-            Image imgFinal = (Image)pnl_codigobarras.BackgroundImage.Clone();
-            Bitacora bit = new Bitacora();
-            bit.grabar("23");
+            //CODIGO PARA HACER TRASLUCIDO EL PANEL
+            pnl_etiqueta.BackColor = Color.FromArgb(25, 0, 0, 0);
+        }
+        public void bloquear()
+        {
+            pnl_codigobarras.Enabled = false;
+            txt_apellido.Enabled = false;
+            txt_nombre.Enabled = false;
+            btn_generar.Enabled = false;
+            btn_guardar.Enabled = false; 
+        }
+        public void Limpiar()
+        {
+            txt_codigo.Text = null;
+            txt_nombre.Text = null;
+            txt_apellido.Text = null;
+            btn_generar.Enabled = false;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_guardar_Click(object sender, EventArgs e)
         {
             //BRIAN SANTIZO
             //CODIGO PARA CONVERTIR A IMAGEN LO QUE ESTA DE FONDO EN EL PANEL
@@ -57,6 +69,7 @@ namespace Clinica
                 imgFinal.Save(Cajadedialogoguardar.FileName, ImageFormat.Png);
             }
             imgFinal.Dispose();
+            bloquear();
             printDocument1.Print();
         }
 
@@ -71,18 +84,62 @@ namespace Clinica
             bm.Dispose();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            //BRIAN SANTIZO
-            //IMPRESION
-            printDocument1.Print();
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
-            FR_TOTAL usu = new FR_TOTAL();
-            usu.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void btn_generar_Click(object sender, EventArgs e)
+        {
+
+            //BRIAN SANTIZO
+            //CODIGO PARA LA GENERACION DE EL CODIGO DE BARRAS DENTRO DEL PANEL
+            
+            btn_guardar.Enabled = true;
+            BarcodeLib.Barcode Codigo = new BarcodeLib.Barcode();
+            Codigo.IncludeLabel = true;
+            pnl_codigobarras.BackgroundImage = Codigo.Encode(BarcodeLib.TYPE.CODE128, txt_codigo.Text+"_"+txt_nombre.Text+"_"+txt_apellido.Text , Color.Black, Color.White, 400, 100);
+            Image imgFinal = (Image)pnl_codigobarras.BackgroundImage.Clone();
+            Bitacora bit = new Bitacora();
+            bit.grabar("23");
+            Limpiar();
+        }
+
+        bool boBandera;
+        private void txt_codigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacion.CampoNumerico(e);
+            if (Char.IsNumber(e.KeyChar))
+            {
+                boBandera = true;
+            }
+            else
+            {
+                boBandera = false;
+            }
+            
+        }
+
+        private void txt_codigo_TextChanged(object sender, EventArgs e)
+        {
+            if (boBandera==true && txt_codigo.Text != "")
+            {
+                OdbcDataReader mostrar = metodos.consulta_etiqueta(txt_codigo.Text);
+                try
+                {
+                    mostrar.Read();
+                    txt_nombre.Text = mostrar.GetString(0);
+                    txt_apellido.Text = mostrar.GetString(1);
+                    btn_generar.Enabled = true;
+                }
+                catch (Exception err)
+                {
+                    btn_generar.Enabled = false;
+                    Limpiar();
+                    MessageBox.Show("Código no existente");
+                    Console.WriteLine(err.Message);
+                }
+            }
         }
     }
 }

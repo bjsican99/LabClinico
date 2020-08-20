@@ -50,7 +50,6 @@ namespace Clinica.CLS_CLASES
                 Clase_Global.EventoGlobal = ("Insercion en " + strTabla + " al codigo" + strCodigo);
                 Bitacora bit = new Bitacora();
                 bit.grabar("15");
-                Clase_Global.EventoGlobal = (strTabla + " " + strCodigo);
                 return mostrar;
             }
             catch (Exception err)
@@ -60,7 +59,6 @@ namespace Clinica.CLS_CLASES
                 Clase_Global.EventoGlobal = ("Error al insertar en " + strTabla + " al codigo" + strCodigo);
                 Bitacora bit = new Bitacora();
                 bit.grabar("16");
-                Clase_Global.EventoGlobal = (strTabla + " " + strCodigo);
                 return null;
             }
         }
@@ -153,11 +151,9 @@ namespace Clinica.CLS_CLASES
                 string strConsulta = "SELECT * FROM " + strTabla + ";";
                 OdbcCommand command = new OdbcCommand(strConsulta, cn.conexion());
                 OdbcDataReader reader = command.ExecuteReader();
-                reader.Read();
                 Clase_Global.EventoGlobal = ("consulta tabla: " + strTabla);
                 Bitacora bit = new Bitacora();
                 bit.grabar("21");
-                Clase_Global.EventoGlobal = (strTabla);
                 return reader;
             }
             catch (Exception err)
@@ -167,9 +163,34 @@ namespace Clinica.CLS_CLASES
                 Clase_Global.EventoGlobal = ("Error en consulta tabla: " + strTabla);
                 Bitacora bit = new Bitacora();
                 bit.grabar("22");
-                Clase_Global.EventoGlobal = (strTabla);
                 return null;
             }
+
+        }
+        //----------------------------Consulta de etiqueta----------------------///
+        public OdbcDataReader consulta_etiqueta(string strCodigo)
+        {
+            try
+            {
+                string strConsulta = "SELECT nombre_paciente, apellido_paciente FROM tbl_paciente WHERE pk_id_paciente= '" + strCodigo + "';";
+                OdbcCommand command = new OdbcCommand(strConsulta, cn.conexion());
+                OdbcDataReader reader = command.ExecuteReader();
+                Clase_Global.EventoGlobal = ("Consulta tabla tbl_paciente, Etiqueta");
+                Bitacora bit = new Bitacora();
+                bit.grabar("21");
+                return reader;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Ocurrio un error en la busqueda de contenido, contacte a IT");
+                Console.WriteLine(err.Message);
+                Clase_Global.EventoGlobal = ("Error en Consulta tabla tbl_paciente, Etiqueta");
+                Bitacora bit = new Bitacora();
+                bit.grabar("22");
+                return null;
+            }
+
+
 
         }
     }
