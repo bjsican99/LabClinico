@@ -48,17 +48,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="BarcodeStandard, Version=2.2.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\BarcodeLib.2.2.5\lib\netstandard2.0\BarcodeStandard.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Drawing.Common.4.5.1\lib\net461\System.Drawing.Common.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -170,6 +174,102 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\FR_BITACORA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FR_BITACORA.Designer.cs">
+      <DependentUpon>FR_BITACORA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FR_GANANCIAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FR_GANANCIAS.Designer.cs">
+      <DependentUpon>FR_GANANCIAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FR_REXAMEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FR_REXAMEN.Designer.cs">
+      <DependentUpon>FR_REXAMEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FR_RFACTURA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FR_RFACTURA.Designer.cs">
+      <DependentUpon>FR_RFACTURA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FR_RPACIENTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FR_RPACIENTE.Designer.cs">
+      <DependentUpon>FR_RPACIENTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FR_RPACIENTES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FR_RPACIENTES.Designer.cs">
+      <DependentUpon>FR_RPACIENTES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FR_RPAGOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FR_RPAGOS.Designer.cs">
+      <DependentUpon>FR_RPAGOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FR_UVISITA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FR_UVISITA.Designer.cs">
+      <DependentUpon>FR_UVISITA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Repo_Ganancia.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repo_Ganancia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\Repo_Bitacora.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repo_Bitacora.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\Repo_Paciente.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repo_Paciente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\Repo_Examen.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repo_Examen.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\Repo_RPacientes.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repo_RPacientes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\Repo_UVisita.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repo_UVisita.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\Repo_pagos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repo_pagos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\Repo_Factura.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repo_Factura.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="FR_CONSULTADOCTOR.resx">
       <DependentUpon>FR_CONSULTADOCTOR.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +325,62 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reportes\FR_BITACORA.resx">
+      <DependentUpon>FR_BITACORA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FR_GANANCIAS.resx">
+      <DependentUpon>FR_GANANCIAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FR_REXAMEN.resx">
+      <DependentUpon>FR_REXAMEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FR_RFACTURA.resx">
+      <DependentUpon>FR_RFACTURA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FR_RPACIENTE.resx">
+      <DependentUpon>FR_RPACIENTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FR_RPACIENTES.resx">
+      <DependentUpon>FR_RPACIENTES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FR_RPAGOS.resx">
+      <DependentUpon>FR_RPAGOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FR_UVISITA.resx">
+      <DependentUpon>FR_UVISITA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Repo_Ganancia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repo_Ganancia.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Repo_Bitacora.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repo_Bitacora.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Repo_Paciente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repo_Paciente.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Repo_Examen.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repo_Examen.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Repo_RPacientes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repo_RPacientes.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Repo_UVisita.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repo_UVisita.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Repo_pagos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repo_pagos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Repo_Factura.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repo_Factura.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
