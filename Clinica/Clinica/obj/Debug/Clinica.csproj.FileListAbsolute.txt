@@ -308,3 +308,14 @@ C:\Users\jmora\Desktop\Git\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Reportes
 C:\Users\jmora\Desktop\Git\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Reportes.FR_RHPACIENTE.resources
 C:\Users\jmora\Desktop\Git\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Reportes.FR_RRESULTADOS.resources
 C:\Users\jmora\Desktop\Git\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Reportes.FR_RUVISITA.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Reportes.FR_RBTACORA.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Reportes.FR_REGPACIENTES.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Reportes.FR_REXAMEN.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Reportes.FR_RFACTURA.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Reportes.FR_RGANANCIAS.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Reportes.FR_RHPACIENTE.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Reportes.FR_RRESULTADOS.resources
+C:\Users\CARLOS JAVIER\LabClinico\Clinica\Clinica\obj\Debug\Clinica.Reportes.FR_RUVISITA.resources
