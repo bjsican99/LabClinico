@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.Repo_RPacientes1 = new Clinica.Reportes.Repo_RPacientes();
+            this.Repo_Examen1 = new Clinica.Reportes.Repo_Examen();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -40,7 +40,7 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.Repo_RPacientes1;
+            this.crystalReportViewer1.ReportSource = this.Repo_Examen1;
             this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
             this.crystalReportViewer1.TabIndex = 0;
             // 
@@ -51,7 +51,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "FR_RRESULTADOS";
-            this.Text = "FR_RRESULTADOS";
+            this.Text = "REPORTE RESULTADOS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
@@ -60,6 +60,6 @@
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private Repo_RPacientes Repo_RPacientes1;
+        private Repo_Examen Repo_Examen1;
     }
 }
