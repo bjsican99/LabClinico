@@ -453,11 +453,11 @@
             this.txt_apellido.TabIndex = 24;
             this.txt_apellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_apellido_KeyPress);
             // 
-            // txt_nombre
+            // txt_nombre_KeyPress
             // 
             this.txt_nombre.Location = new System.Drawing.Point(170, 61);
             this.txt_nombre.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Name = "txt_nombre_KeyPress";
             this.txt_nombre.Size = new System.Drawing.Size(126, 20);
             this.txt_nombre.TabIndex = 7;
             this.txt_nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nombre_KeyPress);

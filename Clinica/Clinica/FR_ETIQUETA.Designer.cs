@@ -135,11 +135,11 @@
             this.lbl_nombre.TabIndex = 7;
             this.lbl_nombre.Text = "Nombre paciente";
             // 
-            // txt_nombre
+            // txt_nombre_KeyPress
             // 
             this.txt_nombre.Location = new System.Drawing.Point(220, 104);
             this.txt_nombre.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Name = "txt_nombre_KeyPress";
             this.txt_nombre.Size = new System.Drawing.Size(172, 20);
             this.txt_nombre.TabIndex = 6;
             this.txt_nombre.Text = " ";

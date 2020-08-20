@@ -160,10 +160,10 @@
             this.txt_valor.Size = new System.Drawing.Size(189, 22);
             this.txt_valor.TabIndex = 9;
             // 
-            // txt_nombre
+            // txt_nombre_KeyPress
             // 
             this.txt_nombre.Location = new System.Drawing.Point(243, 172);
-            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Name = "txt_nombre_KeyPress";
             this.txt_nombre.Size = new System.Drawing.Size(189, 22);
             this.txt_nombre.TabIndex = 7;
             // 
