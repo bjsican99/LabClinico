@@ -127,6 +127,11 @@ namespace Clinica
             bit.grabar("9");
             System.Windows.Forms.Application.Exit();
         }
+
+        private void BTN_AYUDA_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "AyudaClinica/AyudaClinica.chm", "Login.htm");
+        }
     }
 
 

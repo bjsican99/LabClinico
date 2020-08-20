@@ -1,0 +1,23 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=AyudaClinica.chm
+Contents file=AyudaClinica.hhc
+Default Window=AyudaClinica
+Default topic=Etiqueta.htm
+Display compile progress=No
+Language=0x409 English (United States)
+
+[WINDOWS]
+AyudaClinica="Ayuda Clinica","AyudaClinica.hhc",,"Login.htm",,,,,,0x2120,,0x3006,,,,,,,,0
+
+
+[FILES]
+Etiqueta.htm
+Examenes_Muestra.htm
+Facturacion.htm
+Login.htm
+Registros.htm
+Reporte.htm
+
+[INFOTYPES]
+

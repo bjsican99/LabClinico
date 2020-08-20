@@ -45,6 +45,7 @@
             this.lbl_hora = new System.Windows.Forms.Label();
             this.ptb_imagen = new System.Windows.Forms.PictureBox();
             this.timer_horafecha = new System.Windows.Forms.Timer(this.components);
+            this.BTN_AYUDA = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnl_contenedor.SuspendLayout();
             this.pnl_negro.SuspendLayout();
@@ -63,9 +64,9 @@
             this.panel1.Controls.Add(this.btn_reportes);
             this.panel1.Controls.Add(this.btn_paciente);
             this.panel1.Location = new System.Drawing.Point(0, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(206, 488);
+            this.panel1.Size = new System.Drawing.Size(275, 601);
             this.panel1.TabIndex = 0;
             // 
             // btn_doctor
@@ -75,10 +76,10 @@
             this.btn_doctor.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_doctor.ForeColor = System.Drawing.Color.White;
             this.btn_doctor.Image = ((System.Drawing.Image)(resources.GetObject("btn_doctor.Image")));
-            this.btn_doctor.Location = new System.Drawing.Point(0, 366);
-            this.btn_doctor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_doctor.Location = new System.Drawing.Point(0, 450);
+            this.btn_doctor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_doctor.Name = "btn_doctor";
-            this.btn_doctor.Size = new System.Drawing.Size(206, 61);
+            this.btn_doctor.Size = new System.Drawing.Size(275, 75);
             this.btn_doctor.TabIndex = 9;
             this.btn_doctor.Text = "I. Doctor";
             this.btn_doctor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -92,10 +93,10 @@
             this.btn_etiqueta.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_etiqueta.ForeColor = System.Drawing.Color.White;
             this.btn_etiqueta.Image = ((System.Drawing.Image)(resources.GetObject("btn_etiqueta.Image")));
-            this.btn_etiqueta.Location = new System.Drawing.Point(0, 305);
-            this.btn_etiqueta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_etiqueta.Location = new System.Drawing.Point(0, 375);
+            this.btn_etiqueta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_etiqueta.Name = "btn_etiqueta";
-            this.btn_etiqueta.Size = new System.Drawing.Size(206, 61);
+            this.btn_etiqueta.Size = new System.Drawing.Size(275, 75);
             this.btn_etiqueta.TabIndex = 7;
             this.btn_etiqueta.Text = "Etiqueta";
             this.btn_etiqueta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -109,10 +110,10 @@
             this.btn_Examenes.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Examenes.ForeColor = System.Drawing.Color.White;
             this.btn_Examenes.Image = ((System.Drawing.Image)(resources.GetObject("btn_Examenes.Image")));
-            this.btn_Examenes.Location = new System.Drawing.Point(0, 244);
-            this.btn_Examenes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Examenes.Location = new System.Drawing.Point(0, 300);
+            this.btn_Examenes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Examenes.Name = "btn_Examenes";
-            this.btn_Examenes.Size = new System.Drawing.Size(206, 61);
+            this.btn_Examenes.Size = new System.Drawing.Size(275, 75);
             this.btn_Examenes.TabIndex = 8;
             this.btn_Examenes.Text = "Examenes";
             this.btn_Examenes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -126,10 +127,10 @@
             this.btn_personal.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_personal.ForeColor = System.Drawing.Color.White;
             this.btn_personal.Image = ((System.Drawing.Image)(resources.GetObject("btn_personal.Image")));
-            this.btn_personal.Location = new System.Drawing.Point(0, 183);
-            this.btn_personal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_personal.Location = new System.Drawing.Point(0, 225);
+            this.btn_personal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_personal.Name = "btn_personal";
-            this.btn_personal.Size = new System.Drawing.Size(206, 61);
+            this.btn_personal.Size = new System.Drawing.Size(275, 75);
             this.btn_personal.TabIndex = 6;
             this.btn_personal.Text = "I. Personal";
             this.btn_personal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -143,11 +144,11 @@
             this.btn_salir.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_salir.ForeColor = System.Drawing.Color.White;
             this.btn_salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_salir.Image")));
-            this.btn_salir.Location = new System.Drawing.Point(0, 427);
-            this.btn_salir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_salir.Location = new System.Drawing.Point(0, 526);
+            this.btn_salir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btn_salir.Size = new System.Drawing.Size(206, 61);
+            this.btn_salir.Size = new System.Drawing.Size(275, 75);
             this.btn_salir.TabIndex = 5;
             this.btn_salir.Text = "Salir";
             this.btn_salir.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -161,10 +162,10 @@
             this.btn_factura.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_factura.ForeColor = System.Drawing.Color.White;
             this.btn_factura.Image = ((System.Drawing.Image)(resources.GetObject("btn_factura.Image")));
-            this.btn_factura.Location = new System.Drawing.Point(0, 122);
-            this.btn_factura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_factura.Location = new System.Drawing.Point(0, 150);
+            this.btn_factura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_factura.Name = "btn_factura";
-            this.btn_factura.Size = new System.Drawing.Size(206, 61);
+            this.btn_factura.Size = new System.Drawing.Size(275, 75);
             this.btn_factura.TabIndex = 4;
             this.btn_factura.Text = "Facturación";
             this.btn_factura.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -178,10 +179,10 @@
             this.btn_reportes.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_reportes.ForeColor = System.Drawing.Color.White;
             this.btn_reportes.Image = ((System.Drawing.Image)(resources.GetObject("btn_reportes.Image")));
-            this.btn_reportes.Location = new System.Drawing.Point(0, 61);
-            this.btn_reportes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_reportes.Location = new System.Drawing.Point(0, 75);
+            this.btn_reportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_reportes.Name = "btn_reportes";
-            this.btn_reportes.Size = new System.Drawing.Size(206, 61);
+            this.btn_reportes.Size = new System.Drawing.Size(275, 75);
             this.btn_reportes.TabIndex = 3;
             this.btn_reportes.Text = "Reportes";
             this.btn_reportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -196,9 +197,9 @@
             this.btn_paciente.ForeColor = System.Drawing.Color.White;
             this.btn_paciente.Image = ((System.Drawing.Image)(resources.GetObject("btn_paciente.Image")));
             this.btn_paciente.Location = new System.Drawing.Point(0, 0);
-            this.btn_paciente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_paciente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_paciente.Name = "btn_paciente";
-            this.btn_paciente.Size = new System.Drawing.Size(206, 61);
+            this.btn_paciente.Size = new System.Drawing.Size(275, 75);
             this.btn_paciente.TabIndex = 1;
             this.btn_paciente.Text = "I. Paciente";
             this.btn_paciente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -210,32 +211,32 @@
             this.pnl_contenedor.BackColor = System.Drawing.Color.White;
             this.pnl_contenedor.Controls.Add(this.pnl_negro);
             this.pnl_contenedor.Controls.Add(this.ptb_imagen);
-            this.pnl_contenedor.Location = new System.Drawing.Point(204, 1);
-            this.pnl_contenedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_contenedor.Location = new System.Drawing.Point(272, 1);
+            this.pnl_contenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_contenedor.Name = "pnl_contenedor";
-            this.pnl_contenedor.Size = new System.Drawing.Size(699, 491);
+            this.pnl_contenedor.Size = new System.Drawing.Size(932, 604);
             this.pnl_contenedor.TabIndex = 1;
             // 
             // pnl_negro
             // 
             this.pnl_negro.BackColor = System.Drawing.Color.Teal;
+            this.pnl_negro.Controls.Add(this.BTN_AYUDA);
             this.pnl_negro.Controls.Add(this.lbl_fecha);
             this.pnl_negro.Controls.Add(this.lbl_hora);
             this.pnl_negro.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnl_negro.Location = new System.Drawing.Point(0, 450);
-            this.pnl_negro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_negro.Location = new System.Drawing.Point(0, 554);
+            this.pnl_negro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_negro.Name = "pnl_negro";
-            this.pnl_negro.Size = new System.Drawing.Size(699, 41);
+            this.pnl_negro.Size = new System.Drawing.Size(932, 50);
             this.pnl_negro.TabIndex = 1;
             // 
             // lbl_fecha
             // 
             this.lbl_fecha.AutoSize = true;
             this.lbl_fecha.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_fecha.Location = new System.Drawing.Point(405, 4);
-            this.lbl_fecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_fecha.Location = new System.Drawing.Point(540, 5);
             this.lbl_fecha.Name = "lbl_fecha";
-            this.lbl_fecha.Size = new System.Drawing.Size(67, 27);
+            this.lbl_fecha.Size = new System.Drawing.Size(84, 35);
             this.lbl_fecha.TabIndex = 1;
             this.lbl_fecha.Text = "Fecha";
             // 
@@ -243,10 +244,9 @@
             // 
             this.lbl_hora.AutoSize = true;
             this.lbl_hora.Font = new System.Drawing.Font("Corbel", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_hora.Location = new System.Drawing.Point(130, 4);
-            this.lbl_hora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_hora.Location = new System.Drawing.Point(173, 5);
             this.lbl_hora.Name = "lbl_hora";
-            this.lbl_hora.Size = new System.Drawing.Size(57, 27);
+            this.lbl_hora.Size = new System.Drawing.Size(72, 35);
             this.lbl_hora.TabIndex = 0;
             this.lbl_hora.Text = "Hora";
             // 
@@ -256,10 +256,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ptb_imagen.Image = ((System.Drawing.Image)(resources.GetObject("ptb_imagen.Image")));
-            this.ptb_imagen.Location = new System.Drawing.Point(180, 107);
-            this.ptb_imagen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ptb_imagen.Location = new System.Drawing.Point(240, 132);
+            this.ptb_imagen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ptb_imagen.Name = "ptb_imagen";
-            this.ptb_imagen.Size = new System.Drawing.Size(312, 271);
+            this.ptb_imagen.Size = new System.Drawing.Size(416, 334);
             this.ptb_imagen.TabIndex = 0;
             this.ptb_imagen.TabStop = false;
             // 
@@ -268,15 +268,25 @@
             this.timer_horafecha.Enabled = true;
             this.timer_horafecha.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // BTN_AYUDA
+            // 
+            this.BTN_AYUDA.Location = new System.Drawing.Point(3, 8);
+            this.BTN_AYUDA.Name = "BTN_AYUDA";
+            this.BTN_AYUDA.Size = new System.Drawing.Size(77, 37);
+            this.BTN_AYUDA.TabIndex = 2;
+            this.BTN_AYUDA.Text = "Ayuda";
+            this.BTN_AYUDA.UseVisualStyleBackColor = true;
+            this.BTN_AYUDA.Click += new System.EventHandler(this.BTN_AYUDA_Click);
+            // 
             // FR_TOTAL
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 491);
+            this.ClientSize = new System.Drawing.Size(1203, 604);
             this.Controls.Add(this.pnl_contenedor);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FR_TOTAL";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FR_TOTAL";
@@ -306,5 +316,6 @@
         private System.Windows.Forms.Button btn_etiqueta;
         private System.Windows.Forms.Button btn_Examenes;
         private System.Windows.Forms.Button btn_doctor;
+        private System.Windows.Forms.Button BTN_AYUDA;
     }
 }

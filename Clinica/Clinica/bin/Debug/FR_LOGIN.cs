@@ -128,6 +128,11 @@ namespace Clinica
             }
         }
 
+        private void BTN_AYUDA_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "AyudaClinica/AyudaClinica.chm", "Login.htm");
+        }
+
         private void TX_INGRESOPASSWORD_TextChanged(object sender, EventArgs e)
         {
 
